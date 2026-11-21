@@ -1,0 +1,96 @@
+{
+  "post_id": "2026-11-23_0100_mh",
+  "slot_manila": "Mon Nov 23, 1:00 am",
+  "slot_utc": "2026-11-22T17:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift; setting: PACU at night)",
+  "title": "PHARM · Malignant hyperthermia (FEVER IS LATE): dantrolene first (high stakes, night shift)",
+  "hook": "Nurses: no fever yet. Why call malignant hyperthermia?",
+  "hook_backups": [
+    "Nurses: rigid jaw after anesthesia, heart rate 140. Watch it?",
+    "Nurses: ice packs for a post-op fever of 41?"
+  ],
+  "belief": "A high fever is the first sign of malignant hyperthermia.",
+  "score": {
+    "virality": 23,
+    "difficulty": 22,
+    "search": 24,
+    "value": 22,
+    "total": 91
+  },
+  "story": {
+    "patient": "66-year-old man after an emergency hernia repair at 11 PM under general anesthesia (sevoflurane gas and succinylcholine)",
+    "setting": "PACU (post-anesthesia care unit), night shift",
+    "timeline": [
+      {
+        "clock": "12:35 AM",
+        "beat": "Jaw tight, breathing fast. Meter: heart rate 132, end-tidal CO2 (exhaled carbon dioxide) 62 and rising, temp 37.9 °C. Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "12:38 AM",
+        "beat": "'No fever. Can't be malignant hyperthermia.' Waits",
+        "mistake": "MISTAKE 1 · waited for a fever"
+      },
+      {
+        "clock": "12:55 AM",
+        "beat": "Temp 39.4 °C, muscles rigid, sweating. Gives a fever pill and ice packs, nothing else",
+        "mistake": "MISTAKE 2 · treated it like a post-op fever"
+      },
+      {
+        "clock": "12:57 AM",
+        "beat": "Never calls anesthesia or asks for the malignant hyperthermia cart",
+        "mistake": "MISTAKE 3 · no call, no dantrolene"
+      },
+      {
+        "clock": "1:20 AM",
+        "beat": "Temp 41.3 °C, irregular heartbeat, dark cola-colored urine, BP 80/46",
+        "banner": "RAPID RESPONSE",
+        "outcome": "Fever is a LATE sign. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "12:35 AM, same patient",
+      "caught_it": [
+        "Rising CO2, fast heart rate, rigid jaw after anesthesia: think malignant hyperthermia",
+        "Call for help and the malignant hyperthermia cart now",
+        "Dantrolene IV, as ordered, fast",
+        "Cool him (ice, cold IV saline) alongside dantrolene; watch potassium, the heart rhythm and the urine"
+      ]
+    },
+    "choice": {
+      "question": "PACU: rigid jaw, heart rate 132, CO2 rising, temp 37.9 °C.",
+      "a": "Wait for a fever",
+      "b": "CALL: malignant hyperthermia. Get dantrolene",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "MALIGNANT HYPERTHERMIA (FEVER IS LATE)",
+    "items": [
+      "Triggers: inhaled anesthesia gases like sevoflurane (not nitrous oxide) and succinylcholine",
+      "Early: rising CO2, fast heart rate, rigid jaw and muscles",
+      "Late: high fever, dark urine, irregular heartbeat",
+      "Call for help, dantrolene IV as ordered, cool"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Malignant hyperthermia: fever is late. Dantrolene first.",
+  "caption_lesson": "🌙 Night shift, PACU (post-anesthesia care unit), 12:35 AM. He's 66, just out of an emergency hernia repair.\n• Anesthesia: a gas (sevoflurane) and succinylcholine\n• Jaw tight, heart rate 132, exhaled CO2 (carbon dioxide) climbing. Temp 37.9 °C\n\n❌ 3 mistakes\n1️⃣ \"No fever, can't be it.\" Waited\n2️⃣ Treated it like a post-op fever: a fever pill and ice packs, nothing more\n3️⃣ Never called for help or the malignant hyperthermia cart\n➡️ 41.3 °C, irregular heartbeat, dark urine, BP (blood pressure) 80/46. Rapid response.\n\n🔥 Malignant hyperthermia (FEVER IS LATE)\n• An inherited muscle reaction to inhaled anesthesia gases (like sevoflurane, not nitrous oxide) and succinylcholine\n• Muscles burn energy out of control: heat, CO2, acid, potassium\n• EARLY: rising exhaled CO2, fast heart rate, rigid jaw and muscles, fast breathing\n• LATE: high fever, dark cola-colored urine (muscle breakdown), irregular heartbeat\n\n✅ The right move\n• Call for help and the malignant hyperthermia cart now\n• Dantrolene IV (intravenous), as ordered, fast. It's the antidote\n• Stop the trigger drugs. Cool the patient with ice packs and cold IV saline, as ordered, alongside dantrolene, never instead of it\n• Watch potassium, the heart rhythm and urine output\n• Fever pills don't fix it\n\n🧠 Malignant hyperthermia: fever is late. Dantrolene first.",
+  "share_line": "📤 Send this to the nurse who'd wait for the fever.",
+  "sources": [
+    "MHAUS (Malignant Hyperthermia Association of the United States): Emergency Therapy for Malignant Hyperthermia",
+    "Dantrolene sodium for injection prescribing information (DailyMed)"
+  ],
+  "rn_checks": [
+    "Triggers: volatile anesthetic gases (sevoflurane, desflurane, isoflurane) and succinylcholine; nitrous oxide is safe (MHAUS)",
+    "Early signs: unexplained rising end-tidal CO2, tachycardia, masseter and generalized rigidity, tachypnea; hyperthermia is often a late sign (MHAUS)",
+    "Late: high fever, myoglobinuria (dark urine), hyperkalemia, arrhythmias",
+    "Treatment: call for help and the MH cart, stop triggers, dantrolene IV (2.5 mg/kg, repeat as needed) as ordered, active cooling, treat potassium and arrhythmias, monitor urine",
+    "Cooling (ice packs, cold IV saline) is correct MHAUS therapy above 39 °C; the mistake shown is cooling and a fever pill ALONE, with no call and no dantrolene",
+    "Setting: onset in the PACU within the first hour after anesthesia. Realistic? End-tidal CO2 shown on PACU monitoring: OK?",
+    "Story numbers: heart rate 132, EtCO2 62, temps 37.9, 39.4, 41.3 °C, BP 80/46 over about 45 minutes. Realistic?",
+    "'Fever pill' kept unnamed (acetaminophen posted Nov 22, 1 pm in this test)",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

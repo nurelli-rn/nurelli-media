@@ -1,0 +1,90 @@
+{
+  "post_id": "2026-11-22_1400_heartvt",
+  "slot_manila": "Sun Nov 22, 2:00 pm",
+  "slot_utc": "2026-11-22T06:00:00Z",
+  "lane": "ECG",
+  "keyword": "ECG",
+  "format": "heart (play, pause, play; template: the heartvf explainer)",
+  "title": "HEART + ECG · Ventricular tachycardia (RACE): why a racing heart loses its pulse",
+  "hook": "Nurses: why does a racing heart lose its pulse?",
+  "hook_backups": [
+    "Nurses: heart rate 180. Pumping more, or less?",
+    "Nurses: wide and fast on the monitor. What first?"
+  ],
+  "belief": "A faster heart pumps more blood.",
+  "score": {
+    "virality": 22,
+    "difficulty": 23,
+    "search": 25,
+    "value": 23,
+    "total": 93
+  },
+  "beats": [
+    {
+      "step": "play",
+      "card": "First, normal sinus rhythm (slow motion)",
+      "heart": "SA (sinoatrial) node fires, atria fire (P wave), AV (atrioventricular) node pauses, the signal runs down the bundle branches, both ventricles fire together (narrow QRS), squeeze, then refill before the next beat",
+      "strip": "normal sinus at 75"
+    },
+    {
+      "step": "pause 1",
+      "card": "1. A spot in a ventricle takes over",
+      "heart": "an irritable spot low in the ventricle flashes and fires on its own, fast; the SA node keeps firing but gets ignored",
+      "strip": "rate jumps to about 180; no P wave in front of each QRS"
+    },
+    {
+      "step": "pause 2",
+      "card": "2. The beat starts in the wrong place",
+      "heart": "the signal spreads slowly, muscle to muscle, instead of down the fast wiring (bundle branches)",
+      "strip": "every QRS is WIDE (0.12 seconds or more), fast and regular"
+    },
+    {
+      "step": "pause 3 (memory word)",
+      "card": "3. The ventricles RACE",
+      "heart": "ventricles squeeze again and again with no time to refill; chambers squeeze half empty; less blood out; BP number drops",
+      "stamp": "RACE · That's the name: too fast to fill"
+    },
+    {
+      "step": "pause 4",
+      "card": "4. Pulse or no pulse decides everything",
+      "heart": "pulse-check icon at the neck (carotid), 10 seconds or less",
+      "branches": [
+        "No pulse: cardiac arrest. CPR and a shock",
+        "Pulse but unstable (monomorphic): synchronized cardioversion, as ordered",
+        "Pulse and stable: stay, pads on, 12-lead, IV, call"
+      ]
+    },
+    {
+      "step": "play",
+      "card": "Real time",
+      "heart": "racing ventricles at 180",
+      "strip": "monomorphic ventricular tachycardia at 180, full name on the monitor"
+    }
+  ],
+  "save_card": {
+    "title": "VENTRICULAR TACHYCARDIA (RACE): PULSE FIRST",
+    "items": [
+      "Wide and fast: it starts in the ventricles",
+      "No pulse: CPR and a shock",
+      "Pulse but unstable (monomorphic): synchronized cardioversion, as ordered",
+      "Pulse and stable: stay, pads on, 12-lead, call"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Ventricular tachycardia (RACE): too fast to fill. Pulse first.",
+  "caption_lesson": "✅ First, normal sinus rhythm\n• The SA (sinoatrial) node leads. The ventricles fire together down the fast wiring (narrow QRS) and refill between beats\n\n〰️ Then ventricular tachycardia (RACE)\n1️⃣ A spot in the ventricles (lower chambers) takes over and fires fast, often 150 to 250 a minute. The SA node gets ignored\n2️⃣ The beat starts in the wrong place and spreads slowly, muscle to muscle, so every QRS is wide (0.12 seconds or more)\n3️⃣ The ventricles RACE: too fast to fill, so each squeeze pushes less blood and the BP (blood pressure) can crash\n4️⃣ It can lose its pulse or turn into ventricular fibrillation (QUIVER) with little warning\n\n⚡ Pulse first, then decide\n• Check the carotid (neck) pulse, 10 seconds or less\n• No pulse: cardiac arrest. CPR (cardiopulmonary resuscitation) and a shock\n• Pulse but unstable (low BP, new confusion, chest pain, signs of shock, acute heart failure): synchronized cardioversion for monomorphic ventricular tachycardia, as ordered\n• Pulse and stable: stay with him, pads on, 12-lead ECG (electrocardiogram), IV (intravenous) access, call. Antiarrhythmic as ordered\n\n🧠 Ventricular tachycardia (RACE): too fast to fill. Pulse first.\n\n🔖 Save this for your ECG exam",
+  "share_line": "📤 Send this to the classmate who thinks a faster heart pumps more.",
+  "sources": [
+    "2025 American Heart Association (AHA) Adult Tachyarrhythmia With a Pulse Algorithm",
+    "2025 AHA Adult Cardiac Arrest Algorithm"
+  ],
+  "rn_checks": [
+    "Ventricular tachycardia: a ventricular focus firing fast (often 150 to 250 a minute; 3 or more wide beats over 100); SA node ignored; no P wave leading each QRS",
+    "Wide QRS (0.12 s or more) because the signal spreads muscle to muscle, not down the bundle branches",
+    "RACE lands on the frame where the ventricles squeeze with no time to refill: less blood out, BP drops",
+    "Pulse decides (carotid check, 10 seconds or less): no pulse = CPR and a shock; unstable monomorphic = synchronized cardioversion as ordered; stable = stay, pads on, 12-lead, IV, call, antiarrhythmic as ordered (2025 AHA). Polymorphic is covered in the 6 pm torsades Reel",
+    "Pads on in stable ventricular tachycardia is readiness practice, same wording as your Nov 19 RACE story",
+    "Repeat of ventricular tachycardia (posted Nov 19) at your call: deadliest-arrhythmia heart explainer",
+    "Build: @nurelli.rn watermark, 'Nurses:' hook, keyword ECG, numbered pause cards"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "post_id": "2026-11-22_1700_vecuronium",
+  "slot_manila": "Sun Nov 22, 5:00 pm",
+  "slot_utc": "2026-11-22T09:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Midazolam (CALMS) vs vecuronium (STOPS THE BREATHING): the wrong vial (high stakes, night shift)",
+  "hook": "Nurses: one wrong vial. He's awake but can't breathe.",
+  "hook_backups": [
+    "Nurses: 'something to calm him.' Which vial?",
+    "Nurses: the vial needs mixing. Midazolam doesn't."
+  ],
+  "belief": "A sedative and a paralytic are both just 'something to relax him'.",
+  "score": {
+    "virality": 25,
+    "difficulty": 22,
+    "search": 22,
+    "value": 25,
+    "total": 94
+  },
+  "story": {
+    "patient": "71-year-old man, medical floor, panicking at 2 AM and pulling at his IV (intravenous) line",
+    "order": "midazolam 1 mg IV once for severe anxiety",
+    "timeline": [
+      {
+        "clock": "2:05 AM",
+        "beat": "Panicking, pulling at his IV. Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "2:09 AM",
+        "beat": "Grabs a vial from an intubation kit left in the med room, not his own labeled dose",
+        "mistake": "MISTAKE 1 · took a vial from a leftover intubation kit"
+      },
+      {
+        "clock": "2:11 AM",
+        "beat": "The vial is a powder. She mixes it. The cap reads: 'WARNING: PARALYZING AGENT'",
+        "mistake": "MISTAKE 2 · mixed a powder, never read the cap warning"
+      },
+      {
+        "clock": "2:14 AM",
+        "beat": "IV push. Lights off, door closed, no monitor",
+        "mistake": "MISTAKE 3 · no monitor after an IV sedative"
+      },
+      {
+        "clock": "2:19 AM",
+        "beat": "He can't move, can't speak, can't breathe, and he's awake for it. Meter: SpO2 96 to 81 to 62, heart rate 118 then 44"
+      },
+      {
+        "clock": "2:27 AM",
+        "banner": "CODE BLUE",
+        "outcome": "Paralyzed while awake, then unconscious from no oxygen. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "2:09 AM, same patient",
+      "caught_it": [
+        "Give only his own verified dose. Never borrow from a kit",
+        "Midazolam is a liquid. A powder means STOP",
+        "Cap says paralyzing agent. Not for anxiety. Back to pharmacy",
+        "After IV midazolam: stay, watch his breathing and SpO2"
+      ]
+    },
+    "choice": {
+      "question": "Order: midazolam 1 mg IV. You find a powder vial. The cap says 'Warning: Paralyzing Agent'.",
+      "a": "Mix it and give it",
+      "b": "STOP: wrong drug. Return it, verify",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "MIDAZOLAM vs VECURONIUM",
+    "items": [
+      "Midazolam (CALMS): a sedative, liquid vial, can slow breathing",
+      "Vecuronium (STOPS THE BREATHING): a paralytic, powder vial, cap says 'Paralyzing Agent'",
+      "A paralytic: no movement, no breathing, but awake and feeling",
+      "Paralytics only with sedation, airway control and a ventilator"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Midazolam calms. Vecuronium stops the breathing.",
+  "caption_lesson": "🌙 Night shift, 2:05 AM. He's 71, panicking and pulling at his IV (intravenous) line.\n• Order: midazolam 1 mg IV to calm him\n\n❌ 3 mistakes\n1️⃣ Took a vial from a leftover intubation kit\n2️⃣ Mixed a powder and never read the cap warning\n3️⃣ Lights off, door closed, no monitor\n➡️ He can't move or breathe, and he's awake for it. Then the oxygen runs out. Code blue.\n\n💉 Two drugs, two jobs\n\n🟢 Midazolam (CALMS)\n• A benzodiazepine (sedative): calms, makes sleepy\n• Comes as a liquid\n• Can slow breathing: monitor breathing and SpO2 (oxygen saturation) after IV doses\n\n🔴 Vecuronium (STOPS THE BREATHING)\n• A paralytic (neuromuscular blocker): stops every skeletal muscle, breathing included. The heart keeps beating until the oxygen runs out\n• NO sedation, NO pain relief: the patient is awake and feels everything\n• Comes as a powder. The cap must say \"Warning: Paralyzing Agent\". Read the words, not the color\n• Only with sedation, airway control (breathing tube, ventilator) and trained staff\n\n✅ The right move\n• Give only the patient's own verified dose. Read the full label every time\n• Mixing a powder for a drug that comes as a liquid? Stop. Wrong drug\n• After any IV sedative: stay and monitor breathing and SpO2\n\n🧠 Midazolam calms. Vecuronium stops the breathing.",
+  "share_line": "📤 Send this to the nurse who'd grab the closest vial.",
+  "sources": [
+    "ISMP (Institute for Safe Medication Practices) List of High-Alert Medications in Acute Care Settings",
+    "USP (United States Pharmacopeia) General Chapter <7> Labeling: cap warning on neuromuscular blocking agents",
+    "Vecuronium bromide for injection prescribing information (DailyMed)",
+    "Midazolam injection prescribing information (DailyMed)"
+  ],
+  "rn_checks": [
+    "Fictional story, rebuilt so it does not mirror the widely reported 2017 vecuronium case (no cabinet override, no 'VE' search, no scan)",
+    "Midazolam injection is a solution; vecuronium for injection is a powder that must be reconstituted",
+    "Neuromuscular blocker vials must say 'Warning: Paralyzing Agent' on the cap and ferrule (USP <7>); cap color is NOT standardized, so the Reel teaches reading the words",
+    "Vecuronium: paralyzes skeletal muscle including breathing; the heart keeps beating until hypoxia; no sedation or analgesia; only with sedation, airway control and ventilation (label)",
+    "Midazolam 1 mg IV in a 71-year-old fits the label (60 and older: as little as 1 mg); boxed warning requires respiratory and cardiac monitoring",
+    "Outcome: aware while paralyzed at first, then unconscious from hypoxia; SpO2 96, 81, 62; heart rate 118 then 44; code at 2:27. Realistic?",
+    "Memory words are NEW: midazolam (CALMS), vecuronium (STOPS THE BREATHING). Keep or swap?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "post_id": "2026-11-22_1800_hearttdp",
+  "slot_manila": "Sun Nov 22, 6:00 pm",
+  "slot_utc": "2026-11-22T10:00:00Z",
+  "lane": "ECG",
+  "keyword": "ECG",
+  "format": "heart (play, pause, play; template: the heartvf explainer)",
+  "title": "HEART + ECG · Torsades de pointes (TWIST): how a long QT turns deadly",
+  "hook": "Nurses: QTc 560. Just a number on the strip?",
+  "hook_backups": [
+    "Nurses: a long QT, then the rhythm twists. Why?",
+    "Nurses: the T wave got longer. Why call now?"
+  ],
+  "belief": "A long QT is just a number to chart.",
+  "score": {
+    "virality": 22,
+    "difficulty": 24,
+    "search": 23,
+    "value": 23,
+    "total": 92
+  },
+  "beats": [
+    {
+      "step": "play",
+      "card": "First, normal sinus rhythm (slow motion)",
+      "heart": "ventricles fire (QRS) then recover and reset (T wave, lilac sweep)",
+      "strip": "normal sinus; bracket the QT from the start of the QRS to the end of the T wave"
+    },
+    {
+      "step": "pause 1",
+      "card": "1. The ventricles take too long to reset",
+      "heart": "the lilac recovery sweep slows down",
+      "strip": "the T wave stretches; QT bracket grows; tag QTc 560",
+      "side_card": "Common causes: QT-prolonging drugs (ondansetron, haloperidol, some antibiotics, methadone), low potassium, low magnesium"
+    },
+    {
+      "step": "pause 2",
+      "card": "2. An early beat lands on the long T wave",
+      "heart": "a spot in the ventricle fires while the cells are still resetting",
+      "strip": "an early beat on the T wave"
+    },
+    {
+      "step": "pause 3 (memory word)",
+      "card": "3. The rhythm TWISTS",
+      "heart": "the signal spins around the ventricles and keeps changing direction",
+      "strip": "QRS grows and shrinks, twisting around the baseline",
+      "stamp": "TWIST · That's the name: the QRS twists around the line"
+    },
+    {
+      "step": "pause 4",
+      "card": "4. Twisting ventricles can't squeeze well",
+      "heart": "ventricles flutter without a real squeeze",
+      "strip": "a short run stops on its own (dizzy tag), then a long run: it can lose its pulse or turn into ventricular fibrillation (QUIVER)"
+    },
+    {
+      "step": "what to do card",
+      "branches": [
+        "Sustained, even with a pulse: unsynchronized shock (defibrillation). No pulse: CPR too",
+        "Magnesium sulfate IV, as ordered",
+        "Stop the QT-prolonging drugs; correct potassium and magnesium, as ordered"
+      ]
+    },
+    {
+      "step": "play",
+      "card": "Real time",
+      "strip": "torsades de pointes, full name on the monitor"
+    }
+  ],
+  "save_card": {
+    "title": "TORSADES DE POINTES (TWIST)",
+    "items": [
+      "Long QT first: QTc over 500 ms, report it",
+      "The QRS twists around the baseline",
+      "Sustained: unsynchronized shock. No pulse: CPR too",
+      "Magnesium IV as ordered, stop QT drugs"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Torsades de pointes (TWIST): a long QT, then the twist.",
+  "caption_lesson": "✅ First, normal sinus rhythm\n• QRS = the ventricles fire. T wave = they recover and reset\n• QT = from the start of the QRS to the end of the T wave. QTc is the QT corrected for heart rate\n\n🌀 Then torsades de pointes (TWIST)\n1️⃣ The ventricles take too long to reset: a long QT\n2️⃣ An early beat lands on that long T wave\n3️⃣ The signal spins around the ventricles, changing direction. The QRS gets bigger, then smaller, twisting around the line\n4️⃣ Twisting ventricles can't squeeze well. Short runs can stop on their own (dizzy, fainting), but it can lose its pulse or turn into ventricular fibrillation (QUIVER)\n\n⚠️ What stretches the QT\n• Drugs like ondansetron, haloperidol, some antibiotics, methadone\n• Low potassium, low magnesium\n• QTc over 500 ms (milliseconds): high risk. Report it\n\n⚡ What to do\n• Sustained torsades, even with a pulse: an unsynchronized shock (defibrillation), never synchronized cardioversion. No pulse: CPR (cardiopulmonary resuscitation) too\n• Magnesium sulfate IV (intravenous), as ordered\n• Stop the QT-prolonging drugs. Correct potassium and magnesium, as ordered\n\n🧠 Torsades de pointes (TWIST): a long QT, then the twist.\n\n🔖 Save this for your ECG exam",
+  "share_line": "📤 Send this to the nurse who charts the QTc and moves on.",
+  "sources": [
+    "2025 AHA (American Heart Association) Guidelines Part 9: Adult Advanced Life Support (polymorphic ventricular tachycardia)",
+    "2017 AHA/ACC/HRS (American Heart Association, American College of Cardiology, Heart Rhythm Society) Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
+    "2010 AHA/ACCF Scientific Statement: Prevention of Torsade de Pointes in Hospital Settings"
+  ],
+  "rn_checks": [
+    "QT from the start of the QRS to the end of the T wave; QTc corrected for rate; QTc over 500 ms = high risk (AHA/ACCF statement)",
+    "Mechanism: delayed repolarization, an early afterdepolarization beat on the T wave, then polymorphic ventricular tachycardia twisting around the baseline",
+    "TWIST lands on the frame where the QRS twists around the line",
+    "Sustained polymorphic ventricular tachycardia (torsades), pulse or not: immediate unsynchronized shock (2025 AHA, Class 1); no pulse: CPR too; magnesium sulfate IV as ordered (2025: may be considered); stop QT drugs; correct potassium and magnesium",
+    "Torsades often stops on its own in short runs (dizziness, fainting) and only sometimes degenerates into ventricular fibrillation (2010 AHA/ACCF statement)",
+    "Magnesium was the key drug in your Nov 16 torsades Reel (30-day rule) and torsades itself repeats: going ahead at your call (deadliest arrhythmias)",
+    "Drug examples: ondansetron, haloperidol, some antibiotics, methadone. OK?",
+    "Build: @nurelli.rn watermark, 'Nurses:' hook, keyword ECG, numbered pause cards"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "post_id": "2026-11-23_0600_adrenal",
+  "slot_manila": "Mon Nov 23, 6:00 am",
+  "slot_utc": "2026-11-22T22:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Prednisone (NEVER STOP COLD): the NPO steroid that caused a crisis (high stakes, night shift)",
+  "hook": "Nurses: she's NPO. Skip her prednisone?",
+  "hook_backups": ["Nurses: low BP, fluids running. Why isn't it rising?", "Nurses: NPO means hold every pill, right?"],
+  "belief": "NPO means hold every pill.",
+  "score": {"virality": 22, "difficulty": 23, "search": 22, "value": 23, "total": 90},
+  "story": {
+    "patient": "70-year-old woman on prednisone 10 mg every day for 2 years (polymyalgia rheumatica), admitted with vomiting and made NPO (nothing by mouth)",
+    "timeline": [
+      {"clock": "Evening", "beat": "NPO. Her morning prednisone is held", "mistake": "MISTAKE 1 · held her steroid, no call for an IV one"},
+      {"clock": "Night 2, 2:30 AM", "beat": "Dizzy, weak, still vomiting. BP 84/50. Patient and nurse in frame with the hook"},
+      {"clock": "2:35 AM", "beat": "'Just dehydrated.' Slow fluids", "mistake": "MISTAKE 2 · called it dehydration"},
+      {"clock": "3:20 AM", "beat": "BP still 82/48 after fluids. Not reported", "mistake": "MISTAKE 3 · didn't report a low BP that fluids didn't fix"},
+      {"clock": "3:40 AM", "beat": "BP 68/40, heart rate 128, confused, glucose 52 mg/dL (2.9 mmol/L)", "banner": "RAPID RESPONSE", "outcome": "Adrenal crisis. Her body can't make its own steroid anymore. 3 mistakes. Every one avoidable."}
+    ],
+    "rewind": {"clock": "Evening, same patient", "caught_it": ["Long-term steroid: never stop suddenly", "NPO or vomiting? Call for an IV steroid (hydrocortisone)", "Low BP that fluids don't fix, on a steroid: think adrenal crisis, call now", "Hydrocortisone IV and fluids, as ordered"]},
+    "choice": {"question": "On prednisone for 2 years. Now NPO and vomiting.", "a": "Hold the steroid until she eats", "b": "Call: she needs an IV steroid", "answer": "B"}
+  },
+  "save_card": {"title": "PREDNISONE (NEVER STOP COLD)", "items": ["Long-term steroids switch off the body's own cortisol", "Never stop suddenly: taper, as ordered", "NPO, vomiting, surgery or very sick? Ask for an IV steroid", "Crisis: low BP fluids don't fix, vomiting, confusion, low sugar"], "seconds": 4},
+  "memory_line": "Steroids: never stop cold. NPO? Ask for IV.",
+  "caption_lesson": "🌙 Night shift, 2:30 AM. She's 70, on prednisone 10 mg every day for 2 years.\n• Admitted with vomiting, made NPO (nothing by mouth)\n• Her prednisone was held. Now: dizzy, weak, BP (blood pressure) 84/50\n\n❌ 3 mistakes\n1️⃣ Held her steroid, no call for an IV (intravenous) one\n2️⃣ Called the low BP \"just dehydrated\"\n3️⃣ Didn't report a low BP that fluids didn't fix\n➡️ BP 68/40, heart rate 128, confused, low blood sugar. Rapid response.\n\n💊 Prednisone (NEVER STOP COLD)\n• Weeks to months of steroids switch off the body's own cortisol (adrenal suppression)\n• Stop suddenly, or miss doses while sick, and there's not enough cortisol to hold the BP up\n• That's an adrenal crisis\n\n🚨 Adrenal crisis signs\n• Low BP that fluids don't fix\n• Vomiting, belly pain, weakness, confusion\n• Low blood sugar\n\n✅ The right move\n• Never stop a long-term steroid suddenly. Taper, as ordered\n• NPO, vomiting, surgery or very sick? Call for an IV steroid or a stress dose\n• Crisis signs: call now. Hydrocortisone IV and fluids, as ordered\n\n🧠 Steroids: never stop cold. NPO? Ask for IV.",
+  "share_line": "📤 Send this to the nurse who holds every pill when a patient is NPO.",
+  "sources": ["2024 European Society of Endocrinology and Endocrine Society Clinical Practice Guideline: Diagnosis and Therapy of Glucocorticoid-Induced Adrenal Insufficiency", "2016 Endocrine Society Clinical Practice Guideline: Diagnosis and Treatment of Primary Adrenal Insufficiency"],
+  "rn_checks": [
+    "Prednisone 10 mg daily for 2 years: high risk of HPA (hypothalamic-pituitary-adrenal) axis suppression",
+    "NPO or vomiting on a long-term steroid: needs parenteral glucocorticoid (for example IV or IM hydrocortisone) as ordered; sick-day and stress dosing",
+    "Adrenal crisis: hypotension unresponsive to fluids, vomiting, abdominal pain, weakness, confusion, hypoglycemia; treat with hydrocortisone 100 mg IV and fluids as ordered (2024 ESE/ES; 2016 ES)",
+    "Electrolytes (sodium, potassium) not named to keep clear of the Nov 12 electrolyte Reels. OK?",
+    "Story numbers: BP 84/50, 82/48 after fluids, 68/40; heart rate 128; glucose 52 mg/dL (2.9 mmol/L). Realistic?",
+    "Memory phrase is NEW: (NEVER STOP COLD). Keep or swap?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

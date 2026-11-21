@@ -1,0 +1,95 @@
+{
+  "post_id": "2026-11-22_2200_idio",
+  "slot_manila": "Sun Nov 22, 10:00 pm",
+  "slot_utc": "2026-11-22T14:00:00Z",
+  "lane": "ECG",
+  "keyword": "ECG",
+  "format": "story (high stakes, night shift; template: st_junct.py)",
+  "title": "ECG · Idioventricular rhythm (LIFELINE): never suppress it (high stakes, night shift)",
+  "hook": "Nurses: wide QRS, heart rate 32. Suppress it?",
+  "hook_backups": [
+    "Nurses: wide and slow on the monitor. Lidocaine?",
+    "Nurses: his last backup pacemaker. Don't switch it off."
+  ],
+  "belief": "Wide ventricular beats are always dangerous and should be suppressed.",
+  "score": {
+    "virality": 22,
+    "difficulty": 25,
+    "search": 21,
+    "value": 23,
+    "total": 91
+  },
+  "story": {
+    "patient": "79-year-old man on telemetry (heart monitor), heart failure",
+    "timeline": [
+      {
+        "clock": "3:40 AM",
+        "beat": "Alarm: wide, slow, regular beats at 32, no P waves. Patient pale, drowsy. Patient and nurse in frame with the hook. Meter: heart rate 32, BP 82/50, P wave NONE"
+      },
+      {
+        "clock": "3:42 AM",
+        "beat": "Phones it in as 'slow VT'",
+        "mistake": "MISTAKE 1 · called it 'slow VT', never read the rate and the P waves"
+      },
+      {
+        "clock": "3:46 AM",
+        "beat": "Phone order: lidocaine bolus. She gives it",
+        "mistake": "MISTAKE 2 · gave a drug to suppress it, didn't question a rate of 32"
+      },
+      {
+        "clock": "3:47 AM",
+        "beat": "No pads, no BP check, walks away",
+        "mistake": "MISTAKE 3 · no pads, no BP check"
+      },
+      {
+        "clock": "3:52 AM",
+        "beat": "The wide beats stop. Flat line. No pulse",
+        "banner": "CODE BLUE",
+        "outcome": "His last backup pacemaker, switched off. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "3:40 AM, same patient",
+      "caught_it": [
+        "Read it: wide, slow, regular, no P waves, 32",
+        "It's an escape rhythm: his last backup pacemaker",
+        "Check pulse and BP, pads on, call now",
+        "Question any order to suppress it"
+      ]
+    },
+    "choice": {
+      "question": "Wide QRS at 32, no P waves, BP 82/50. Phone order: lidocaine bolus.",
+      "a": "Give it",
+      "b": "HOLD it, call back: it's an escape rhythm. Pads on",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "IDIOVENTRICULAR RHYTHM (LIFELINE)",
+    "items": [
+      "Wide QRS, 20 to 40 a minute, no P waves",
+      "The ventricles' own backup pacemaker",
+      "Never suppress it: no lidocaine or amiodarone",
+      "Check pulse and BP, pads on, atropine or pacing as ordered, call"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Wide and slow is a lifeline, not a target.",
+  "caption_lesson": "🌙 Night shift, 3:40 AM. He's 79, heart failure, on telemetry (heart monitor).\n• Wide, slow, regular beats at 32 a minute. No P waves\n• BP (blood pressure) 82/50, pale, drowsy\n\n❌ 3 mistakes\n1️⃣ Called it \"slow VT\" and never read the rate or the P waves\n2️⃣ Gave lidocaine to suppress it, never questioned a rate of 32\n3️⃣ No pads, no BP check\n➡️ The wide beats stopped. Flat line, no pulse. Code blue.\n\n🔍 Wide QRS? Look at the rate\n\n🟢 Idioventricular rhythm (LIFELINE)\n• 20 to 40 beats a minute, wide QRS (the beat's main spike), no P waves\n• The ventricles' own backup pacemaker. It shows up when the pacemakers above it fail\n• It's keeping him alive. Suppress it and nothing is left\n\n🔴 Ventricular tachycardia (RACE)\n• Also wide, but over 100 a minute\n• A different rhythm with a different plan\n\n✅ The right move\n• Check him: pulse, BP, how he looks\n• Pads on now. Atropine or transcutaneous pacing (through the skin), as ordered\n• Call now. Never suppress an escape rhythm with lidocaine or amiodarone\n• Find the cause: heart block, potassium, drugs that slow the heart\n\n🧠 Wide and slow is a lifeline, not a target.",
+  "share_line": "📤 Send this to the nurse who'd try to suppress every wide beat.",
+  "sources": [
+    "StatPearls: Idioventricular Rhythm",
+    "Lidocaine hydrochloride injection prescribing information (DailyMed): contraindicated in severe sinoatrial, atrioventricular or intraventricular block",
+    "Amiodarone injection prescribing information (DailyMed): contraindicated in marked sinus bradycardia and second- or third-degree AV block without a working pacemaker",
+    "2025 American Heart Association (AHA) Adult Bradycardia With a Pulse Algorithm"
+  ],
+  "rn_checks": [
+    "Idioventricular (ventricular escape) rhythm: 20 to 40 a minute, wide QRS, no related P waves; appears when higher pacemakers fail",
+    "Suppressing a ventricular escape rhythm can remove the only pacemaker: lidocaine and amiodarone are contraindicated in severe conduction block or marked bradycardia without a working pacemaker (lidocaine and amiodarone labels)",
+    "Accelerated idioventricular rhythm (40 to 100, often after reperfusion) is not taught here, to keep it simple. OK?",
+    "Right move: check pulse and BP, pads on, atropine or transcutaneous pacing as ordered, call, find the cause (2025 AHA Adult Bradycardia With a Pulse). Atropine named (posted Nov 7, inside 30 days). OK?",
+    "Story: phone order for a lidocaine bolus, given without questioning; rhythm stops within minutes; flat line drawn but not named. Realistic?",
+    "Memory word is NEW: idioventricular rhythm (LIFELINE). Keep or swap?",
+    "Choice answer B; keyword ECG; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

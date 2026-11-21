@@ -1,0 +1,98 @@
+{
+  "post_id": "2026-11-22_2000_heartchb",
+  "slot_manila": "Sun Nov 22, 8:00 pm",
+  "slot_utc": "2026-11-22T12:00:00Z",
+  "lane": "ECG",
+  "keyword": "ECG",
+  "format": "heart (play, pause, play; template: the heartvf explainer)",
+  "title": "HEART + ECG · Third-degree AV block (SPLIT): P waves everywhere, heart rate 34",
+  "hook": "Nurses: P waves everywhere, heart rate 34. Just slow?",
+  "hook_backups": [
+    "Nurses: the atria and ventricles stopped talking. Now what?",
+    "Nurses: the PR changes every beat. Why call now?"
+  ],
+  "belief": "If you can see P waves, the conduction is fine.",
+  "score": {
+    "virality": 22,
+    "difficulty": 24,
+    "search": 25,
+    "value": 22,
+    "total": 93
+  },
+  "beats": [
+    {
+      "step": "play",
+      "card": "First, normal sinus rhythm (slow motion)",
+      "heart": "every atrial signal passes the AV node after the same short pause and reaches the ventricles",
+      "strip": "every P followed by a QRS; PR 0.12 to 0.20 s, the same every beat"
+    },
+    {
+      "step": "pause 1",
+      "card": "1. The AV node blocks every signal",
+      "heart": "each atrial signal hits the AV node and stops (a wall icon); the atria keep firing on time",
+      "strip": "P waves march on at about 80, no QRS after them"
+    },
+    {
+      "step": "pause 2",
+      "card": "2. A backup pacemaker takes over below the block",
+      "heart": "a spot below the block fires on its own, slowly: junction 40 to 60 (narrow QRS) or ventricles 20 to 40 (wide QRS)",
+      "strip": "slow, regular QRS at 34"
+    },
+    {
+      "step": "pause 3 (memory word)",
+      "card": "3. Top and bottom SPLIT",
+      "heart": "atria and ventricles beat on two separate clocks (two metronome icons, out of step)",
+      "strip": "P waves march through the QRS and T waves; the PR changes every beat; ring 2 P waves hidden in a T wave",
+      "stamp": "SPLIT · That's the name: the top and bottom beat apart"
+    },
+    {
+      "step": "pause 4",
+      "card": "4. Too slow to hold the pressure",
+      "heart": "slow squeeze; BP number drops",
+      "branches": [
+        "Dizzy, faint, low BP",
+        "The backup can fail: cardiac arrest"
+      ]
+    },
+    {
+      "step": "what to do card",
+      "branches": [
+        "Check her: pulse, BP, how she looks",
+        "Pads on. Atropine or transcutaneous pacing, as ordered",
+        "Call now",
+        "A permanent pacemaker is the usual fix"
+      ]
+    },
+    {
+      "step": "play",
+      "card": "Real time",
+      "heart": "pads on, pacing spikes capture, rate 70",
+      "strip": "third-degree AV block, full name on the monitor, then paced beats"
+    }
+  ],
+  "save_card": {
+    "title": "THIRD-DEGREE AV BLOCK (SPLIT)",
+    "items": [
+      "P waves march on their own clock",
+      "QRS march on their own slow clock",
+      "The PR is never the same",
+      "Check her, pads on, atropine or pacing as ordered, call"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Third-degree AV block (SPLIT): the top and bottom beat apart.",
+  "caption_lesson": "✅ First, normal sinus rhythm\n• Every P wave is followed by a QRS after the same short pause (PR 0.12 to 0.20 seconds)\n• The AV (atrioventricular) node passes every signal\n\n🧱 Then third-degree AV block (SPLIT), also called complete heart block\n1️⃣ The AV node blocks EVERY signal. The atria (upper chambers) keep firing on time\n2️⃣ A backup pacemaker below the block takes over, slowly: 40 to 60 from the junction (narrow QRS) or 20 to 40 from the ventricles (wide QRS)\n3️⃣ Top and bottom SPLIT: P waves and QRS each march on their own clock. The PR changes every beat\n4️⃣ Too slow to hold the BP (blood pressure). Dizziness, fainting, and the backup can fail\n\n⚡ What to do\n• Check her: pulse, BP, how she looks\n• Pads on now. Atropine may be ordered first, but it often fails in third-degree block, so be ready for transcutaneous pacing (through the skin), as ordered\n• Call now. A permanent pacemaker is the usual fix\n\n🧠 Third-degree AV block (SPLIT): the top and bottom beat apart.\n\n🔖 Save this for your ECG exam",
+  "share_line": "📤 Send this to the classmate who sees P waves and stops looking.",
+  "sources": [
+    "2025 American Heart Association (AHA) Adult Bradycardia With a Pulse Algorithm",
+    "2018 ACC/AHA/HRS (American College of Cardiology, American Heart Association, Heart Rhythm Society) Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay"
+  ],
+  "rn_checks": [
+    "Third-degree AV block: no atrial impulses conduct; atria and ventricles independent (AV dissociation); PR varies; P waves march through",
+    "Escape rates: junctional 40 to 60 with a narrow QRS; ventricular 20 to 40 with a wide QRS",
+    "Memory word SPLIT comes from your Nov 5 'Heart blocks in 4 words: SLOW, SNAP, SKIP, SPLIT' Reel. Confirm SPLIT = third degree on your ECG sheet",
+    "What to do: check the patient, pads on, atropine 1 mg IV (repeat every 3 to 5 minutes, max 3 mg) or transcutaneous pacing as ordered, call; permanent pacemaker usual fix (2025 AHA Adult Bradycardia With a Pulse; 2018 ACC/AHA/HRS). Atropine is now named because the algorithm needs it; adenosine vs atropine posted Nov 7, so this repeats atropine inside 30 days. OK?",
+    "Repeat of heart blocks (posted Nov 15) at your call: deadliest-arrhythmia heart explainer",
+    "Build: @nurelli.rn watermark, 'Nurses:' hook, keyword ECG, numbered pause cards"
+  ]
+}

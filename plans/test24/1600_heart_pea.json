@@ -1,0 +1,94 @@
+{
+  "post_id": "2026-11-22_1600_heartpea",
+  "slot_manila": "Sun Nov 22, 4:00 pm",
+  "slot_utc": "2026-11-22T08:00:00Z",
+  "lane": "ECG",
+  "keyword": "ECG",
+  "format": "heart (play, pause, play; template: the heartvf explainer)",
+  "title": "HEART + ECG · Pulseless electrical activity (EMPTY): a normal-looking rhythm with no pulse",
+  "hook": "Nurses: a normal-looking rhythm with no pulse. How?",
+  "hook_backups": [
+    "Nurses: perfect rhythm on the monitor. She's not breathing.",
+    "Nurses: the wires still fire. Why is the heart empty?"
+  ],
+  "belief": "An organized rhythm on the monitor means the heart is pumping.",
+  "score": {
+    "virality": 22,
+    "difficulty": 24,
+    "search": 23,
+    "value": 24,
+    "total": 93
+  },
+  "beats": [
+    {
+      "step": "play",
+      "card": "First, normal sinus rhythm (slow motion)",
+      "heart": "one signal, one squeeze; the chambers fill with blood between beats (show blood filling); a pulse at the wrist",
+      "strip": "normal sinus at 75"
+    },
+    {
+      "step": "pause 1",
+      "card": "1. The wiring still fires",
+      "heart": "SA node, AV node and bundle branches light up exactly as normal",
+      "strip": "P, QRS, T keep drawing; the strip looks organized"
+    },
+    {
+      "step": "pause 2 (memory word)",
+      "card": "2. But the pump is EMPTY",
+      "heart": "the ventricles squeeze with almost no blood inside; almost nothing comes out; the neck (carotid) pulse icon is flat",
+      "stamp": "EMPTY · That's the name: the wires fire, the pump is empty"
+    },
+    {
+      "step": "pause 3",
+      "card": "3. Why it's empty or stuck",
+      "icons": [
+        "No blood to pump: bleeding, low volume",
+        "Heart squeezed: tamponade",
+        "Flow blocked: tension pneumothorax, a big clot in the lungs",
+        "Heart too sick to squeeze: low oxygen, acid, potassium problems"
+      ],
+      "note": "label the group: the Hs and Ts"
+    },
+    {
+      "step": "pause 4",
+      "card": "4. Treat the patient, not the monitor",
+      "branches": [
+        "Not responding, no breathing (or only gasping), no carotid pulse in 10 seconds: cardiac arrest, CPR now",
+        "NOT shockable: no chaotic rhythm for a shock to stop",
+        "Epinephrine as soon as possible, then every 3 to 5 minutes, as ordered",
+        "Find and fix the cause"
+      ]
+    },
+    {
+      "step": "play",
+      "card": "Real time",
+      "heart": "CPR hands push blood; the cause is fixed and the chambers fill again",
+      "strip": "organized rhythm labeled PULSELESS ELECTRICAL ACTIVITY (EMPTY), NO PULSE tag"
+    }
+  ],
+  "save_card": {
+    "title": "PULSELESS ELECTRICAL ACTIVITY (EMPTY)",
+    "items": [
+      "Organized rhythm, no pulse",
+      "Not shockable: CPR now",
+      "Epinephrine as soon as possible, then every 3 to 5 minutes",
+      "Find the cause: the Hs and Ts"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Pulseless electrical activity (EMPTY): the wires fire, the pump is empty.",
+  "caption_lesson": "✅ First, normal sinus rhythm\n• One signal, one squeeze, one pulse. The chambers refill between beats\n\n🔌 Then pulseless electrical activity (EMPTY)\n1️⃣ The wiring still fires: P waves, QRS, T waves. The strip can look organized, even normal\n2️⃣ But the pump moves too little blood to make a pulse. It's cardiac arrest\n3️⃣ Why: no blood to pump, the heart squeezed or blocked, or a heart too sick to squeeze\n\n⚡ What to do\n• Not responding? Check breathing and the carotid (neck) pulse together, no more than 10 seconds\n• No pulse: start CPR (cardiopulmonary resuscitation) right away\n• NOT shockable\n• Epinephrine as soon as possible, then every 3 to 5 minutes, as ordered\n\n🔍 Find the cause: the Hs and Ts\n• Hs: hypovolemia (low volume), hypoxia (low oxygen), hydrogen ion (acidosis), hypo-/hyperkalemia (low or high potassium), hypothermia\n• Ts: tension pneumothorax, tamponade (cardiac), toxins, thrombosis (pulmonary, coronary)\n\n🧠 Pulseless electrical activity (EMPTY): treat the patient, not the monitor.\n\n🔖 Save this for your ECG exam",
+  "share_line": "📤 Send this to the classmate who trusts the monitor over the pulse.",
+  "sources": [
+    "2025 American Heart Association (AHA) Adult Cardiac Arrest Algorithm"
+  ],
+  "rn_checks": [
+    "Pulseless electrical activity: organized electrical activity without a palpable pulse; not shockable",
+    "EMPTY lands on the frame where the ventricles squeeze with almost no blood inside",
+    "Causes grouped as the Hs and Ts (same list as your Nov 17 EMPTY story)",
+    "Check breathing and the carotid pulse together, no more than 10 seconds; CPR now; epinephrine as soon as possible, then every 3 to 5 minutes, as ordered (2025 AHA)",
+    "Some PEA hearts still contract weakly (pseudo-PEA), so the wording is \"too little blood to make a pulse\", not \"no blood\" (Vera, StatPearls)",
+    "Repeat of pulseless electrical activity (posted Nov 17) at your call: deadliest-arrhythmia heart explainer",
+    "Build: @nurelli.rn watermark, 'Nurses:' hook, keyword ECG, numbered pause cards"
+  ]
+}

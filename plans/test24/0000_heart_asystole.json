@@ -1,0 +1,35 @@
+{
+  "post_id": "2026-11-23_0000_heartflat",
+  "slot_manila": "Mon Nov 23, 12:00 am",
+  "slot_utc": "2026-11-22T16:00:00Z",
+  "lane": "ECG",
+  "keyword": "ECG",
+  "format": "heart (play, pause, play; template: the heartvf explainer)",
+  "title": "HEART + ECG · Asystole (FLAT): why a shock can't restart a flat line",
+  "hook": "Nurses: TV shocks a flat line. Real codes don't. Why?",
+  "hook_backups": ["Nurses: no electricity at all. What would a shock reset?", "Nurses: flat line. Grab the paddles?"],
+  "belief": "A shock restarts a stopped heart.",
+  "score": {"virality": 23, "difficulty": 21, "search": 25, "value": 22, "total": 91},
+  "beats": [
+    {"step": "play", "card": "First, normal sinus rhythm (slow motion)", "heart": "SA node fires, the wave spreads, the heart squeezes", "strip": "normal sinus at 75"},
+    {"step": "pause 1", "card": "1. No signal starts anywhere", "heart": "SA node dark, AV node dark, ventricles dark; the heart sits still", "strip": "the line goes flat"},
+    {"step": "pause 2 (memory word)", "card": "2. The strip goes FLAT", "heart": "still heart, no squeeze", "stamp": "FLAT · That's the name: no electricity, a flat line"},
+    {"step": "pause 3", "card": "3. Why a shock won't help", "split_panel": ["Ventricular fibrillation (QUIVER): chaotic electricity. A shock stops it all at once so the SA node can lead again", "Asystole (FLAT): no electricity. Nothing to stop or reset. A shock only steals time from CPR"]},
+    {"step": "pause 4", "card": "4. Make sure it's real", "branches": ["Not responding, no pulse in 10 seconds", "Leads still on? Check a second lead", "A loose lead or a fine quiver can look flat"]},
+    {"step": "what to do card", "branches": ["CPR right away", "Epinephrine as soon as possible, then every 3 to 5 minutes, as ordered", "Find the cause: the Hs and Ts"]},
+    {"step": "play", "card": "Real time", "heart": "CPR hands squeeze the heart and push blood", "strip": "asystole, full name on the monitor, compression artifact during CPR"}
+  ],
+  "save_card": {"title": "ASYSTOLE (FLAT)", "items": ["No electricity: nothing to shock", "Check the patient, the leads and a second lead", "CPR right away", "Epinephrine as soon as possible, then every 3 to 5 minutes"], "seconds": 4},
+  "memory_line": "Asystole (FLAT): nothing to reset. Push, don't shock.",
+  "caption_lesson": "✅ First, normal sinus rhythm\n• The SA (sinoatrial) node fires, the wave spreads, the heart squeezes\n\n➖ Then asystole (FLAT)\n1️⃣ No signal starts anywhere. The heart sits still\n2️⃣ The strip goes flat: no P waves, no QRS, no T waves\n3️⃣ It's cardiac arrest. No pulse\n\n⚡ Why a shock won't help\n• A shock stops CHAOTIC electricity, like ventricular fibrillation (QUIVER), so the SA node can lead again\n• Asystole has no electricity to stop. A shock only steals time from CPR (cardiopulmonary resuscitation)\n\n🔍 Make sure it's real\n• Not responding, no pulse in 10 seconds\n• Leads still on? Check a second lead. A loose lead or a fine quiver can look flat\n\n✅ What to do\n• CPR right away\n• Epinephrine as soon as possible, then every 3 to 5 minutes, as ordered\n• Find the cause: the Hs and Ts\n\n🧠 Asystole (FLAT): nothing to reset. Push, don't shock.\n\n🔖 Save this for your ECG exam",
+  "share_line": "📤 Send this to the friend who learned codes from TV.",
+  "sources": ["2025 American Heart Association (AHA) Adult Cardiac Arrest Algorithm"],
+  "rn_checks": [
+    "Asystole: no electrical activity, not shockable; CPR, epinephrine as soon as possible then every 3 to 5 minutes, Hs and Ts (2025 AHA)",
+    "FLAT lands on the frame where the heart sits still and the strip is flat",
+    "Defibrillation terminates fibrillation so the SA node can resume; no benefit in asystole",
+    "'Check a second lead / leads attached' is classic ACLS teaching to rule out fine ventricular fibrillation or a loose lead. OK?",
+    "Repeat of asystole (FLAT, Nov 16 breakout) at your call: deadliest-arrhythmia heart explainer",
+    "Build: @nurelli.rn watermark, 'Nurses:' hook, keyword ECG, numbered pause cards"
+  ]
+}

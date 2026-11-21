@@ -1,0 +1,95 @@
+{
+  "post_id": "2026-11-22_2300_phenytoin",
+  "slot_manila": "Sun Nov 22, 11:00 pm",
+  "slot_utc": "2026-11-22T15:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Phenytoin IV (SLOW AND SALINE): the rate that crashes the heart (high stakes, night shift)",
+  "hook": "Nurses: seizure stopped. Push the phenytoin fast?",
+  "hook_backups": [
+    "Nurses: a 30-minute drug in 10. What happens?",
+    "Nurses: phenytoin in dextrose? Look at the bag."
+  ],
+  "belief": "The faster the loading dose goes in, the safer the patient.",
+  "score": {
+    "virality": 22,
+    "difficulty": 22,
+    "search": 24,
+    "value": 23,
+    "total": 91
+  },
+  "story": {
+    "patient": "72-year-old man, 70 kg, with a heart history; a seizure at 12:50 AM stopped after lorazepam",
+    "order": "phenytoin 1,400 mg IV (intravenous) loading dose (20 mg/kg)",
+    "timeline": [
+      {
+        "clock": "1:05 AM",
+        "beat": "'Get it in before the next seizure.' Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "1:06 AM",
+        "beat": "Mixes it in dextrose (D5W), no in-line filter",
+        "mistake": "MISTAKE 1 · mixed in dextrose, no filter"
+      },
+      {
+        "clock": "1:08 AM",
+        "beat": "Runs it in 10 minutes (140 mg a minute)",
+        "mistake": "MISTAKE 2 · ran it almost 3 times too fast"
+      },
+      {
+        "clock": "1:09 AM",
+        "beat": "No cardiac monitor, no BP checks during the infusion",
+        "mistake": "MISTAKE 3 · no monitor, no BP checks"
+      },
+      {
+        "clock": "1:18 AM",
+        "beat": "Meter: BP 72/40, heart rate 38, wide beats on the strip. He's gray and barely responding",
+        "banner": "RAPID RESPONSE",
+        "outcome": "A 30-minute drug in 10. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "1:05 AM, same patient",
+      "caught_it": [
+        "Normal saline only, with an in-line filter",
+        "No faster than 50 mg a minute. Slower for older adults or heart disease",
+        "Cardiac monitor and BP during and after",
+        "Watch the IV site: burning, swelling, color change"
+      ]
+    },
+    "choice": {
+      "question": "Phenytoin 1,400 mg IV. Max 50 mg a minute. Fastest safe time?",
+      "a": "10 minutes",
+      "b": "28 minutes or longer",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "PHENYTOIN IV (SLOW AND SALINE)",
+    "items": [
+      "No faster than 50 mg a minute in adults (slower if older or heart disease)",
+      "Normal saline only, in-line filter, flush before and after",
+      "Cardiac monitor and BP during and after",
+      "Therapeutic level: 10 to 20 mcg/mL"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Phenytoin: slow, saline, and a monitor.",
+  "caption_lesson": "🌙 Night shift, 1:05 AM. He's 72, 70 kg, with a heart history. His seizure stopped after lorazepam.\n• Order: phenytoin 1,400 mg IV (intravenous) loading dose\n\n❌ 3 mistakes\n1️⃣ Mixed it in dextrose, no filter\n2️⃣ Ran it in 10 minutes\n3️⃣ No cardiac monitor, no BP (blood pressure) checks\n➡️ BP 72/40, heart rate 38, wide beats. Rapid response.\n\n🧮 The math\n• 1,400 mg ÷ 50 mg a minute = 28 minutes, at the fastest\n• He got it in 10. That's 140 mg a minute\n\n💉 Phenytoin IV (SLOW AND SALINE)\n• Too fast: low BP and dangerous heart rhythms\n• Adults: no faster than 50 mg a minute. Older adults or heart disease: slower, as ordered\n• Normal saline only. It can form crystals in dextrose\n• In-line filter, flush with saline before and after\n• Cardiac monitor and BP during and after the infusion\n• Watch the IV site: it can burn and damage tissue\n\n📊 Therapeutic level: 10 to 20 mcg/mL (micrograms per milliliter)\n\n🧠 Phenytoin: slow, saline, and a monitor.",
+  "share_line": "📤 Send this to the nurse who'd push phenytoin to beat the next seizure.",
+  "sources": [
+    "Phenytoin sodium injection prescribing information (DailyMed): boxed warning, cardiovascular risk with rapid infusion",
+    "American Epilepsy Society 2016 Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults"
+  ],
+  "rn_checks": [
+    "Loading dose 20 mg/kg per the AES 2016 status epilepticus guideline (70 kg = 1,400 mg; the label lists 10 to 15 mg/kg); adult max rate 50 mg a minute; label recommends slower rates, complications most common in older and critically ill patients",
+    "Boxed warning: hypotension and arrhythmias with rapid IV administration; continuous ECG and BP monitoring during and after",
+    "Dilute in normal saline only (precipitates in dextrose); in-line filter; flush with saline before and after",
+    "IV site: extravasation and soft tissue injury (purple glove syndrome) risk",
+    "Therapeutic total level 10 to 20 mcg/mL",
+    "Story outcome: BP 72/40, heart rate 38, wide beats after 140 mg a minute in a 72-year-old with heart disease. Realistic?",
+    "Memory word is NEW: phenytoin (SLOW AND SALINE). Keep or swap?",
+    "Choice answer B (28 minutes or longer); keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

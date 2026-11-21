@@ -1,0 +1,39 @@
+{
+  "post_id": "2026-11-23_0300_diphenhydramine",
+  "slot_manila": "Mon Nov 23, 3:00 am",
+  "slot_utc": "2026-11-22T19:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Diphenhydramine in older adults (CONFUSES, NOT SNOOZES) (high stakes, night shift)",
+  "hook": "Nurses: 84 and can't sleep at 2 AM. Diphenhydramine?",
+  "hook_backups": ["Nurses: a 'harmless' sleep aid. Then she fell.", "Nurses: new confusion at 2 AM. Sleep aid or red flag?"],
+  "belief": "Diphenhydramine is a harmless sleep aid.",
+  "score": {"virality": 24, "difficulty": 22, "search": 21, "value": 24, "total": 91},
+  "story": {
+    "patient": "84-year-old woman, day 2 after hip fracture surgery",
+    "order": "diphenhydramine 25 to 50 mg by mouth at bedtime as needed for sleep",
+    "timeline": [
+      {"clock": "2:00 AM", "beat": "Restless, wide awake: 'Where am I?' Patient and nurse in frame with the hook"},
+      {"clock": "2:05 AM", "beat": "Gives diphenhydramine 50 mg 'to help her sleep'", "mistake": "MISTAKE 1 · a strong anticholinergic for an 84-year-old"},
+      {"clock": "2:06 AM", "beat": "Never screens for delirium, never checks pain, bladder or oxygen", "mistake": "MISTAKE 2 · treated the confusion, not the cause"},
+      {"clock": "2:07 AM", "beat": "Bed high, bed alarm off", "mistake": "MISTAKE 3 · no fall precautions"},
+      {"clock": "3:35 AM", "beat": "Pulling at her IV, 'bugs on the wall', bladder full. Climbs out of bed, falls, hits her head", "banner": "RAPID RESPONSE", "outcome": "A 'harmless' sleep aid. A fall with a head strike. 3 mistakes. Every one avoidable."}
+    ],
+    "rewind": {"clock": "2:00 AM, same patient", "caught_it": ["New confusion at night: screen for delirium, look for the cause", "Check pain, a full bladder, oxygen, glasses and hearing aids", "Sleep without drugs: lights low, quiet, reorient her", "Low bed, bed alarm on. Ask the provider about that diphenhydramine order"]},
+    "choice": {"question": "84, confused and awake at 2 AM after hip surgery.", "a": "Diphenhydramine 50 mg", "b": "Look for the cause, non-drug steps, call the provider", "answer": "B"}
+  },
+  "save_card": {"title": "DIPHENHYDRAMINE IN OLDER ADULTS (CONFUSES, NOT SNOOZES)", "items": ["Anticholinergic: confusion, delirium, urine retention, constipation, falls", "On the Beers list: avoid in older adults", "New night confusion? Think delirium, find the cause", "Fix the cause, sleep steps, low bed, bed alarm, call"], "seconds": 4},
+  "memory_line": "In older adults, diphenhydramine confuses, not snoozes.",
+  "caption_lesson": "🌙 Night shift, 2:00 AM. She's 84, day 2 after hip fracture surgery.\n• Restless, awake, asking where she is\n• PRN (as-needed) order: diphenhydramine for sleep\n\n❌ 3 mistakes\n1️⃣ Gave diphenhydramine 50 mg to an 84-year-old\n2️⃣ Never screened for delirium or looked for the cause\n3️⃣ Bed high, bed alarm off\n➡️ 3:35 AM: pulling at her IV, seeing bugs, bladder full. She falls and hits her head. Rapid response.\n\n💊 Diphenhydramine in older adults (CONFUSES, NOT SNOOZES)\n• Strongly anticholinergic: blocks a brain and body messenger (acetylcholine)\n• Can cause confusion, delirium, urine retention, constipation, dry mouth, blurry vision and falls\n• On the AGS (American Geriatrics Society) Beers Criteria: avoid in older adults\n\n⚠️ New confusion at night is not \"just sundowning\"\n• Think delirium until proven otherwise\n• Look for the cause: pain, a full bladder, low oxygen, infection, new medicines\n\n✅ The right move\n• Screen for delirium, check pain, bladder and oxygen\n• Glasses and hearing aids on, lights low, quiet, reorient her\n• Low bed, bed alarm on\n• Call the provider about the sleep order\n\n🧠 In older adults, diphenhydramine confuses, not snoozes.",
+  "share_line": "📤 Send this to the nurse who'd give a sleep aid at 2 AM.",
+  "sources": ["2023 American Geriatrics Society (AGS) Beers Criteria for Potentially Inappropriate Medication Use in Older Adults", "Diphenhydramine hydrochloride prescribing information (DailyMed)"],
+  "rn_checks": [
+    "Beers 2023: first-generation antihistamines including diphenhydramine: avoid in older adults (strongly anticholinergic: confusion, dry mouth, constipation; exception for acute severe allergic reaction)",
+    "Anticholinergic effects: confusion, delirium, urinary retention, constipation, blurred vision, falls",
+    "New nighttime confusion after hip fracture surgery: delirium screen (for example CAM, Confusion Assessment Method), find the cause",
+    "Story: 50 mg dose, hallucinations, urinary retention and a fall with a head strike about 90 minutes later. Realistic?",
+    "Memory phrase is NEW: (CONFUSES, NOT SNOOZES). Keep or swap?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

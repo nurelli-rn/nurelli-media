@@ -1,0 +1,88 @@
+{
+  "post_id": "2026-11-23_0200_glyburide",
+  "slot_manila": "Mon Nov 23, 2:00 am",
+  "slot_utc": "2026-11-22T18:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Glyburide (THE LOW THAT COMES BACK): 3 AM confusion (high stakes, night shift)",
+  "hook": "Nurses: 3 AM confusion. Just sundowning?",
+  "hook_backups": [
+    "Nurses: glucose 38, coughing on sips. Orange juice?",
+    "Nurses: her sugar came up. Safe to walk away?"
+  ],
+  "belief": "Confusion in an older adult at night is just sundowning.",
+  "score": {
+    "virality": 22,
+    "difficulty": 21,
+    "search": 25,
+    "value": 23,
+    "total": 91
+  },
+  "story": {
+    "patient": "81-year-old woman with type 2 diabetes; took her home glyburide (a sulfonylurea) with dinner but ate only a few bites",
+    "timeline": [
+      {
+        "clock": "3:10 AM",
+        "beat": "Mumbling, sweaty, picking at the sheets. Patient and nurse in frame with the hook",
+        "mistake": "MISTAKE 1 · charted 'sundowning', no glucose check"
+      },
+      {
+        "clock": "3:40 AM",
+        "beat": "Glucose finally checked: 38 mg/dL (2.1 mmol/L). Drowsy, coughs on sips. The nurse gives orange juice anyway",
+        "mistake": "MISTAKE 2 · juice by mouth when she couldn't swallow safely"
+      },
+      {
+        "clock": "4:05 AM",
+        "beat": "Recheck 74 mg/dL (4.1 mmol/L). The nurse leaves",
+        "mistake": "MISTAKE 3 · one recheck, then walked away"
+      },
+      {
+        "clock": "5:10 AM",
+        "beat": "Glucose 31 mg/dL (1.7 mmol/L), a seizure",
+        "banner": "RAPID RESPONSE",
+        "outcome": "A sulfonylurea low comes back for hours. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "3:10 AM, same patient",
+      "caught_it": [
+        "New confusion with diabetes: check the glucose first",
+        "Can't swallow safely: nothing by mouth. IV dextrose or glucagon, as ordered",
+        "Recheck every 15 minutes, then often for hours. Food once she's awake. Report"
+      ]
+    },
+    "choice": {
+      "question": "Glucose 38 mg/dL, drowsy, coughs on sips.",
+      "a": "Orange juice",
+      "b": "Nothing by mouth: IV dextrose or glucagon, as ordered",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "GLYBURIDE (THE LOW THAT COMES BACK)",
+    "items": [
+      "Confused at night with diabetes? Glucose first",
+      "Awake and swallows safely: 15 g fast sugar, recheck in 15 minutes",
+      "Can't swallow safely: IV dextrose or glucagon, as ordered",
+      "Sulfonylurea lows last for hours: keep rechecking, report"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Confused with diabetes? Check the sugar first.",
+  "caption_lesson": "🌙 Night shift, 3:10 AM. She's 81 with type 2 diabetes.\n• Took her glyburide with dinner, ate only a few bites\n• Now: mumbling, sweaty, picking at the sheets\n\n❌ 3 mistakes\n1️⃣ Charted \"sundowning\", no glucose check\n2️⃣ Orange juice when she couldn't swallow safely\n3️⃣ One recheck, then walked away\n➡️ 5:10 AM: glucose 31 mg/dL (1.7 mmol/L), a seizure. Rapid response.\n\n💊 Glyburide (THE LOW THAT COMES BACK)\n• A sulfonylurea: it makes the pancreas release insulin, whether she eats or not\n• Its lows can last or come back for many hours\n• Older adults: on the Beers list to avoid\n\n✅ The right move\n• New confusion with diabetes? Check the glucose first\n• Awake and swallows safely: 15 g of fast sugar (about 4 oz or 120 mL juice), recheck in 15 minutes\n• Drowsy or can't swallow safely: nothing by mouth. IV (intravenous) dextrose or glucagon, as ordered\n• Then a meal or snack once she's awake, keep rechecking, report\n\n🧠 Confused with diabetes? Check the sugar first.",
+  "share_line": "📤 Send this to the nurse who'd chart 'sundowning' without a glucose check.",
+  "sources": [
+    "American Diabetes Association (ADA) Standards of Care in Diabetes 2026, Section 6: Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises",
+    "2023 American Geriatrics Society (AGS) Beers Criteria for Potentially Inappropriate Medication Use in Older Adults"
+  ],
+  "rn_checks": [
+    "Hypoglycemia treatment: 15 g fast-acting carbohydrate, recheck in 15 minutes, repeat if still low, then a meal or snack (ADA 2026 Section 6)",
+    "Unsafe to swallow: nothing by mouth; IV dextrose or glucagon (IM, subcutaneous or intranasal) as ordered",
+    "Sulfonylureas, especially glyburide, cause prolonged and recurrent hypoglycemia; Beers 2023 avoid list",
+    "Glucose shown in mg/dL with mmol/L for Canadian viewers: 38 (2.1), 74 (4.1), 31 (1.7)",
+    "Story: glyburide with dinner, poor intake, confusion at 3:10, seizure at 5:10. Realistic?",
+    "Insulin not named (insulin lispro vs glargine posted Nov 17)",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "post_id": "2026-11-23_0500_apixaban",
+  "slot_manila": "Mon Nov 23, 5:00 am",
+  "slot_utc": "2026-11-22T21:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Apixaban and a fall (NO SMALL BUMPS) (high stakes, night shift)",
+  "hook": "Nurses: he fell. 'Just a bump.' He's on apixaban.",
+  "hook_backups": [
+    "Nurses: a small bump on a blood thinner. Chart it?",
+    "Nurses: he feels fine after the fall. Recheck at 8?"
+  ],
+  "belief": "A small bump with no cut is nothing to report.",
+  "score": {
+    "virality": 24,
+    "difficulty": 21,
+    "search": 23,
+    "value": 23,
+    "total": 91
+  },
+  "story": {
+    "patient": "78-year-old man on apixaban (a blood thinner) for a past clot in his leg",
+    "timeline": [
+      {
+        "clock": "1:30 AM",
+        "beat": "Unwitnessed fall on the way to the bathroom. Small bump on his forehead. 'I'm fine.' Awake, talking. Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "1:35 AM",
+        "beat": "'Just a bump.' Back to bed",
+        "mistake": "MISTAKE 1 · didn't report a head strike on a blood thinner"
+      },
+      {
+        "clock": "1:40 AM",
+        "beat": "No neuro checks",
+        "mistake": "MISTAKE 2 · no neuro checks"
+      },
+      {
+        "clock": "3:15 AM",
+        "beat": "Hard to rouse: 'He's just tired.'",
+        "mistake": "MISTAKE 3 · called new sleepiness 'just tired'"
+      },
+      {
+        "clock": "4:20 AM",
+        "beat": "Hard to wake, one pupil bigger, vomiting. BP 186/94, heart rate 52",
+        "banner": "RAPID RESPONSE",
+        "outcome": "A bleed in the brain, hours after 'just a bump'. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "1:30 AM, same patient",
+      "caught_it": [
+        "Any fall with a head strike on a blood thinner: report now",
+        "Neuro checks per your fall protocol: alertness, pupils, speech, strength",
+        "Head CT (computed tomography) as ordered, even if he feels fine",
+        "Bleeding found? Reversal as ordered"
+      ]
+    },
+    "choice": {
+      "question": "On apixaban. Fell, small bump, feels fine.",
+      "a": "Chart it, recheck in the morning",
+      "b": "Report now, neuro checks, head CT as ordered",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "APIXABAN + A FALL (NO SMALL BUMPS)",
+    "items": [
+      "Head strike on a blood thinner: report now",
+      "Neuro checks: alertness, pupils, speech, strength",
+      "Head CT as ordered, even if he feels fine",
+      "Red flags: sleepy, vomiting, headache, unequal pupils"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Blood thinner plus a fall: no small bumps.",
+  "caption_lesson": "🌙 Night shift, 1:30 AM. He's 78, on apixaban (a blood thinner) for a past clot in his leg.\n• Unwitnessed fall on the way to the bathroom\n• Small bump on his forehead. \"I'm fine.\"\n\n❌ 3 mistakes\n1️⃣ \"Just a bump.\" Not reported\n2️⃣ No neuro checks\n3️⃣ Called his new sleepiness \"just tired\"\n➡️ 4:20 AM: hard to wake, one pupil bigger, vomiting. Rapid response.\n\n🩸 Apixaban (NO SMALL BUMPS)\n• A DOAC (direct oral anticoagulant): blocks clotting factor Xa\n• No INR (international normalized ratio) to watch, but bleeding risk is real\n• A brain bleed can grow slowly. He can look fine for hours\n\n✅ The right move\n• Any fall with a head strike on a blood thinner: report now\n• Neuro checks per your fall protocol: alertness, pupils, speech, strength\n• Head CT (computed tomography) as ordered, even if he feels fine\n• Red flags: worse headache, vomiting, sleepiness, confusion, unequal pupils\n• Bleeding confirmed? Reversal as ordered, usually a PCC (prothrombin complex concentrate)\n\n🧠 Blood thinner plus a fall: no small bumps.",
+  "share_line": "📤 Send this to the nurse who'd chart 'just a bump'.",
+  "sources": [
+    "Apixaban prescribing information (DailyMed)",
+    "NICE (National Institute for Health and Care Excellence) Guideline NG232: Head Injury, Assessment and Early Management (2023)",
+    "2020 ACC (American College of Cardiology) Expert Consensus Decision Pathway on Management of Bleeding in Patients on Oral Anticoagulants",
+    "FDA (U.S. Food and Drug Administration) Safety Communication: Andexxa, December 2025"
+  ],
+  "rn_checks": [
+    "Apixaban: direct factor Xa inhibitor; no routine INR monitoring",
+    "Head injury on an anticoagulant: NICE NG232 says consider a CT head within 8 hours even without other risk factors; the Reel says \"head CT as ordered\"",
+    "Reversal for life-threatening bleeding on apixaban: 4-factor PCC, as ordered. Andexanet alfa was withdrawn from the US market in Dec 2025 (FDA safety communication); still authorized in Canada as Ondexxya, so it is not named",
+    "Story: fall 1:30, deterioration 4:20 with a dilated pupil, vomiting, BP 186/94, heart rate 52. Realistic? (Cushing's triad not named: Beck's vs Cushing's posted Nov 5)",
+    "Close to the Nov 16 warfarin bleed Reel (heparin vs warfarin), but apixaban is a different drug. OK under the 30-day rule?",
+    "Atrial fibrillation not named (posted within 30 days): reason given is a past leg clot",
+    "Memory phrase is NEW: (NO SMALL BUMPS). Keep or swap?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

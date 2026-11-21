@@ -1,0 +1,40 @@
+{
+  "post_id": "2026-11-22_1900_serotonin",
+  "slot_manila": "Sun Nov 22, 7:00 pm",
+  "slot_utc": "2026-11-22T11:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Serotonin syndrome (FAST AND TWITCHY) vs neuroleptic malignant syndrome (SLOW AND STIFF) (high stakes, night shift)",
+  "hook": "Nurses: shivering, twitching, fever 38.9. Just a post-op fever?",
+  "hook_backups": ["Nurses: sertraline plus tramadol. Why are her legs jerking?", "Nurses: her legs won't stop jerking. Give the next dose?"],
+  "belief": "A fever after surgery is just a post-op fever.",
+  "score": {"virality": 23, "difficulty": 25, "search": 24, "value": 23, "total": 95},
+  "story": {
+    "patient": "68-year-old woman, day 1 after a knee replacement; takes sertraline (an SSRI, selective serotonin reuptake inhibitor) every day",
+    "order": "new: tramadol 50 mg by mouth every 6 hours as needed for pain",
+    "timeline": [
+      {"clock": "1:30 AM", "beat": "Restless, sweating, shivering, legs jerking. Meter: temp 38.9 °C (102 °F), heart rate 122, BP 168/96. Patient and nurse in frame with the hook"},
+      {"clock": "1:35 AM", "beat": "'Just a post-op fever.'", "mistake": "MISTAKE 1 · called it a post-op fever"},
+      {"clock": "2:00 AM", "beat": "Pain 6 out of 10: gives the next tramadol dose", "mistake": "MISTAKE 2 · gave more of the trigger drug"},
+      {"clock": "2:05 AM", "beat": "Never checks the med list, never reports the jerking legs", "mistake": "MISTAKE 3 · never reported the jerking or checked her meds"},
+      {"clock": "3:20 AM", "beat": "Temp 40.4 °C (104.7 °F), rigid, confused, then a seizure", "banner": "RAPID RESPONSE", "outcome": "Serotonin syndrome. 3 mistakes. Every one avoidable."}
+    ],
+    "rewind": {"clock": "1:30 AM, same patient", "caught_it": ["Shivering, jerking legs, fever on an SSRI: think serotonin syndrome", "Check the med list: sertraline plus new tramadol", "Hold the tramadol. Report now", "Stay, cool her, treatment as ordered"]},
+    "choice": {"question": "Sertraline plus new tramadol. Sweating, jerking legs, 38.9 °C.", "a": "Give the next tramadol", "b": "HOLD it, report now: think serotonin syndrome", "answer": "B"}
+  },
+  "save_card": {"title": "SEROTONIN SYNDROME vs NMS", "items": ["Serotonin syndrome (FAST AND TWITCHY): hours after a serotonin drug; jerking, shivering, sweating, diarrhea", "Neuroleptic malignant syndrome (SLOW AND STIFF): days after an antipsychotic; lead-pipe rigidity, slow responses", "Both: high fever, fast heart rate, BP swings", "Both: stop the drug, report now, cool"], "seconds": 4},
+  "memory_line": "Serotonin: fast and twitchy. NMS: slow and stiff.",
+  "caption_lesson": "🌙 Night shift, 1:30 AM. She's 68, day 1 after a knee replacement.\n• Takes sertraline (an SSRI, selective serotonin reuptake inhibitor) every day\n• New order: tramadol for pain\n• Now: sweating, shivering, legs jerking. 38.9 °C (102 °F), heart rate 122\n\n❌ 3 mistakes\n1️⃣ Called it a post-op fever\n2️⃣ Gave the next tramadol dose\n3️⃣ Never reported the jerking legs or checked her meds\n➡️ 40.4 °C (104.7 °F), rigid, a seizure. Rapid response.\n\n🔥 Two drug reactions, both with a high fever\n\n⚡ Serotonin syndrome (FAST AND TWITCHY)\n• Hours after starting or raising a serotonin drug: SSRIs, tramadol, linezolid, triptans and more\n• Jerking muscles (clonus), tremor, shivering, sweating, diarrhea, agitation\n• Stop the serotonin drugs, report now. Cooling, benzodiazepines, cyproheptadine, as ordered\n\n🧊 Neuroleptic malignant syndrome, NMS (SLOW AND STIFF)\n• Days to weeks after an antipsychotic like haloperidol\n• Lead-pipe rigidity (stiff all over), slow responses, confusion\n• Stop the antipsychotic, report now. Cooling, fluids, treatment as ordered\n\n✅ The right move\n• New fever with jerking or rigidity? Check the med list first\n• Hold the trigger drug and call\n\n🧠 Serotonin: fast and twitchy. NMS: slow and stiff.",
+  "share_line": "📤 Send this to the nurse who'd call it a post-op fever.",
+  "sources": ["StatPearls: Serotonin Syndrome", "StatPearls: Neuroleptic Malignant Syndrome", "Tramadol hydrochloride prescribing information (DailyMed): serotonin syndrome warning", "Hunter Serotonin Toxicity Criteria"],
+  "rn_checks": [
+    "Serotonin syndrome: usually within hours (often within 24 h) of starting or raising a serotonergic drug; clonus, hyperreflexia, tremor, shivering, diaphoresis, diarrhea, agitation, hyperthermia",
+    "Sertraline plus tramadol is a labeled serotonin syndrome interaction (tramadol label)",
+    "NMS: days to weeks after an antipsychotic; lead-pipe rigidity, bradyreflexia, altered mental status, hyperthermia, high CK (creatine kinase)",
+    "Treatments named: SS = stop the drug, cooling, benzodiazepines, cyproheptadine as ordered; NMS = stop the antipsychotic, cooling, fluids, treatment as ordered (dantrolene not named here because it features in the 1 am malignant hyperthermia Reel)",
+    "Story numbers: 38.9 then 40.4 °C, heart rate 122, BP 168/96, rigidity and seizure. Realistic?",
+    "Memory words are NEW: (FAST AND TWITCHY) vs (SLOW AND STIFF). Keep or swap?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

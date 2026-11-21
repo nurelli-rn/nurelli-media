@@ -1,0 +1,88 @@
+{
+  "post_id": "2026-11-22_2100_methotrexate",
+  "slot_manila": "Sun Nov 22, 9:00 pm",
+  "slot_utc": "2026-11-22T13:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Methotrexate (ONCE A WEEK): the weekly pill given daily (high stakes, night shift)",
+  "hook": "Nurses: low-dose methotrexate, every day. What could go wrong?",
+  "hook_backups": [
+    "Nurses: a weekly pill was given daily. Day 6.",
+    "Nurses: 'It's only 7.5 mg.' Give it nightly?"
+  ],
+  "belief": "A low dose can't hurt, even every day.",
+  "score": {
+    "virality": 24,
+    "difficulty": 21,
+    "search": 22,
+    "value": 24,
+    "total": 91
+  },
+  "story": {
+    "patient": "74-year-old woman with rheumatoid arthritis, admitted with pneumonia",
+    "order": "home list: methotrexate 7.5 mg by mouth once a WEEK (Mondays). Admission order entered as: methotrexate 7.5 mg by mouth DAILY",
+    "timeline": [
+      {
+        "clock": "Night 1, 9:00 PM",
+        "beat": "Gives the 'daily' methotrexate. Patient and nurse in frame with the hook",
+        "mistake": "MISTAKE 1 · never compared it with her home list: WEEKLY"
+      },
+      {
+        "clock": "Night 4, 9:00 PM",
+        "beat": "'It's only 7.5 mg.' Gives it again",
+        "mistake": "MISTAKE 2 · kept giving a weekly drug daily"
+      },
+      {
+        "clock": "Night 6, 2:40 AM",
+        "beat": "Mouth sores, can't swallow, new bruises on her arms, temp 38.6 °C (101.5 °F)",
+        "mistake": "MISTAKE 3 · called the sores thrush, didn't report"
+      },
+      {
+        "clock": "Night 6, 3:30 AM",
+        "beat": "Labs: WBC (white blood cells) 0.8, platelets 19, creatinine doubled since admission (her kidneys clear methotrexate). BP 84/48, heart rate 128",
+        "banner": "RAPID RESPONSE",
+        "outcome": "6 daily doses of a weekly drug. Bone marrow wiped out. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "Night 1, 9:00 PM, same patient",
+      "caught_it": [
+        "Methotrexate for arthritis: once a WEEK",
+        "Daily order? Hold it, clarify with the provider and pharmacy",
+        "Mouth sores, bruising, fever: report now"
+      ]
+    },
+    "choice": {
+      "question": "Order: methotrexate 7.5 mg daily, for rheumatoid arthritis.",
+      "a": "Give it, it's a low dose",
+      "b": "HOLD it, clarify: it's weekly",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "METHOTREXATE (ONCE A WEEK)",
+    "items": [
+      "For arthritis and psoriasis: one day a WEEK",
+      "Daily order? Hold and clarify",
+      "Toxic signs: mouth sores, bruising, fever, diarrhea",
+      "Report now. Leucovorin (the rescue drug) as ordered"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Methotrexate for arthritis: once a week, never every day.",
+  "caption_lesson": "🌙 Night shift. She's 74 with rheumatoid arthritis, admitted with pneumonia.\n• Home: methotrexate 7.5 mg once a WEEK, on Mondays\n• Admission order: 7.5 mg DAILY\n\n❌ 3 mistakes\n1️⃣ Never compared it with her home list\n2️⃣ Kept giving it. \"It's only 7.5 mg\"\n3️⃣ Called her mouth sores thrush and didn't report\n➡️ Night 6: her kidneys are slowing, WBC (white blood cells) 0.8, platelets 19, fever, low BP. Rapid response.\n\n🧮 The math\n• 6 days × 7.5 mg = 45 mg in 6 days\n• That's 6 weeks of methotrexate in 6 days\n\n💊 Methotrexate (ONCE A WEEK)\n• For rheumatoid arthritis and psoriasis: one dose, one named day a week\n• Folic acid is often the daily pill beside it. Don't mix them up\n• Too much hits fast-growing cells: bone marrow (infection, bleeding), mouth and gut (sores, diarrhea)\n• The kidneys clear it. Kidney trouble makes toxicity worse, faster\n\n✅ The right move\n• A daily order for arthritis? Hold it. Clarify with the provider and pharmacy\n• Mouth sores, new bruising, fever, diarrhea: report now\n• Leucovorin (the rescue drug), as ordered. It works best early\n\n🧠 Methotrexate for arthritis: once a week, never every day.",
+  "share_line": "📤 Send this to the nurse who'd give it nightly because it's a low dose.",
+  "sources": [
+    "Methotrexate tablets prescribing information (DailyMed): boxed warning on fatal toxicity from daily instead of weekly dosing",
+    "ISMP (Institute for Safe Medication Practices) Targeted Medication Safety Best Practices for Hospitals: weekly oral methotrexate"
+  ],
+  "rn_checks": [
+    "Oral methotrexate for rheumatoid arthritis and psoriasis is dosed once weekly; daily dosing errors have caused fatal toxicity (label boxed warning, ISMP best practice)",
+    "Folic acid is commonly given daily alongside it (a known source of mix-ups)",
+    "Toxicity: myelosuppression (infection, bleeding), mucositis (mouth sores), diarrhea; report now; leucovorin rescue as ordered, best early",
+    "Story: 6 daily doses of 7.5 mg (45 mg) plus pneumonia-related kidney injury (creatinine doubled), then on night 6 WBC 0.8, platelets 19, fever 38.6 °C, BP 84/48. Vera: published daily-dosing cases without kidney injury had milder day-5 counts, so the kidney cause was added. Realistic now?",
+    "Leucovorin as soon as possible, as ordered (label)",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}

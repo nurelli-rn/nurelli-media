@@ -1,0 +1,94 @@
+{
+  "post_id": "2026-11-23_0400_htn",
+  "slot_manila": "Mon Nov 23, 4:00 am",
+  "slot_utc": "2026-11-22T20:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Hypertensive emergency (LOWER, DON'T DROP): not to normal fast (high stakes, night shift)",
+  "hook": "Nurses: BP 228/126 at 3 AM. Normal by 4?",
+  "hook_backups": [
+    "Nurses: you fixed the BP. Why is he slurring?",
+    "Nurses: the faster the BP falls, the safer? No."
+  ],
+  "belief": "The faster you lower a dangerous blood pressure, the safer.",
+  "score": {
+    "virality": 23,
+    "difficulty": 23,
+    "search": 23,
+    "value": 22,
+    "total": 91
+  },
+  "story": {
+    "patient": "69-year-old man, severe headache and blurred vision",
+    "order": "labetalol IV (intravenous) push as needed for systolic BP over 180",
+    "timeline": [
+      {
+        "clock": "3:00 AM",
+        "beat": "BP 228/126, pounding headache, blurry vision. Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "3:05 AM",
+        "beat": "Pushes labetalol, then again, then again, chasing 120/80",
+        "mistake": "MISTAKE 1 · chased a normal BP in under an hour"
+      },
+      {
+        "clock": "3:20 AM",
+        "beat": "No BP checks between doses, no neuro checks",
+        "mistake": "MISTAKE 2 · no BP or neuro checks between doses"
+      },
+      {
+        "clock": "3:25 AM",
+        "beat": "Never calls for a target or a higher level of care",
+        "mistake": "MISTAKE 3 · no call, no target"
+      },
+      {
+        "clock": "3:50 AM",
+        "beat": "BP 102/58. Slurred speech, left arm weak",
+        "banner": "RAPID RESPONSE",
+        "outcome": "The BP dropped too fast and the brain lost blood flow. 3 mistakes. Every one avoidable."
+      }
+    ],
+    "rewind": {
+      "clock": "3:00 AM, same patient",
+      "caught_it": [
+        "Very high BP plus organ signs: an emergency, call now",
+        "First hour: down no more than 25%, as ordered",
+        "BP every 5 to 15 minutes, neuro checks",
+        "ICU-level care, IV drip as ordered"
+      ]
+    },
+    "choice": {
+      "question": "BP 228/126 with blurred vision. First-hour goal?",
+      "a": "120/80, fast",
+      "b": "Down no more than 25%, as ordered",
+      "answer": "B"
+    }
+  },
+  "save_card": {
+    "title": "HYPERTENSIVE EMERGENCY (LOWER, DON'T DROP)",
+    "items": [
+      "Very high BP plus organ damage: chest pain, confusion, vision changes, shortness of breath",
+      "First hour: down no more than 25%",
+      "Next 2 to 6 hours: under 160/100; then systolic 130 to 140 over 24 to 48 hours",
+      "Exceptions, like aortic dissection, as ordered"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Hypertensive emergency: lower it, don't drop it.",
+  "caption_lesson": "🌙 Night shift, 3:00 AM. He's 69.\n• BP (blood pressure) 228/126, pounding headache, blurry vision\n• PRN (as-needed) order: IV (intravenous) labetalol\n\n❌ 3 mistakes\n1️⃣ Pushed dose after dose, chasing 120/80\n2️⃣ No BP or neuro checks between doses\n3️⃣ Never called for a target or a higher level of care\n➡️ 3:50 AM: BP 102/58, slurred speech, left arm weak. Rapid response.\n\n🧮 The math\n• 25% of 228 is 57\n• First-hour floor: a systolic around 171, not 120\n\n🩺 Hypertensive emergency (LOWER, DON'T DROP)\n• Very high BP plus signs of organ damage: chest pain, confusion, vision changes, shortness of breath, little urine\n• The brain gets used to high pressure. Drop it fast and blood flow to the brain falls: stroke risk\n• Very high BP (over 180/120) with NO new organ damage is now called severe hypertension (the old name was urgency): oral meds, no rapid lowering\n\n✅ The right move\n• Call now. ICU-level care, IV drip as ordered\n• First hour: down no more than 25%\n• Then under 160/100 over the next 2 to 6 hours, then a systolic of 130 to 140 over the next 24 to 48 hours\n• BP every 5 to 15 minutes, neuro checks\n• Exceptions, like aortic dissection, follow their own targets, as ordered\n\n🧠 Hypertensive emergency: lower it, don't drop it.",
+  "share_line": "📤 Send this to the nurse who'd chase 120/80 at 3 AM.",
+  "sources": [
+    "2025 AHA/ACC (American Heart Association, American College of Cardiology) Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults, Section 6.2: Hypertensive Emergencies and Severe Hypertension"
+  ],
+  "rn_checks": [
+    "Hypertensive emergency: severe BP elevation (often over 180/120) with new or worsening target organ damage",
+    "Targets (2025 AHA/ACC, Section 6.2): first hour SBP down no more than 25%; next 2 to 6 hours under 160/100; next 24 to 48 hours cautiously to SBP 130 to 140; ICU admission",
+    "Compelling conditions have faster first-hour targets (SBP under 140 for most, under 120 for aortic dissection), as ordered; 2025 no longer lists pheochromocytoma",
+    "Story: repeated IV labetalol pushes, BP 228/126 to 102/58 in under an hour, then stroke signs. Realistic?",
+    "Labetalol is a beta blocker; metoprolol (posted Nov 16) is a different drug. OK under the 30-day rule?",
+    "Vera confirmed the 2025 guideline keeps the 25% first-hour rule; 2017 source dropped. \"Severe hypertension\" replaces \"urgency\"",
+    "Memory phrase is NEW: (LOWER, DON'T DROP). Keep or swap?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ]
+}
