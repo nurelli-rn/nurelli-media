@@ -1,0 +1,116 @@
+{
+ "post_id": "2026-11-23_1500_transfusion",
+ "slot_manila": "Mon Nov 23, 3:00 pm",
+ "slot_utc": "2026-11-23T07:00:00Z",
+ "lane": "PHARM",
+ "keyword": "PHARM",
+ "format": "story (high stakes, night shift)",
+ "title": "PHARM · Blood transfusion reaction (STOP THE BLOOD, KEEP THE VEIN) (high stakes, night shift, Smart Prep errors)",
+ "hook": "Nurses: 10 minutes into blood, her back hurts. Slow it?",
+ "hook_backups": [
+  "Nurses: chills during a transfusion. Just slow it down?",
+  "Nurses: blood running, fever 38.6. Call first or stop first?"
+ ],
+ "belief": "A reaction during a transfusion means you slow the blood and call.",
+ "score": {
+  "virality": 24,
+  "difficulty": 22,
+  "search": 25,
+  "value": 24,
+  "total": 95
+ },
+ "smart_prep": [
+  "SCOPE ERROR",
+  "HABIT OVER STANDARD",
+  "WRONG PRIORITY"
+ ],
+ "story": {
+  "patient": "76-year-old woman with a stomach bleed, hemoglobin 6.8 g/dL, getting her first unit of packed red blood cells",
+  "timeline": [
+   {
+    "clock": "1:10 AM",
+    "beat": "First unit of blood starts. Patient and nurse in frame with the hook"
+   },
+   {
+    "clock": "1:12 AM",
+    "beat": "'Can you do her 15-minute vitals?' The nurse leaves the aide with her",
+    "mistake": "MISTAKE 1 · SCOPE ERROR",
+    "mistake_line": "Left the first 15 minutes to the aide"
+   },
+   {
+    "clock": "1:20 AM",
+    "beat": "'My back hurts. I'm so cold.' Chills, temp 38.6 °C (101.5 °F), heart rate 118. The nurse slows the blood",
+    "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
+    "mistake_line": "Slowed the blood instead of stopping it"
+   },
+   {
+    "clock": "1:28 AM",
+    "beat": "Pages the provider and waits for a call back. The blood is still running",
+    "mistake": "MISTAKE 3 · WRONG PRIORITY",
+    "mistake_line": "Called first, stopped the blood later"
+   },
+   {
+    "clock": "1:45 AM",
+    "beat": "BP (blood pressure) 78/44, dark red urine, oozing at the IV (intravenous) site",
+    "banner": "RAPID RESPONSE",
+    "outcome": "A transfusion reaction, worse with every minute the blood ran. 3 mistakes. Every one avoidable."
+   }
+  ]
+ },
+ "rewind": {
+  "clock": "1:10 AM, same patient",
+  "caught_it": [
+   {
+    "text": "Two-person check at the bedside: two identifiers, the unit, the order",
+    "anchor": "SAFETY"
+   },
+   {
+    "text": "The RN stays with her for the first 15 minutes, vitals per policy",
+    "anchor": "SCOPE"
+   },
+   {
+    "text": "Back pain, chills, fever: STOP the blood now",
+    "anchor": "ABC"
+   },
+   {
+    "text": "Keep the vein open: normal saline with new tubing. Stay, vitals, call the provider and blood bank",
+    "anchor": "PRIORITY"
+   }
+  ]
+ },
+ "choice": {
+  "question": "Blood running. Back pain, chills, fever.",
+  "a": "Slow it down, call the provider",
+  "b": "Stop it, saline with new tubing, call",
+  "answer": "B"
+ },
+ "save_card": {
+  "title": "TRANSFUSION REACTION (STOP THE BLOOD, KEEP THE VEIN)",
+  "items": [
+   "First 15 minutes: the RN stays",
+   "Back pain, chills, fever: stop the blood",
+   "Keep the vein open: saline, new tubing",
+   "Call the provider and blood bank, send the bag and tubing back"
+  ],
+  "seconds": 4
+ },
+ "memory_line": "Reaction? Stop the blood, keep the vein.",
+ "caption_lesson": "🌙 Night shift, 1:10 AM. She's 76, a stomach bleed, hemoglobin 6.8. Her first unit of blood starts.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Scope error: left the first 15 minutes to the aide\n2️⃣ Habit over standard: back pain and chills, so the nurse slowed the blood\n3️⃣ Wrong priority: paged the provider and waited, blood still running\n➡️ 1:45 AM: BP (blood pressure) 78/44, dark red urine. Rapid response.\n\n🩸 Transfusion reaction (STOP THE BLOOD, KEEP THE VEIN)\n• Watch closely in the first 15 minutes: the most dangerous reactions often start early\n• Signs: back pain, chills, fever, fast heart rate, low BP, dark urine, trouble breathing, hives\n\n✅ The right move\n• Two-person check at the bedside before it starts\n• The RN (registered nurse) stays for the first 15 minutes, vitals per policy\n• Any reaction sign: stop the blood first\n• Keep the vein open with normal saline and new tubing\n• Stay, vitals, call the provider and the blood bank. Send the bag and tubing back, per policy\n\n🧠 Reaction? Stop the blood, keep the vein.",
+ "share_line": "📤 Send this to the nurse who'd slow the blood and wait for a call back.",
+ "sources": [
+  "AABB (Association for the Advancement of Blood and Biotherapies) Technical Manual, current edition: recognizing and managing transfusion reactions",
+  "Lewis's Medical-Surgical Nursing, 13th ed. (2026): blood transfusion and acute transfusion reactions"
+ ],
+ "rn_checks": [
+  "Signs: back pain, chills, fever, tachycardia, hypotension, dark urine (hemoglobinuria), oozing at the IV site suggest an acute hemolytic reaction; the cause (usually a mismatch) is not shown. OK?",
+  "Stop the transfusion first; keep the vein open with normal saline through NEW tubing (not the blood set); stay, vitals, notify the provider and blood bank; return the bag and tubing per policy",
+  "RN stays with the patient and assesses during the first 15 minutes (common policy wording, 'per policy' on screen)",
+  "Two-person bedside check: two identifiers, the unit, the order",
+  "Story numbers: temp 38.6 °C, heart rate 118, then BP 78/44 over about 35 minutes. Realistic?",
+  "Lane: blood is a biologic, keyword PHARM. OK?",
+  "Memory phrase is NEW: (STOP THE BLOOD, KEEP THE VEIN). Keep or swap?",
+  "Smart Prep labels on the stamps: SCOPE ERROR, HABIT OVER STANDARD, WRONG PRIORITY. Fit?",
+  "Choice answer B; hook, cover and caption line 1 open with 'Nurses:'"
+ ],
+ "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
+}
