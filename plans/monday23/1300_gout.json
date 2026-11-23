@@ -1,0 +1,109 @@
+{
+ "post_id": "2026-11-25_1300_gout",
+ "slot_manila": "Wed Nov 25, 1:00 pm",
+ "slot_utc": "2026-11-25T05:00:00Z",
+ "lane": "PHARM",
+ "keyword": "PHARM",
+ "format": "pharm body explainer (full screen, flat poster)",
+ "title": "PHARM · Allopurinol (MAKE LESS) vs colchicine (CALM THE FLARE): body explainer",
+ "hook": "Nurses: big toe on fire. Will allopurinol stop it?",
+ "hook_backups": [
+  "Nurses: gout flare tonight. Stop his allopurinol?",
+  "Nurses: allopurinol or colchicine for the 2 AM flare?"
+ ],
+ "belief": "Allopurinol stops a gout attack, and it should be stopped during a flare.",
+ "score": {
+  "virality": 23,
+  "difficulty": 22,
+  "search": 23,
+  "value": 24,
+  "total": 92
+ },
+ "steps": [
+  {
+   "t": "1",
+   "line": "Too much uric acid forms crystals",
+   "sub": "Needle crystals in a joint, often the big toe",
+   "shown": "the liver makes uric acid dots; they flow to the big toe joint and stack into needle crystals"
+  },
+  {
+   "t": "2",
+   "line": "White cells attack the crystals: a flare",
+   "sub": "Red, hot, swollen, very painful",
+   "shown": "white blood cells swarm the crystals; the toe turns red and swells; a PAIN meter climbs"
+  },
+  {
+   "t": "3",
+   "line": "Allopurinol: the liver makes less uric acid",
+   "sub": "Prevention over months. Not for tonight's pain",
+   "shown": "the aqua capsule docks on the liver's uric acid machine (xanthine oxidase); fewer dots leave; a months counter; crystals shrink slowly; the pain meter stays high; stamp MAKE LESS"
+  },
+  {
+   "t": "4",
+   "line": "Colchicine calms the white cells",
+   "sub": "Treats the flare. Start it early",
+   "shown": "same toe, starting over: the lilac capsule reaches the joint; the white cells stop swarming; the redness fades; the pain meter drops; uric acid unchanged; stamp CALM THE FLARE"
+  },
+  {
+   "t": "5",
+   "line": "Watch for the warning signs",
+   "sub": "Allopurinol: any rash, hold it and report right away. Colchicine: diarrhea or vomiting, hold it and report",
+   "shown": "two warning chips on the drug capsules"
+  }
+ ],
+ "facts_per_drug": {
+  "allopurinol": [
+   "Blocks xanthine oxidase: the body makes less uric acid; crystals dissolve over months (prevention, not flare pain relief)",
+   "Keep taking it during a flare (allopurinol label counseling); flare prophylaxis (low-dose colchicine or an NSAID) for 3 to 6 months when starting (ACR 2020)",
+   "Any rash: hold it and notify the prescriber right away (label: discontinue permanently at the first rash; SJS, TEN, DRESS)"
+  ],
+  "colchicine": [
+   "Calms the white cells at the crystals (stops neutrophil activation and migration): treats the flare, not a painkiller, does not lower uric acid",
+   "Start at the first sign of a flare (label); most effective within about 12 to 24 hours (MSD Manual); low dose as ordered",
+   "Diarrhea, nausea, vomiting, muscle pain or weakness can herald toxicity: hold it and report; interactions (strong CYP3A4, P-gp inhibitors, grapefruit), kidneys and liver"
+  ]
+ },
+ "choice": {
+  "question": "Gout flare, already on allopurinol. Stop it?",
+  "a": "Stop allopurinol until it settles",
+  "b": "Keep allopurinol, colchicine for the flare",
+  "answer": "B"
+ },
+ "memory": {
+  "allopurinol": "MAKE LESS",
+  "colchicine": "CALM THE FLARE"
+ },
+ "save_card": {
+  "title": "Allopurinol vs colchicine",
+  "kicker": "GOUT: PREVENT VS TREAT",
+  "allopurinol": [
+   "Makes less uric acid: prevention",
+   "Keep it going in a flare. Rash? Hold it, report"
+  ],
+  "colchicine": [
+   "Calms the flare: start it early",
+   "Diarrhea or vomiting? Hold it, report"
+  ],
+  "seconds": 4
+ },
+ "memory_line": "Allopurinol makes less. Colchicine calms the flare.",
+ "caption_lesson": "🦶 First, what a gout flare is\n• Too much uric acid in the blood forms needle-shaped crystals in a joint, often the big toe\n• White blood cells attack the crystals: red, hot, swollen, very painful\n\n🩵 Allopurinol (MAKE LESS)\n• Blocks the enzyme that makes uric acid (xanthine oxidase), so the body makes less\n• Prevention: crystals dissolve over months. It doesn't stop tonight's pain\n• Keep taking it during a flare. Starting it can trigger flares at first, so low-dose colchicine or an NSAID (nonsteroidal anti-inflammatory drug) is usually given with it for 3 to 6 months\n• Drink enough fluid for at least 2 L (liters) of urine a day\n• Any rash: hold it and tell the prescriber right away. It can be the first sign of a severe skin or whole-body reaction\n• Southeast Asian or African American descent? Ask about the HLA-B*5801 gene test before it starts\n\n💜 Colchicine (CALM THE FLARE)\n• Calms the white cells attacking the crystals, so the flare settles. Not a painkiller, and it doesn't lower uric acid\n• Start it at the first sign of a flare, low dose as ordered\n• Diarrhea, nausea, vomiting, or muscle pain or weakness can be early toxicity: hold it and report\n• Avoid grapefruit. Check other meds, the kidneys and the liver\n\n✅ The right move\n• Flare on allopurinol: keep it going, treat the flare as ordered\n• Allopurinol rash: hold it, report right away\n• Colchicine GI (stomach and bowel) symptoms: hold it, report",
+ "share_line": "📤 Send this to the nurse who'd hold allopurinol during a flare.",
+ "sources": [
+  "FitzGerald JD, et al. 2020 American College of Rheumatology Guideline for the Management of Gout. Arthritis Care & Research 2020",
+  "Allopurinol Tablets: Full Prescribing Information (DailyMed, revised 10/2023)",
+  "Colchicine Tablets, USP: Full Prescribing Information (DailyMed)"
+ ],
+ "rn_checks": [
+  "Allopurinol: xanthine oxidase inhibitor, lowers uric acid production; prevention over months, not flare pain relief; continue during a flare (label counseling; MSD Manual). ACR 2020: flare prophylaxis 3 to 6 months when starting; starting during a flare is conditionally allowed. OK?",
+  "Allopurinol rash: on screen 'Hold it, report right away' (label: discontinue permanently at the first appearance of rash; SJS, TEN, DRESS). Caption adds fluids for 2 L of urine a day and HLA-B*5801 testing for Southeast Asian and African American patients (ACR 2020, conditional). OK?",
+  "Colchicine: stops neutrophil activation and migration; treats the flare, not an analgesic, does not lower uric acid; start at the first sign of a flare (label), most effective within 12 to 24 hours (MSD Manual); low dose as ordered (no dose on screen); GI symptoms, muscle pain or weakness: hold and report; grapefruit, strong CYP3A4 or P-gp inhibitors, kidney and liver function. OK?",
+  "Story numbers are illustrative: a TOE PAIN tile and an ON ALLOPURINOL months tile, no uric acid values on screen. OK?",
+  "Memory words are NEW: allopurinol (MAKE LESS), colchicine (CALM THE FLARE). Vera flagged CALM THE FLARE can hide colchicine's prevention role (covered in the caption). Keep or swap?",
+  "Drawing choices: the liver's uric acid maker as a gear (xanthine oxidase), uric acid dots riding a vessel to a zoomed big toe joint with needle crystals and white cells; redness fades as they calm",
+  "Pick answer B (keep allopurinol, colchicine for the flare as ordered); keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'",
+  "30-day rule: no allopurinol, colchicine or gout Reel in the last 30 days. OK?",
+  "Vera (independent check): no MUST FIX. SHOULD FIX applied: 'keep it going' credited to the label, flare prophylaxis, fluids, hold and report wording for rash and GI symptoms, muscle pain, grapefruit, the 12 to 24 hour window credited to MSD, HLA-B*5801. OK?"
+ ],
+ "vera": "Nov 23: no MUST FIX. SHOULD FIX label attribution for continuing in a flare, flare prophylaxis, fluids, hold-and-report wording, colchicine toxicity signs and interactions, MSD 12 to 24 hours, CALM THE FLARE prevention note, HLA-B*5801: applied. Sources: ACR 2020 gout guideline; allopurinol label (DailyMed); colchicine label (DailyMed); MSD Manual Professional, Gout."
+}

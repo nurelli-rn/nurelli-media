@@ -1,0 +1,115 @@
+{
+ "post_id": "2026-11-25_0900_ppih2",
+ "slot_manila": "Wed Nov 25, 9:00 am",
+ "slot_utc": "2026-11-25T01:00:00Z",
+ "lane": "PHARM",
+ "keyword": "PHARM",
+ "format": "pharm body explainer (full screen, flat poster)",
+ "title": "PHARM · Omeprazole (PUMP OFF) vs famotidine (SIGNAL OFF): body explainer",
+ "hook": "Nurses: omeprazole and famotidine both cut acid. Same thing?",
+ "hook_backups": [
+  "Nurses: one shuts the pump, one mutes a signal. Which?"
+ ],
+ "belief": "Omeprazole and famotidine work the same way, so it doesn't matter when you give them.",
+ "score": {
+  "virality": 22,
+  "difficulty": 22,
+  "search": 24,
+  "value": 24,
+  "total": 92
+ },
+ "steps": [
+  {
+   "t": "1",
+   "line": "A meal switches on the acid pumps",
+   "sub": "Histamine is 1 of 3 signals that turn them on",
+   "shown": "a stomach lining cell: food arrives, histamine docks on its receptor, the pumps light up and push acid into the stomach"
+  },
+  {
+   "t": "2",
+   "line": "Omeprazole shuts the pump itself",
+   "sub": "The last step, whatever the signal: more acid cut",
+   "shown": "the aqua capsule docks on the pumps, the pumps lock and go gray, the acid stream stops; stamp PUMP OFF"
+  },
+  {
+   "t": "3",
+   "line": "Give it 30 to 60 minutes before breakfast",
+   "sub": "It blocks the pumps a meal switches on",
+   "shown": "clock tiles: omeprazole 7:00, breakfast 7:45, '30 to 60 min before'; the pumps switch on with the meal and lock"
+  },
+  {
+   "t": "4",
+   "line": "On it 3+ months? Check magnesium",
+   "sub": "Diarrhea that won't stop? Report it",
+   "shown": "magnesium dots in the blood thin out; a MAGNESIUM tile goes Normal to Low"
+  },
+  {
+   "t": "5",
+   "line": "Famotidine blocks the histamine signal",
+   "sub": "Fewer pumps switch on",
+   "shown": "same cell, starting over: the lilac capsule docks on the histamine receptor, histamine bounces off, most pumps stay off, a smaller acid stream; stamp SIGNAL OFF; chip '1 of 3 signals off: less acid, not none'; chip 'Works within about an hour'"
+  },
+  {
+   "t": "6",
+   "line": "Weak kidneys? Famotidine builds up",
+   "sub": "Lower dose. New confusion? Report it",
+   "shown": "a kidney card with low filtering, famotidine dots pile up, a confused face; chip: dose is set by kidney function"
+  }
+ ],
+ "facts_per_drug": {
+  "omeprazole": [
+   "Proton pump inhibitor: blocks the acid pump (H+/K+ ATPase), the final step whatever the stimulus; more acid suppression than an H2 blocker",
+   "Give 30 to 60 minutes before breakfast (ACG 2022; label: before meals)",
+   "C. diff diarrhea any time, especially in hospital; low magnesium after 3+ months (label)"
+  ],
+  "famotidine": [
+   "H2 (histamine 2) receptor blocker: blocks 1 of 3 signals, so less acid, not none",
+   "Works within about an hour; with or without food",
+   "CrCl under 60: lower dose; confusion or delirium reported in older adults and with moderate or severe kidney impairment (label)"
+  ]
+ },
+ "choice": {
+  "question": "Breakfast trays at 7:45. When does omeprazole go in?",
+  "a": "With the breakfast tray",
+  "b": "30 to 60 min before, about 7:00",
+  "answer": "B"
+ },
+ "memory": {
+  "omeprazole": "PUMP OFF",
+  "famotidine": "SIGNAL OFF"
+ },
+ "save_card": {
+  "title": "Omeprazole vs famotidine",
+  "kicker": "TWO WAYS TO CUT STOMACH ACID",
+  "omeprazole": [
+   "Shuts the acid pump: more acid cut",
+   "30 to 60 min before breakfast"
+  ],
+  "famotidine": [
+   "Blocks 1 of 3 signals: less acid",
+   "Weak kidneys: lower dose, watch for confusion"
+  ],
+  "seconds": 4
+ },
+ "memory_line": "Omeprazole: pump off. Famotidine: signal off.",
+ "caption_lesson": "🧪 First, how the stomach makes acid\n• Cells in the stomach lining push acid out through tiny pumps (proton pumps)\n• A meal switches the pumps on. Histamine is 1 of 3 signals that do it (with gastrin and a nerve signal)\n\n🩵 Omeprazole (PUMP OFF)\n• A PPI (proton pump inhibitor): blocks the pump itself, the last step, whatever the signal. More acid cut than famotidine\n• Give it 30 to 60 minutes before breakfast: it blocks pumps that a meal switches on. The full effect builds over a few days\n• Swallow the capsule whole. Don't crush or chew it\n• Any time, especially in the hospital: C. diff (Clostridioides difficile) diarrhea. Report diarrhea that won't go away\n• On it 3 months or more: low magnesium. Check the level as ordered\n\n💜 Famotidine (SIGNAL OFF)\n• An H2 (histamine 2) blocker: blocks the histamine signal, so less acid, not none\n• Works within about an hour, with or without food\n• Cleared by the kidneys: CrCl (creatinine clearance) under 60 means a lower dose\n• Confusion or delirium can happen in older adults and with weak kidneys: report it\n\n✅ The right move\n• Omeprazole: 30 to 60 minutes before breakfast\n• Famotidine: check kidney function, watch for confusion",
+ "share_line": "📤 Send this to the nurse who gives omeprazole with breakfast.",
+ "sources": [
+  "Omeprazole Delayed-Release Capsules, USP: Full Prescribing Information (DailyMed, revised 2/2025)",
+  "Famotidine Tablets, USP: Full Prescribing Information (DailyMed)",
+  "Katz PO et al. ACG Clinical Guideline for the Diagnosis and Management of Gastroesophageal Reflux Disease. Am J Gastroenterol 2022"
+ ],
+ "rn_checks": [
+  "Omeprazole: PPI, blocks the H+/K+ ATPase, the final step whatever the stimulus (label 12.1); more acid suppression than an H2 blocker (ACG 2022). On screen 'more acid cut', not 'the most'. OK?",
+  "Timing: 30 to 60 minutes before breakfast for once-daily dosing (ACG 2022); the label says before meals. OK?",
+  "Warnings: C. diff diarrhea with PPI therapy, especially in hospitalized patients (any time); low magnesium after 3+ months, most after a year (label 5.3, 5.9). Swallow the capsule whole (label 2.3). Bone fracture and B12 left out for the 3-fact limit. OK?",
+  "Famotidine: H2 blocker, onset within 1 hour, with or without food; CrCl under 60 mL/min: lower dose; CNS reactions (confusion, delirium) reported in older adults and in moderate or severe kidney impairment; QT prolongation reported with kidney impairment (label 2, 5.1, 8.6). QT is in the RN check only, not the caption. OK?",
+  "On screen: '1 of 3 signals off: less acid, not none' (histamine; gastrin and acetylcholine still act). OK?",
+  "Memory words are NEW: omeprazole (PUMP OFF), famotidine (SIGNAL OFF). Keep or swap?",
+  "Drawing choices: one stomach lining (parietal) cell, three acid pumps on the stomach side, the histamine receptor on the blood side; acid as H+ dots; magnesium dots; pump counts are illustrative",
+  "Pick answer B (30 to 60 min before breakfast, about 7:00); keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'",
+  "30-day rule: no omeprazole, famotidine or acid-reducer Reel in the last 30 days. OK?",
+  "Vera (independent check): MUST FIX applied (C. diff is not a long-term-only risk; magnesium after 3+ months). SHOULD FIX applied: clearer pick stem, 'more acid cut' instead of 'the most', '1 of 3 signals', kidney dosing below CrCl 60, swallow whole. OK?"
+ ],
+ "vera": "Nov 23: MUST FIX C. diff vs long-term magnesium, applied. SHOULD FIX pick stem, 'more acid cut', 1 of 3 signals, CrCl under 60 and elderly vs renal wording, swallow whole, applied. Sources: omeprazole DR capsules label (DailyMed); famotidine tablets label (DailyMed); ACG 2022 GERD guideline."
+}
