@@ -1,6 +1,6 @@
 # Smart Prep 24-hour batch (Cass, Mon Nov 23, 2026, 9:09 am Manila)
 
-Reels every 2 hours for 24 hours, Mon 11 am to Tue 9 am Manila. Night-shift stories stay. Each MISTAKE stamp names its Smart Prep error type after the number ("MISTAKE 1 · SCOPE ERROR") with the beat line under it; each CAUGHT IT may carry its anchor chip (ABC, SCOPE, STANDARD...). Simple error names only on screen. No product names, no pitch.
+Reels every 2 hours for 24 hours, Mon 11 am to Tue 9 am Manila. Night-shift stories stay. Each MISTAKE stamp names its Smart Prep error type after the number ("MISTAKE 1 · SCOPE ERROR") with the beat line under it; CAUGHT IT shows no anchor chip (Cass, Nov 23, 9:21 pm: no ABC, Maslow, STANDARD, SCOPE, PRIORITY or other framework anchors on screen or in captions; frameworks live only in question rationales). Simple error names only on screen. No product names, no pitch.
 
 Briefs written by HQ, checked by an independent Vera agent (fixes applied). Use clinical lines word for word; copy rn_checks into the post checks.
 

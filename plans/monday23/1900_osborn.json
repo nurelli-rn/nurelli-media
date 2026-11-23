@@ -1,116 +1,112 @@
 {
- "post_id": "2026-11-24_1900_osborn",
- "slot_manila": "Tue Nov 24, 7:00 pm",
- "slot_utc": "2026-11-24T11:00:00Z",
- "lane": "ECG",
- "keyword": "ECG",
- "format": "story (high stakes, night shift, Night Shift kit, full screen)",
- "title": "ECG · Osborn wave (COLD HUMP): hypothermia on the monitor (high stakes, night shift, Smart Prep errors)",
- "hook": "Nurses: a hump after every QRS. Just shivering?",
- "hook_backups": [
-  "Nurses: found on her floor. What's that hump on the monitor?",
-  "Nurses: ear temp 35.0, heart rate 46. Warming up?"
- ],
- "belief": "A hump after the QRS in a cold, shivering patient is shivering artifact, and an ear thermometer reading is good enough.",
- "score": {
-  "virality": 23,
-  "difficulty": 22,
-  "search": 22,
-  "value": 24,
-  "total": 91
- },
- "smart_prep": [
-  "KNOWLEDGE GAP",
-  "HABIT OVER STANDARD",
-  "ACTED TOO LATE"
- ],
- "story": {
-  "patient": "84-year-old woman found on her kitchen floor on a cold night; admitted to the ward at 1:10 AM; ED ear temperature 35.0 °C (the device's lowest reading); a liter of room-temperature saline running; no active warming; on the heart monitor",
-  "timeline": [
-   {
-    "clock": "2:30 AM",
-    "beat": "Heart rate 48. A hump right after every QRS (the Osborn wave, also called the J wave). Nurse thinks: 'Just shivering artifact.' MISTAKE 1 · KNOWLEDGE GAP: called the hump artifact"
-   },
-   {
-    "clock": "2:35 AM",
-    "beat": "Ear temp 35.0 °C, its lowest reading. Nurse thinks: '35.0. She's warming up.' MISTAKE 2 · HABIT OVER STANDARD: trusted the ear, no core temp"
-   },
-   {
-    "clock": "3:40 AM",
-    "beat": "Heart rate 42. She has stopped shivering and is confused. Nurse thinks: 'Stopped shivering. Finally warm.' MISTAKE 3 · ACTED TOO LATE: no recheck, no call"
-   },
-   {
-    "clock": "4:10 AM",
-    "beat": "Real-time crisis: BP falls 98/58 to 76/42; heart rate 38; hard to wake; the humps grow. Core temperature (rectal, low-reading probe) 30.6 °C. RAPID RESPONSE: 'Room 8: core temp 30.6 °C, BP 76/42, hard to wake'"
-   }
+  "post_id": "2026-11-24_1900_osborn",
+  "slot_manila": "Tue Nov 24, 7:00 pm",
+  "slot_utc": "2026-11-24T11:00:00Z",
+  "lane": "ECG",
+  "keyword": "ECG",
+  "format": "story (high stakes, night shift, Night Shift kit, full screen)",
+  "title": "ECG · Osborn wave (COLD HUMP): hypothermia on the monitor (high stakes, night shift, Smart Prep errors)",
+  "hook": "Nurses: a hump after every QRS. Just shivering?",
+  "hook_backups": [
+    "Nurses: found on her floor. What's that hump on the monitor?",
+    "Nurses: ear temp 35.0, heart rate 46. Warming up?"
   ],
-  "outcome": "Moderate hypothermia, missed for 3 hours. The hump was the clue, not artifact."
- },
- "rewind": {
-  "clock": "2:30 AM, same patient",
-  "caught_it": [
-   {
-    "text": "Hump after every QRS? Osborn wave: think cold",
-    "anchor": "STANDARD"
-   },
-   {
-    "text": "Core temperature with a low-reading probe, not the ear (rectal, per policy). Core 31.4 °C",
-    "anchor": "ASSESS FIRST"
-   },
-   {
-    "text": "Warm her trunk: warm blankets, a forced-air warmer, IV fluids warmed to 38 to 42 °C, as ordered. Keep her flat, move her gently",
-    "anchor": "SAFETY"
-   },
-   {
-    "text": "Stopped shivering and confused? Colder, not warmer. Call now",
-    "anchor": "STABLE VS UNSTABLE"
-   }
-  ]
- },
- "choice": {
-  "question": "Hump after every QRS. Ear temp 35.0.",
-  "a": "Shivering artifact. Recheck at 6",
-  "b": "Think cold: core temp, warm her, call",
-  "answer": "B"
- },
- "memory": {
-  "name": "Osborn wave",
-  "sub": "the J wave of hypothermia",
-  "word": "COLD HUMP",
-  "chips": [
-   "COLD",
-   "HUMP"
-  ]
- },
- "save_card": {
-  "title": "OSBORN WAVE (COLD HUMP)",
-  "items": [
-   "Hump right after the QRS: think cold",
-   "Core temp with a low-reading probe",
-   "Warm her trunk, warmed fluids, keep her flat",
-   "Stopped shivering and confused: call now"
+  "belief": "A hump after the QRS in a cold, shivering patient is shivering artifact, and an ear thermometer reading is good enough.",
+  "score": {
+    "virality": 23,
+    "difficulty": 22,
+    "search": 22,
+    "value": 24,
+    "total": 91
+  },
+  "smart_prep": [
+    "KNOWLEDGE GAP",
+    "HABIT OVER STANDARD",
+    "ACTED TOO LATE"
   ],
-  "seconds": 4
- },
- "memory_line": "Cold heart: a hump after every QRS.",
- "caption_lesson": "🌙 Night shift, 2:30 AM. She's 84, found on her kitchen floor on a cold night.\n• Heart rate 48. A hump right after every QRS (the spike of each beat)\n\n❌ 3 mistakes, 3 error types\n1️⃣ Knowledge gap: called the hump \"shivering artifact\"\n2️⃣ Habit over standard: trusted the ear thermometer. 35.0 was its lowest reading. No core temperature\n3️⃣ Acted too late: she stopped shivering and got confused. Called it \"finally warm\"\n➡️ 4:10 AM: core temperature 30.6 °C, BP (blood pressure) 76/42, hard to wake. Rapid response.\n\n❄️ Osborn wave (COLD HUMP)\n• Also called the J wave: an extra hump where the QRS ends and the ST segment starts (the J point)\n• A classic sign of hypothermia. It usually shows below about 32 °C and grows as the body gets colder\n• Not only cold: it can also show with a high calcium or a brain injury. Look at the patient\n• Other cold signs on the ECG (electrocardiogram): a slow rate, longer PR, QRS and QT\n• Stopping shivering while confused means colder, not warmer\n\n✅ The right move\n• Hump after every QRS? Think cold\n• Core temperature with a low-reading probe (rectal, per policy). Many ear and mouth thermometers can't read below 35 °C\n• Warm her as ordered: heat to the trunk, warm blankets, a forced-air warmer, IV (intravenous) fluids warmed to 38 to 42 °C\n• Keep her flat and move her gently: a cold heart is irritable\n• Check her glucose and ask why she fell\n• Confused, stopped shivering, slow heart, low BP? Call now. Rewarming, not atropine, usually fixes a cold slow heart",
- "share_line": "📤 Send this to the nurse who'd chart that hump as artifact.",
- "sources": [
-  "StatPearls: Hypothermia (2026)",
-  "Wilderness Medical Society Accidental Hypothermia Guidelines, 2019 Update",
-  "Mattu et al., Electrocardiographic Manifestations of Hypothermia, Am J Emerg Med 2002",
-  "Paal et al., Accidental Hypothermia: An Update, 2016"
- ],
- "rn_checks": [
-  "Osborn (J) wave: a positive hump at the J point (QRS end, ST start), usually below about 32 °C, larger as the temperature falls; also seen with high calcium and brain injury (Mattu 2002; Paal 2016; Maruyama 2004). OK?",
-  "Other hypothermia ECG signs in the caption only: slow heart rate, longer PR, QRS and QT, shivering artifact (Mattu 2002). OK?",
-  "Right move: core temperature with a low-reading probe (rectal on a ward, per policy; many ear and oral thermometers can't read below 35 °C); warm as ordered: heat to the trunk, blankets, forced-air warmer, IV fluids warmed to 38 to 42 °C; flat and gentle handling (irritable cold heart); check glucose, ask why she fell; stopped shivering plus confusion = colder, call now; cold bradycardia usually doesn't respond to atropine, rewarming treats it (WMS 2019; StatPearls; Paal 2016). OK?",
-  "Story numbers (softened after Vera's check): 84-year-old found on her floor, ED ear temp 35.0 °C (its lowest reading), no active warming, room-temperature saline; core 31.4 °C at 2:30 AM falling to 30.6 °C by 4:10 AM (moderate hypothermia); heart rate 48, 42, then 38; BP falling to 76/42 on a live counter; rectal core probe at the rapid response. Realistic?",
-  "30-day rule: ventricular fibrillation (off until Dec 22) is not shown or named; the caption only says a cold heart is irritable. Sinus bradycardia (Nov 22) appears only as a slow rate, not taught. OK?",
-  "Memory word is NEW: Osborn wave (COLD HUMP). Keep or swap?",
-  "Smart Prep labels: KNOWLEDGE GAP, HABIT OVER STANDARD, ACTED TOO LATE. Fit?",
-  "Choice answer B; keyword ECG; hook, cover and caption line 1 open with 'Nurses:'",
-  "Vera (independent check): MUST FIX applied (sources: no StatPearls 'Osborn Wave' article; the 2025 AHA section covers only severe hypothermia and arrest, dropped). SHOULD FIX applied: rectal not bladder probe, slower cooling and heart rate, 35.0 as the thermometer's floor, 'not only cold', heat to the trunk, warmed fluids 38 to 42 °C, glucose, atropine note. OK?"
- ],
- "vera": "Nov 23: MUST FIX source titles (StatPearls Hypothermia, Mattu 2002; AHA 2025 dropped), applied. SHOULD FIX rectal probe, story numbers, ear thermometer floor, J waves not only in cold, trunk heat, warmed fluids, glucose, atropine, all applied. Sources: StatPearls Hypothermia; WMS 2019; Mattu 2002; Paal 2016; Brown NEJM 2012; Maruyama 2004."
+  "story": {
+    "patient": "84-year-old woman found on her kitchen floor on a cold night; admitted to the ward at 1:10 AM; ED ear temperature 35.0 °C (the device's lowest reading); a liter of room-temperature saline running; no active warming; on the heart monitor",
+    "timeline": [
+      {
+        "clock": "2:30 AM",
+        "beat": "Heart rate 48. A hump right after every QRS (the Osborn wave, also called the J wave). Nurse thinks: 'Just shivering artifact.' MISTAKE 1 · KNOWLEDGE GAP: called the hump artifact"
+      },
+      {
+        "clock": "2:35 AM",
+        "beat": "Ear temp 35.0 °C, its lowest reading. Nurse thinks: '35.0. She's warming up.' MISTAKE 2 · HABIT OVER STANDARD: trusted the ear, no core temp"
+      },
+      {
+        "clock": "3:40 AM",
+        "beat": "Heart rate 42. She has stopped shivering and is confused. Nurse thinks: 'Stopped shivering. Finally warm.' MISTAKE 3 · ACTED TOO LATE: no recheck, no call"
+      },
+      {
+        "clock": "4:10 AM",
+        "beat": "Real-time crisis: BP falls 98/58 to 76/42; heart rate 38; hard to wake; the humps grow. Core temperature (rectal, low-reading probe) 30.6 °C. RAPID RESPONSE: 'Room 8: core temp 30.6 °C, BP 76/42, hard to wake'"
+      }
+    ],
+    "outcome": "Moderate hypothermia, missed for 3 hours. The hump was the clue, not artifact."
+  },
+  "rewind": {
+    "clock": "2:30 AM, same patient",
+    "caught_it": [
+      {
+        "text": "Hump after every QRS? Osborn wave: think cold"
+      },
+      {
+        "text": "Core temperature with a low-reading probe, not the ear (rectal, per policy). Core 31.4 °C"
+      },
+      {
+        "text": "Warm her trunk: warm blankets, a forced-air warmer, IV fluids warmed to 38 to 42 °C, as ordered. Keep her flat, move her gently"
+      },
+      {
+        "text": "Stopped shivering and confused? Colder, not warmer. Call now"
+      }
+    ]
+  },
+  "choice": {
+    "question": "Hump after every QRS. Ear temp 35.0.",
+    "a": "Shivering artifact. Recheck at 6",
+    "b": "Think cold: core temp, warm her, call",
+    "answer": "B"
+  },
+  "memory": {
+    "name": "Osborn wave",
+    "sub": "the J wave of hypothermia",
+    "word": "COLD HUMP",
+    "chips": [
+      "COLD",
+      "HUMP"
+    ]
+  },
+  "save_card": {
+    "title": "OSBORN WAVE (COLD HUMP)",
+    "items": [
+      "Hump right after the QRS: think cold",
+      "Core temp with a low-reading probe",
+      "Warm her trunk, warmed fluids, keep her flat",
+      "Stopped shivering and confused: call now"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Cold heart: a hump after every QRS.",
+  "caption_lesson": "🌙 Night shift, 2:30 AM. She's 84, found on her kitchen floor on a cold night.\n• Heart rate 48. A hump right after every QRS (the spike of each beat)\n\n❌ 3 mistakes, 3 error types\n1️⃣ Knowledge gap: called the hump \"shivering artifact\"\n2️⃣ Habit over standard: trusted the ear thermometer. 35.0 was its lowest reading. No core temperature\n3️⃣ Acted too late: she stopped shivering and got confused. Called it \"finally warm\"\n➡️ 4:10 AM: core temperature 30.6 °C, BP (blood pressure) 76/42, hard to wake. Rapid response.\n\n❄️ Osborn wave (COLD HUMP)\n• Also called the J wave: an extra hump where the QRS ends and the ST segment starts (the J point)\n• A classic sign of hypothermia. It usually shows below about 32 °C and grows as the body gets colder\n• Not only cold: it can also show with a high calcium or a brain injury. Look at the patient\n• Other cold signs on the ECG (electrocardiogram): a slow rate, longer PR, QRS and QT\n• Stopping shivering while confused means colder, not warmer\n\n✅ The right move\n• Hump after every QRS? Think cold\n• Core temperature with a low-reading probe (rectal, per policy). Many ear and mouth thermometers can't read below 35 °C\n• Warm her as ordered: heat to the trunk, warm blankets, a forced-air warmer, IV (intravenous) fluids warmed to 38 to 42 °C\n• Keep her flat and move her gently: a cold heart is irritable\n• Check her glucose and ask why she fell\n• Confused, stopped shivering, slow heart, low BP? Call now. Rewarming, not atropine, usually fixes a cold slow heart",
+  "share_line": "📤 Send this to the nurse who'd chart that hump as artifact.",
+  "sources": [
+    "StatPearls: Hypothermia (2026)",
+    "Wilderness Medical Society Accidental Hypothermia Guidelines, 2019 Update",
+    "Mattu et al., Electrocardiographic Manifestations of Hypothermia, Am J Emerg Med 2002",
+    "Paal et al., Accidental Hypothermia: An Update, 2016"
+  ],
+  "rn_checks": [
+    "Osborn (J) wave: a positive hump at the J point (QRS end, ST start), usually below about 32 °C, larger as the temperature falls; also seen with high calcium and brain injury (Mattu 2002; Paal 2016; Maruyama 2004). OK?",
+    "Other hypothermia ECG signs in the caption only: slow heart rate, longer PR, QRS and QT, shivering artifact (Mattu 2002). OK?",
+    "Right move: core temperature with a low-reading probe (rectal on a ward, per policy; many ear and oral thermometers can't read below 35 °C); warm as ordered: heat to the trunk, blankets, forced-air warmer, IV fluids warmed to 38 to 42 °C; flat and gentle handling (irritable cold heart); check glucose, ask why she fell; stopped shivering plus confusion = colder, call now; cold bradycardia usually doesn't respond to atropine, rewarming treats it (WMS 2019; StatPearls; Paal 2016). OK?",
+    "Story numbers (softened after Vera's check): 84-year-old found on her floor, ED ear temp 35.0 °C (its lowest reading), no active warming, room-temperature saline; core 31.4 °C at 2:30 AM falling to 30.6 °C by 4:10 AM (moderate hypothermia); heart rate 48, 42, then 38; BP falling to 76/42 on a live counter; rectal core probe at the rapid response. Realistic?",
+    "30-day rule: ventricular fibrillation (off until Dec 22) is not shown or named; the caption only says a cold heart is irritable. Sinus bradycardia (Nov 22) appears only as a slow rate, not taught. OK?",
+    "Memory word is NEW: Osborn wave (COLD HUMP). Keep or swap?",
+    "Smart Prep labels: KNOWLEDGE GAP, HABIT OVER STANDARD, ACTED TOO LATE. Fit?",
+    "Choice answer B; keyword ECG; hook, cover and caption line 1 open with 'Nurses:'",
+    "Vera (independent check): MUST FIX applied (sources: no StatPearls 'Osborn Wave' article; the 2025 AHA section covers only severe hypothermia and arrest, dropped). SHOULD FIX applied: rectal not bladder probe, slower cooling and heart rate, 35.0 as the thermometer's floor, 'not only cold', heat to the trunk, warmed fluids 38 to 42 °C, glucose, atropine note. OK?"
+  ],
+  "vera": "Nov 23: MUST FIX source titles (StatPearls Hypothermia, Mattu 2002; AHA 2025 dropped), applied. SHOULD FIX rectal probe, story numbers, ear thermometer floor, J waves not only in cold, trunk heat, warmed fluids, glucose, atropine, all applied. Sources: StatPearls Hypothermia; WMS 2019; Mattu 2002; Paal 2016; Brown NEJM 2012; Maruyama 2004."
 }

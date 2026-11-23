@@ -1,116 +1,112 @@
 {
- "post_id": "2026-11-23_2100_hffluids",
- "slot_manila": "Mon Nov 23, 9:00 pm",
- "slot_utc": "2026-11-23T13:00:00Z",
- "lane": "PHARM",
- "keyword": "PHARM",
- "format": "story (high stakes, night shift)",
- "title": "PHARM · IV fluids in heart failure (ASSESS BEFORE YOU POUR) (high stakes, night shift, Smart Prep errors)",
- "hook": "Nurses: weak heart, BP 86/50. Open the fluids?",
- "hook_backups": [
-  "Nurses: low BP at 3 AM. A fluid bolus fixes it?",
-  "Nurses: BP 86/50 and she's asleep. Bolus now?"
- ],
- "belief": "Low blood pressure always means give fluids fast.",
- "score": {
-  "virality": 23,
-  "difficulty": 22,
-  "search": 23,
-  "value": 24,
-  "total": 92
- },
- "smart_prep": [
-  "ACTED TOO SOON",
-  "SCOPE ERROR",
-  "ACTED TOO LATE"
- ],
- "story": {
-  "patient": "79-year-old woman with heart failure (a weak pump), admitted with a urinary infection; she had her evening blood pressure pills",
-  "timeline": [
-   {
-    "clock": "3:05 AM",
-    "beat": "Automatic cuff: BP (blood pressure) 86/50. She's asleep. Patient and nurse in frame with the hook"
-   },
-   {
-    "clock": "3:07 AM",
-    "beat": "'She's dry.' The IV (intravenous) saline goes wide open, 1 liter. Nobody listens to her lungs",
-    "mistake": "MISTAKE 1 · ACTED TOO SOON",
-    "mistake_line": "Treated a number before assessing her"
-   },
-   {
-    "clock": "3:08 AM",
-    "beat": "No call, no order for the bolus",
-    "mistake": "MISTAKE 2 · SCOPE ERROR",
-    "mistake_line": "Gave a fluid bolus with no order"
-   },
-   {
-    "clock": "3:40 AM",
-    "beat": "Crackles, a wet cough, 'I can't lie flat.' 'Just a cold.' Fluids keep running",
-    "mistake": "MISTAKE 3 · ACTED TOO LATE",
-    "mistake_line": "Heard crackles, kept the fluids running"
-   },
-   {
-    "clock": "4:10 AM",
-    "beat": "SpO2 (oxygen saturation) 84%, breathing 32, pink frothy sputum",
-    "banner": "RAPID RESPONSE",
-    "outcome": "Fluid in her lungs. 3 mistakes. Every one avoidable."
-   }
-  ]
- },
- "rewind": {
-  "clock": "3:05 AM, same patient",
-  "caught_it": [
-   {
-    "text": "Recheck the BP by hand. Look at her: alert? dizzy?",
-    "anchor": "ASSESS FIRST"
-   },
-   {
-    "text": "Listen to her lungs, check swelling and urine, review tonight's BP pills",
-    "anchor": "NURSING PROCESS"
-   },
-   {
-    "text": "Call the provider with your findings. Fluids only as ordered, then reassess",
-    "anchor": "SCOPE"
-   },
-   {
-    "text": "Crackles or breathless on fluids: stop them, sit her up, oxygen, call",
-    "anchor": "ABC"
-   }
-  ]
- },
- "choice": {
-  "question": "Heart failure. BP 86/50, asleep, no complaints.",
-  "a": "Open the fluids wide",
-  "b": "Recheck, assess her lungs, call",
-  "answer": "B"
- },
- "save_card": {
-  "title": "HEART FAILURE + LOW BP (ASSESS BEFORE YOU POUR)",
-  "items": [
-   "Recheck the BP by hand",
-   "Lungs, swelling, urine, tonight's meds",
-   "Fluids only as ordered, then reassess",
-   "Crackles or breathless: stop, sit up, call"
+  "post_id": "2026-11-23_2100_hffluids",
+  "slot_manila": "Mon Nov 23, 9:00 pm",
+  "slot_utc": "2026-11-23T13:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · IV fluids in heart failure (ASSESS BEFORE YOU POUR) (high stakes, night shift, Smart Prep errors)",
+  "hook": "Nurses: weak heart, BP 86/50. Open the fluids?",
+  "hook_backups": [
+    "Nurses: low BP at 3 AM. A fluid bolus fixes it?",
+    "Nurses: BP 86/50 and she's asleep. Bolus now?"
   ],
-  "seconds": 4
- },
- "memory_line": "Weak pump, low BP: assess before you pour.",
- "caption_lesson": "🌙 Night shift, 3:05 AM. She's 79 with heart failure (a weak pump). She had her evening blood pressure pills.\n• BP (blood pressure) 86/50 on the automatic cuff. Asleep\n\n❌ 3 mistakes, 3 error types\n1️⃣ Acted too soon: opened 1 liter of saline wide, never assessed her\n2️⃣ Scope error: gave a fluid bolus with no order\n3️⃣ Acted too late: crackles and a wet cough called \"just a cold\", fluids kept running\n➡️ 4:10 AM: SpO2 (oxygen saturation) 84%, pink frothy sputum. Rapid response.\n\n💧 IV (intravenous) fluids in heart failure (ASSESS BEFORE YOU POUR)\n• A weak pump can't move extra fluid forward\n• It backs up into the lungs: crackles, a wet cough, breathless lying flat\n• A low BP has many causes. Find hers first\n\n✅ The right move\n• Recheck the BP by hand and look at her\n• Listen to the lungs, check swelling and urine, review tonight's meds\n• Call the provider. Fluids only as ordered, then reassess\n• Crackles or breathless on fluids: stop them, sit her up, oxygen, call\n\n🧠 Weak pump, low BP: assess before you pour.",
- "share_line": "📤 Send this to the nurse who'd open the fluids before listening to the lungs.",
- "sources": [
-  "2022 AHA/ACC/HFSA (American Heart Association, American College of Cardiology, Heart Failure Society of America) Guideline for the Management of Heart Failure",
-  "Lewis's Medical-Surgical Nursing, 13th ed. (2026): heart failure and fluid volume excess"
- ],
- "rn_checks": [
-  "Low BP in heart failure after evening antihypertensives: recheck manually and assess before acting",
-  "Nurse can't start a fluid bolus without an order or protocol (SCOPE ERROR label)",
-  "Fluid overload signs: crackles, wet cough, orthopnea, low SpO2, pink frothy sputum (acute pulmonary edema): stop fluids, sit up, oxygen, call",
-  "Diuretic not named on purpose (furosemide vs spironolactone off until Dec 19). OK?",
-  "Story: 1 L saline wide open at 3:07, crackles by 3:40, SpO2 84% with pink frothy sputum by 4:10. Realistic?",
-  "Not a shock-types Reel (off until Dec 5): no shock classification taught. OK?",
-  "Memory phrase is NEW: (ASSESS BEFORE YOU POUR). Keep or swap?",
-  "Smart Prep labels: ACTED TOO SOON, SCOPE ERROR, ACTED TOO LATE. Fit?",
-  "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
- ],
- "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
+  "belief": "Low blood pressure always means give fluids fast.",
+  "score": {
+    "virality": 23,
+    "difficulty": 22,
+    "search": 23,
+    "value": 24,
+    "total": 92
+  },
+  "smart_prep": [
+    "ACTED TOO SOON",
+    "SCOPE ERROR",
+    "ACTED TOO LATE"
+  ],
+  "story": {
+    "patient": "79-year-old woman with heart failure (a weak pump), admitted with a urinary infection; she had her evening blood pressure pills",
+    "timeline": [
+      {
+        "clock": "3:05 AM",
+        "beat": "Automatic cuff: BP (blood pressure) 86/50. She's asleep. Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "3:07 AM",
+        "beat": "'She's dry.' The IV (intravenous) saline goes wide open, 1 liter. Nobody listens to her lungs",
+        "mistake": "MISTAKE 1 · ACTED TOO SOON",
+        "mistake_line": "Treated a number before assessing her"
+      },
+      {
+        "clock": "3:08 AM",
+        "beat": "No call, no order for the bolus",
+        "mistake": "MISTAKE 2 · SCOPE ERROR",
+        "mistake_line": "Gave a fluid bolus with no order"
+      },
+      {
+        "clock": "3:40 AM",
+        "beat": "Crackles, a wet cough, 'I can't lie flat.' 'Just a cold.' Fluids keep running",
+        "mistake": "MISTAKE 3 · ACTED TOO LATE",
+        "mistake_line": "Heard crackles, kept the fluids running"
+      },
+      {
+        "clock": "4:10 AM",
+        "beat": "SpO2 (oxygen saturation) 84%, breathing 32, pink frothy sputum",
+        "banner": "RAPID RESPONSE",
+        "outcome": "Fluid in her lungs. 3 mistakes. Every one avoidable."
+      }
+    ]
+  },
+  "rewind": {
+    "clock": "3:05 AM, same patient",
+    "caught_it": [
+      {
+        "text": "Recheck the BP by hand. Look at her: alert? dizzy?"
+      },
+      {
+        "text": "Listen to her lungs, check swelling and urine, review tonight's BP pills"
+      },
+      {
+        "text": "Call the provider with your findings. Fluids only as ordered, then reassess"
+      },
+      {
+        "text": "Crackles or breathless on fluids: stop them, sit her up, oxygen, call"
+      }
+    ]
+  },
+  "choice": {
+    "question": "Heart failure. BP 86/50, asleep, no complaints.",
+    "a": "Open the fluids wide",
+    "b": "Recheck, assess her lungs, call",
+    "answer": "B"
+  },
+  "save_card": {
+    "title": "HEART FAILURE + LOW BP (ASSESS BEFORE YOU POUR)",
+    "items": [
+      "Recheck the BP by hand",
+      "Lungs, swelling, urine, tonight's meds",
+      "Fluids only as ordered, then reassess",
+      "Crackles or breathless: stop, sit up, call"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Weak pump, low BP: assess before you pour.",
+  "caption_lesson": "🌙 Night shift, 3:05 AM. She's 79 with heart failure (a weak pump). She had her evening blood pressure pills.\n• BP (blood pressure) 86/50 on the automatic cuff. Asleep\n\n❌ 3 mistakes, 3 error types\n1️⃣ Acted too soon: opened 1 liter of saline wide, never assessed her\n2️⃣ Scope error: gave a fluid bolus with no order\n3️⃣ Acted too late: crackles and a wet cough called \"just a cold\", fluids kept running\n➡️ 4:10 AM: SpO2 (oxygen saturation) 84%, pink frothy sputum. Rapid response.\n\n💧 IV (intravenous) fluids in heart failure (ASSESS BEFORE YOU POUR)\n• A weak pump can't move extra fluid forward\n• It backs up into the lungs: crackles, a wet cough, breathless lying flat\n• A low BP has many causes. Find hers first\n\n✅ The right move\n• Recheck the BP by hand and look at her\n• Listen to the lungs, check swelling and urine, review tonight's meds\n• Call the provider. Fluids only as ordered, then reassess\n• Crackles or breathless on fluids: stop them, sit her up, oxygen, call\n\n🧠 Weak pump, low BP: assess before you pour.",
+  "share_line": "📤 Send this to the nurse who'd open the fluids before listening to the lungs.",
+  "sources": [
+    "2022 AHA/ACC/HFSA (American Heart Association, American College of Cardiology, Heart Failure Society of America) Guideline for the Management of Heart Failure",
+    "Lewis's Medical-Surgical Nursing, 13th ed. (2026): heart failure and fluid volume excess"
+  ],
+  "rn_checks": [
+    "Low BP in heart failure after evening antihypertensives: recheck manually and assess before acting",
+    "Nurse can't start a fluid bolus without an order or protocol (SCOPE ERROR label)",
+    "Fluid overload signs: crackles, wet cough, orthopnea, low SpO2, pink frothy sputum (acute pulmonary edema): stop fluids, sit up, oxygen, call",
+    "Diuretic not named on purpose (furosemide vs spironolactone off until Dec 19). OK?",
+    "Story: 1 L saline wide open at 3:07, crackles by 3:40, SpO2 84% with pink frothy sputum by 4:10. Realistic?",
+    "Not a shock-types Reel (off until Dec 5): no shock classification taught. OK?",
+    "Memory phrase is NEW: (ASSESS BEFORE YOU POUR). Keep or swap?",
+    "Smart Prep labels: ACTED TOO SOON, SCOPE ERROR, ACTED TOO LATE. Fit?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ],
+  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
 }

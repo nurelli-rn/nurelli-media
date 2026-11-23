@@ -1,116 +1,112 @@
 {
- "post_id": "2026-11-24_0500_promethazine",
- "slot_manila": "Tue Nov 24, 5:00 am",
- "slot_utc": "2026-11-23T21:00:00Z",
- "lane": "PHARM",
- "keyword": "PHARM",
- "format": "story (high stakes, night shift)",
- "title": "PHARM · Promethazine IV (NEVER PUSH IT) (high stakes, night shift, Smart Prep errors)",
- "hook": "Nurses: 2 AM nausea. Push promethazine in her hand IV?",
- "hook_backups": [
-  "Nurses: 'It burns!' Keep pushing the promethazine?",
-  "Nurses: one quick IV push. Her hand turns white by morning."
- ],
- "belief": "Promethazine is a routine quick IV push for nausea.",
- "score": {
-  "virality": 24,
-  "difficulty": 22,
-  "search": 21,
-  "value": 23,
-  "total": 90
- },
- "smart_prep": [
-  "KNOWLEDGE GAP",
-  "MISSED KEYWORD",
-  "ACTED TOO LATE"
- ],
- "story": {
-  "patient": "68-year-old woman after gallbladder surgery, nauseated; order: promethazine 12.5 mg IV (intravenous) every 6 hours as needed. Her only IV is in the back of her hand",
-  "timeline": [
-   {
-    "clock": "2:10 AM",
-    "beat": "'I'm going to be sick.' Patient and nurse in frame with the hook"
-   },
-   {
-    "clock": "2:12 AM",
-    "beat": "Pushes it straight from the vial, undiluted, in under a minute",
-    "mistake": "MISTAKE 1 · KNOWLEDGE GAP",
-    "mistake_line": "Pushed it undiluted: the label changed in 2023"
-   },
-   {
-    "clock": "2:12 AM",
-    "beat": "Into the hand IV. The label says never a hand or wrist vein",
-    "mistake": "MISTAKE 2 · MISSED KEYWORD",
-    "mistake_line": "Skipped 'never in the hand or wrist'"
-   },
-   {
-    "clock": "2:13 AM",
-    "beat": "'It burns!' The nurse keeps pushing",
-    "mistake": "MISTAKE 3 · ACTED TOO LATE",
-    "mistake_line": "Kept pushing through 'it burns'"
-   },
-   {
-    "clock": "6:30 AM",
-    "beat": "Her hand is pale, cold and swollen, the fingers dusky, blisters forming",
-    "banner": "URGENT SURGERY CONSULT",
-    "outcome": "A badly injured hand from one push. 3 mistakes. Every one avoidable."
-   }
-  ]
- },
- "rewind": {
-  "clock": "2:10 AM, same patient",
-  "caught_it": [
-   {
-    "text": "Preferred route: deep IM (intramuscular)",
-    "anchor": "STANDARD"
-   },
-   {
-    "text": "IV only if needed: dilute in normal saline (1 mg/mL max), infuse over 20 to 40 minutes",
-    "anchor": "KNOW THE LABEL"
-   },
-   {
-    "text": "A large vein, ideally central. Never the hand or wrist",
-    "anchor": "READ EVERY WORD"
-   },
-   {
-    "text": "Burning or pain: stop now and report",
-    "anchor": "ACT"
-   }
-  ]
- },
- "choice": {
-  "question": "Promethazine IV ordered. Her only IV is in her hand.",
-  "a": "Push it: it's a small dose",
-  "b": "Ask for IM or a large vein, dilute, infuse",
-  "answer": "B"
- },
- "save_card": {
-  "title": "PROMETHAZINE IV (NEVER PUSH IT)",
-  "items": [
-   "Preferred: deep IM (into the muscle)",
-   "IV: dilute (1 mg/mL max), infuse over 20 to 40 min",
-   "Large vein. Never the hand or wrist",
-   "Burning or pain: stop and report"
+  "post_id": "2026-11-24_0500_promethazine",
+  "slot_manila": "Tue Nov 24, 5:00 am",
+  "slot_utc": "2026-11-23T21:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Promethazine IV (NEVER PUSH IT) (high stakes, night shift, Smart Prep errors)",
+  "hook": "Nurses: 2 AM nausea. Push promethazine in her hand IV?",
+  "hook_backups": [
+    "Nurses: 'It burns!' Keep pushing the promethazine?",
+    "Nurses: one quick IV push. Her hand turns white by morning."
   ],
-  "seconds": 4
- },
- "memory_line": "Promethazine: dilute, drip, big vein. Never push.",
- "caption_lesson": "🌙 Night shift, 2:10 AM. She's 68, nauseated after gallbladder surgery. Promethazine 12.5 mg IV (intravenous) as needed. Her only IV is in her hand.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Knowledge gap: pushed it undiluted. The label changed in 2023\n2️⃣ Missed keyword: into a hand vein, which the label rules out\n3️⃣ Acted too late: \"It burns!\" and the nurse kept pushing\n➡️ 6:30 AM: her hand pale, cold, fingers dusky. Urgent surgery consult.\n\n💉 Promethazine IV (NEVER PUSH IT)\n• It can damage tissue badly if it leaks from the vein or enters an artery\n• Injuries have included gangrene and amputation\n• Deep IM (intramuscular) is the preferred route\n\n✅ The right move\n• Ask whether IM, or another antiemetic, is an option\n• IV only if needed: dilute in normal saline (1 mg/mL or less) and infuse over 20 to 40 minutes, per the label\n• A large vein, ideally central. Never the hand or wrist\n• Burning or pain: stop now and report\n\n🧠 Promethazine: dilute, drip, big vein. Never push.",
- "share_line": "📤 Send this to the nurse who still pushes promethazine in 30 seconds.",
- "sources": [
-  "FDA (U.S. Food and Drug Administration): updates to labeling for promethazine hydrochloride injection products (December 2023)",
-  "Promethazine hydrochloride injection prescribing information (DailyMed): boxed warning, severe tissue injury including gangrene",
-  "Promethazine injection label: stop the infusion right away for pain or burning"
- ],
- "rn_checks": [
-  "FDA Dec 2023 labeling: deep IM preferred; IV only after dilution in 0.9% sodium chloride (contraindicated IV above 1 mg/mL; adult 12.5 to 50 mg in 50 mL), infused over 20 to 40 minutes through a large vein, preferably central; never through IV catheters in the hand or wrist; label: stop the infusion right away for pain or burning",
-  "Boxed warning: severe tissue injury including gangrene, regardless of route",
-  "Promethazine in a 68-year-old is on the 2023 AGS Beers list (avoid). Not raised in the Reel to keep one lesson; the caption says 'or another antiemetic'. OK?",
-  "Outcome: about 4 hours later, a pale, cold, swollen hand with dusky fingers and blisters; urgent surgery consult (not graphic). Realistic?",
-  "Banner 'URGENT SURGERY CONSULT' instead of RAPID RESPONSE. OK?",
-  "Memory phrase is NEW: (NEVER PUSH IT). Keep or swap?",
-  "Smart Prep labels: KNOWLEDGE GAP, MISSED KEYWORD, ACTED TOO LATE. Fit?",
-  "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
- ],
- "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
+  "belief": "Promethazine is a routine quick IV push for nausea.",
+  "score": {
+    "virality": 24,
+    "difficulty": 22,
+    "search": 21,
+    "value": 23,
+    "total": 90
+  },
+  "smart_prep": [
+    "KNOWLEDGE GAP",
+    "MISSED KEYWORD",
+    "ACTED TOO LATE"
+  ],
+  "story": {
+    "patient": "68-year-old woman after gallbladder surgery, nauseated; order: promethazine 12.5 mg IV (intravenous) every 6 hours as needed. Her only IV is in the back of her hand",
+    "timeline": [
+      {
+        "clock": "2:10 AM",
+        "beat": "'I'm going to be sick.' Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "2:12 AM",
+        "beat": "Pushes it straight from the vial, undiluted, in under a minute",
+        "mistake": "MISTAKE 1 · KNOWLEDGE GAP",
+        "mistake_line": "Pushed it undiluted: the label changed in 2023"
+      },
+      {
+        "clock": "2:12 AM",
+        "beat": "Into the hand IV. The label says never a hand or wrist vein",
+        "mistake": "MISTAKE 2 · MISSED KEYWORD",
+        "mistake_line": "Skipped 'never in the hand or wrist'"
+      },
+      {
+        "clock": "2:13 AM",
+        "beat": "'It burns!' The nurse keeps pushing",
+        "mistake": "MISTAKE 3 · ACTED TOO LATE",
+        "mistake_line": "Kept pushing through 'it burns'"
+      },
+      {
+        "clock": "6:30 AM",
+        "beat": "Her hand is pale, cold and swollen, the fingers dusky, blisters forming",
+        "banner": "URGENT SURGERY CONSULT",
+        "outcome": "A badly injured hand from one push. 3 mistakes. Every one avoidable."
+      }
+    ]
+  },
+  "rewind": {
+    "clock": "2:10 AM, same patient",
+    "caught_it": [
+      {
+        "text": "Preferred route: deep IM (intramuscular)"
+      },
+      {
+        "text": "IV only if needed: dilute in normal saline (1 mg/mL max), infuse over 20 to 40 minutes"
+      },
+      {
+        "text": "A large vein, ideally central. Never the hand or wrist"
+      },
+      {
+        "text": "Burning or pain: stop now and report"
+      }
+    ]
+  },
+  "choice": {
+    "question": "Promethazine IV ordered. Her only IV is in her hand.",
+    "a": "Push it: it's a small dose",
+    "b": "Ask for IM or a large vein, dilute, infuse",
+    "answer": "B"
+  },
+  "save_card": {
+    "title": "PROMETHAZINE IV (NEVER PUSH IT)",
+    "items": [
+      "Preferred: deep IM (into the muscle)",
+      "IV: dilute (1 mg/mL max), infuse over 20 to 40 min",
+      "Large vein. Never the hand or wrist",
+      "Burning or pain: stop and report"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "Promethazine: dilute, drip, big vein. Never push.",
+  "caption_lesson": "🌙 Night shift, 2:10 AM. She's 68, nauseated after gallbladder surgery. Promethazine 12.5 mg IV (intravenous) as needed. Her only IV is in her hand.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Knowledge gap: pushed it undiluted. The label changed in 2023\n2️⃣ Missed keyword: into a hand vein, which the label rules out\n3️⃣ Acted too late: \"It burns!\" and the nurse kept pushing\n➡️ 6:30 AM: her hand pale, cold, fingers dusky. Urgent surgery consult.\n\n💉 Promethazine IV (NEVER PUSH IT)\n• It can damage tissue badly if it leaks from the vein or enters an artery\n• Injuries have included gangrene and amputation\n• Deep IM (intramuscular) is the preferred route\n\n✅ The right move\n• Ask whether IM, or another antiemetic, is an option\n• IV only if needed: dilute in normal saline (1 mg/mL or less) and infuse over 20 to 40 minutes, per the label\n• A large vein, ideally central. Never the hand or wrist\n• Burning or pain: stop now and report\n\n🧠 Promethazine: dilute, drip, big vein. Never push.",
+  "share_line": "📤 Send this to the nurse who still pushes promethazine in 30 seconds.",
+  "sources": [
+    "FDA (U.S. Food and Drug Administration): updates to labeling for promethazine hydrochloride injection products (December 2023)",
+    "Promethazine hydrochloride injection prescribing information (DailyMed): boxed warning, severe tissue injury including gangrene",
+    "Promethazine injection label: stop the infusion right away for pain or burning"
+  ],
+  "rn_checks": [
+    "FDA Dec 2023 labeling: deep IM preferred; IV only after dilution in 0.9% sodium chloride (contraindicated IV above 1 mg/mL; adult 12.5 to 50 mg in 50 mL), infused over 20 to 40 minutes through a large vein, preferably central; never through IV catheters in the hand or wrist; label: stop the infusion right away for pain or burning",
+    "Boxed warning: severe tissue injury including gangrene, regardless of route",
+    "Promethazine in a 68-year-old is on the 2023 AGS Beers list (avoid). Not raised in the Reel to keep one lesson; the caption says 'or another antiemetic'. OK?",
+    "Outcome: about 4 hours later, a pale, cold, swollen hand with dusky fingers and blisters; urgent surgery consult (not graphic). Realistic?",
+    "Banner 'URGENT SURGERY CONSULT' instead of RAPID RESPONSE. OK?",
+    "Memory phrase is NEW: (NEVER PUSH IT). Keep or swap?",
+    "Smart Prep labels: KNOWLEDGE GAP, MISSED KEYWORD, ACTED TOO LATE. Fit?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ],
+  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
 }

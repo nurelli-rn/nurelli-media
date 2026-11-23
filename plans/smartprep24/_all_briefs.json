@@ -1,698 +1,674 @@
 [
- {
-  "post_id": "2026-11-23_1500_transfusion",
-  "slot_manila": "Mon Nov 23, 3:00 pm",
-  "slot_utc": "2026-11-23T07:00:00Z",
-  "lane": "PHARM",
-  "keyword": "PHARM",
-  "format": "story (high stakes, night shift)",
-  "title": "PHARM · Blood transfusion reaction (STOP THE BLOOD, KEEP THE VEIN) (high stakes, night shift, Smart Prep errors)",
-  "hook": "Nurses: 10 minutes into blood, her back hurts. Slow it?",
-  "hook_backups": [
-   "Nurses: chills during a transfusion. Just slow it down?",
-   "Nurses: blood running, fever 38.6. Call first or stop first?"
-  ],
-  "belief": "A reaction during a transfusion means you slow the blood and call.",
-  "score": {
-   "virality": 24,
-   "difficulty": 22,
-   "search": 25,
-   "value": 24,
-   "total": 95
+  {
+    "post_id": "2026-11-23_1500_transfusion",
+    "slot_manila": "Mon Nov 23, 3:00 pm",
+    "slot_utc": "2026-11-23T07:00:00Z",
+    "lane": "PHARM",
+    "keyword": "PHARM",
+    "format": "story (high stakes, night shift)",
+    "title": "PHARM · Blood transfusion reaction (STOP THE BLOOD, KEEP THE VEIN) (high stakes, night shift, Smart Prep errors)",
+    "hook": "Nurses: 10 minutes into blood, her back hurts. Slow it?",
+    "hook_backups": [
+      "Nurses: chills during a transfusion. Just slow it down?",
+      "Nurses: blood running, fever 38.6. Call first or stop first?"
+    ],
+    "belief": "A reaction during a transfusion means you slow the blood and call.",
+    "score": {
+      "virality": 24,
+      "difficulty": 22,
+      "search": 25,
+      "value": 24,
+      "total": 95
+    },
+    "smart_prep": [
+      "SCOPE ERROR",
+      "HABIT OVER STANDARD",
+      "WRONG PRIORITY"
+    ],
+    "story": {
+      "patient": "76-year-old woman with a stomach bleed, hemoglobin 6.8 g/dL, getting her first unit of packed red blood cells",
+      "timeline": [
+        {
+          "clock": "1:10 AM",
+          "beat": "First unit of blood starts. Patient and nurse in frame with the hook"
+        },
+        {
+          "clock": "1:12 AM",
+          "beat": "'Can you do her 15-minute vitals?' The nurse leaves the aide with her",
+          "mistake": "MISTAKE 1 · SCOPE ERROR",
+          "mistake_line": "Left the first 15 minutes to the aide"
+        },
+        {
+          "clock": "1:20 AM",
+          "beat": "'My back hurts. I'm so cold.' Chills, temp 38.6 °C (101.5 °F), heart rate 118. The nurse slows the blood",
+          "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
+          "mistake_line": "Slowed the blood instead of stopping it"
+        },
+        {
+          "clock": "1:28 AM",
+          "beat": "Pages the provider and waits for a call back. The blood is still running",
+          "mistake": "MISTAKE 3 · WRONG PRIORITY",
+          "mistake_line": "Called first, stopped the blood later"
+        },
+        {
+          "clock": "1:45 AM",
+          "beat": "BP (blood pressure) 78/44, dark red urine, oozing at the IV (intravenous) site",
+          "banner": "RAPID RESPONSE",
+          "outcome": "A transfusion reaction, worse with every minute the blood ran. 3 mistakes. Every one avoidable."
+        }
+      ]
+    },
+    "rewind": {
+      "clock": "1:10 AM, same patient",
+      "caught_it": [
+        {
+          "text": "Two-person check at the bedside: two identifiers, the unit, the order"
+        },
+        {
+          "text": "The RN stays with her for the first 15 minutes, vitals per policy"
+        },
+        {
+          "text": "Back pain, chills, fever: STOP the blood now"
+        },
+        {
+          "text": "Keep the vein open: normal saline with new tubing. Stay, vitals, call the provider and blood bank"
+        }
+      ]
+    },
+    "choice": {
+      "question": "Blood running. Back pain, chills, fever.",
+      "a": "Slow it down, call the provider",
+      "b": "Stop it, saline with new tubing, call",
+      "answer": "B"
+    },
+    "save_card": {
+      "title": "TRANSFUSION REACTION (STOP THE BLOOD, KEEP THE VEIN)",
+      "items": [
+        "First 15 minutes: the RN stays",
+        "Back pain, chills, fever: stop the blood",
+        "Keep the vein open: saline, new tubing",
+        "Call the provider and blood bank, send the bag and tubing back"
+      ],
+      "seconds": 4
+    },
+    "memory_line": "Reaction? Stop the blood, keep the vein.",
+    "caption_lesson": "🌙 Night shift, 1:10 AM. She's 76, a stomach bleed, hemoglobin 6.8. Her first unit of blood starts.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Scope error: left the first 15 minutes to the aide\n2️⃣ Habit over standard: back pain and chills, so the nurse slowed the blood\n3️⃣ Wrong priority: paged the provider and waited, blood still running\n➡️ 1:45 AM: BP (blood pressure) 78/44, dark red urine. Rapid response.\n\n🩸 Transfusion reaction (STOP THE BLOOD, KEEP THE VEIN)\n• Watch closely in the first 15 minutes: the most dangerous reactions often start early\n• Signs: back pain, chills, fever, fast heart rate, low BP, dark urine, trouble breathing, hives\n\n✅ The right move\n• Two-person check at the bedside before it starts\n• The RN (registered nurse) stays for the first 15 minutes, vitals per policy\n• Any reaction sign: stop the blood first\n• Keep the vein open with normal saline and new tubing\n• Stay, vitals, call the provider and the blood bank. Send the bag and tubing back, per policy\n\n🧠 Reaction? Stop the blood, keep the vein.",
+    "share_line": "📤 Send this to the nurse who'd slow the blood and wait for a call back.",
+    "sources": [
+      "AABB (Association for the Advancement of Blood and Biotherapies) Technical Manual, current edition: recognizing and managing transfusion reactions",
+      "Lewis's Medical-Surgical Nursing, 13th ed. (2026): blood transfusion and acute transfusion reactions"
+    ],
+    "rn_checks": [
+      "Signs: back pain, chills, fever, tachycardia, hypotension, dark urine (hemoglobinuria), oozing at the IV site suggest an acute hemolytic reaction; the cause (usually a mismatch) is not shown. OK?",
+      "Stop the transfusion first; keep the vein open with normal saline through NEW tubing (not the blood set); stay, vitals, notify the provider and blood bank; return the bag and tubing per policy",
+      "RN stays with the patient and assesses during the first 15 minutes (common policy wording, 'per policy' on screen)",
+      "Two-person bedside check: two identifiers, the unit, the order",
+      "Story numbers: temp 38.6 °C, heart rate 118, then BP 78/44 over about 35 minutes. Realistic?",
+      "Lane: blood is a biologic, keyword PHARM. OK?",
+      "Memory phrase is NEW: (STOP THE BLOOD, KEEP THE VEIN). Keep or swap?",
+      "Smart Prep labels on the stamps: SCOPE ERROR, HABIT OVER STANDARD, WRONG PRIORITY. Fit?",
+      "Choice answer B; hook, cover and caption line 1 open with 'Nurses:'"
+    ],
+    "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
   },
-  "smart_prep": [
-   "SCOPE ERROR",
-   "HABIT OVER STANDARD",
-   "WRONG PRIORITY"
-  ],
-  "story": {
-   "patient": "76-year-old woman with a stomach bleed, hemoglobin 6.8 g/dL, getting her first unit of packed red blood cells",
-   "timeline": [
-    {
-     "clock": "1:10 AM",
-     "beat": "First unit of blood starts. Patient and nurse in frame with the hook"
+  {
+    "post_id": "2026-11-23_1700_copdo2",
+    "slot_manila": "Mon Nov 23, 5:00 pm",
+    "slot_utc": "2026-11-23T09:00:00Z",
+    "lane": "PHARM",
+    "keyword": "PHARM",
+    "format": "story (high stakes, night shift)",
+    "title": "PHARM · Oxygen in COPD (88 TO 92, NEVER ZERO) (high stakes, night shift, Smart Prep errors)",
+    "hook": "Nurses: COPD, SpO2 82% at 2 AM. Hold the oxygen?",
+    "hook_backups": [
+      "Nurses: oxygen stops a COPD patient breathing. True?",
+      "Nurses: his sats are 82. 'That's his normal.' Is it?"
+    ],
+    "belief": "Oxygen is dangerous in COPD, so you hold it even when sats are low.",
+    "score": {
+      "virality": 24,
+      "difficulty": 22,
+      "search": 24,
+      "value": 24,
+      "total": 94
     },
-    {
-     "clock": "1:12 AM",
-     "beat": "'Can you do her 15-minute vitals?' The nurse leaves the aide with her",
-     "mistake": "MISTAKE 1 · SCOPE ERROR",
-     "mistake_line": "Left the first 15 minutes to the aide"
+    "smart_prep": [
+      "BEYOND THE STEM",
+      "HABIT OVER STANDARD",
+      "ACTED TOO LATE"
+    ],
+    "story": {
+      "patient": "72-year-old man with COPD (chronic obstructive pulmonary disease), admitted with pneumonia",
+      "timeline": [
+        {
+          "clock": "2:15 AM",
+          "beat": "Alarm: SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles. Patient and nurse in frame with the hook"
+        },
+        {
+          "clock": "2:17 AM",
+          "beat": "'His normal's probably low.' No baseline is charted anywhere",
+          "mistake": "MISTAKE 1 · BEYOND THE STEM",
+          "mistake_line": "Assumed a baseline nobody charted"
+        },
+        {
+          "clock": "2:18 AM",
+          "beat": "'Oxygen stops his drive to breathe.' The oxygen stays off",
+          "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
+          "mistake_line": "Held oxygen for 'COPD drive'"
+        },
+        {
+          "clock": "2:50 AM",
+          "beat": "He's drowsy. 'Finally sleeping.' No recheck",
+          "mistake": "MISTAKE 3 · ACTED TOO LATE",
+          "mistake_line": "Called drowsy 'sleeping', no recheck"
+        },
+        {
+          "clock": "3:20 AM",
+          "beat": "SpO2 74%, hard to wake, heart rate 132",
+          "banner": "RAPID RESPONSE",
+          "outcome": "Too little oxygen, not too much. 3 mistakes. Every one avoidable."
+        }
+      ]
     },
-    {
-     "clock": "1:20 AM",
-     "beat": "'My back hurts. I'm so cold.' Chills, temp 38.6 °C (101.5 °F), heart rate 118. The nurse slows the blood",
-     "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
-     "mistake_line": "Slowed the blood instead of stopping it"
+    "rewind": {
+      "clock": "2:15 AM, same patient",
+      "caught_it": [
+        {
+          "text": "Low oxygen? Give oxygen. Never withhold it"
+        },
+        {
+          "text": "COPD with a CO2 (carbon dioxide) risk: controlled oxygen, target SpO2 88 to 92%"
+        },
+        {
+          "text": "Nasal cannula or a Venturi mask, as ordered or per protocol"
+        },
+        {
+          "text": "Recheck SpO2, breathing, alertness. Drowsy or confused? Call now, blood gas as ordered"
+        }
+      ]
     },
-    {
-     "clock": "1:28 AM",
-     "beat": "Pages the provider and waits for a call back. The blood is still running",
-     "mistake": "MISTAKE 3 · WRONG PRIORITY",
-     "mistake_line": "Called first, stopped the blood later"
+    "choice": {
+      "question": "COPD. SpO2 82%, breathing 28.",
+      "a": "Hold oxygen to protect his drive",
+      "b": "Oxygen now, aim 88 to 92%, call",
+      "answer": "B"
     },
-    {
-     "clock": "1:45 AM",
-     "beat": "BP (blood pressure) 78/44, dark red urine, oozing at the IV (intravenous) site",
-     "banner": "RAPID RESPONSE",
-     "outcome": "A transfusion reaction, worse with every minute the blood ran. 3 mistakes. Every one avoidable."
-    }
-   ]
+    "save_card": {
+      "title": "COPD + LOW OXYGEN (88 TO 92, NEVER ZERO)",
+      "items": [
+        "Low oxygen? Never withhold it",
+        "Target SpO2 88 to 92% if CO2 risk",
+        "Controlled oxygen, as ordered",
+        "Drowsy or confused: call, blood gas"
+      ],
+      "seconds": 4
+    },
+    "memory_line": "COPD: aim for 88 to 92. Never zero.",
+    "caption_lesson": "🌙 Night shift, 2:15 AM. He's 72 with COPD (chronic obstructive pulmonary disease), admitted with pneumonia.\n• SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles\n\n❌ 3 mistakes, 3 error types\n1️⃣ Beyond the stem: \"His normal's probably low.\" No baseline was charted\n2️⃣ Habit over standard: held the oxygen for \"COPD drive\"\n3️⃣ Acted too late: called drowsy \"sleeping\", no recheck\n➡️ 3:20 AM: SpO2 74%, hard to wake. Rapid response.\n\n🫁 Oxygen in COPD (88 TO 92, NEVER ZERO)\n• Low oxygen kills faster than high CO2 (carbon dioxide)\n• Some COPD patients hold on to CO2, so too much oxygen can also make them drowsy\n• The answer is controlled oxygen, not none\n\n✅ The right move\n• Low oxygen? Give oxygen. Never withhold it\n• COPD with a CO2 risk: aim for SpO2 88 to 92%, as ordered\n• Nasal cannula or a Venturi mask, as ordered or per protocol\n• Recheck SpO2, breathing and alertness. Drowsy or confused? Call now, blood gas as ordered\n\n🧠 COPD: aim for 88 to 92. Never zero.",
+    "share_line": "📤 Send this to the nurse who still believes oxygen stops COPD patients breathing.",
+    "sources": [
+      "BTS (British Thoracic Society) Guideline for oxygen use in adults in healthcare and emergency settings (O'Driscoll et al., Thorax 2017)",
+      "GOLD (Global Initiative for Chronic Obstructive Lung Disease) Global Strategy for Prevention, Diagnosis and Management of COPD: 2027 Report"
+    ],
+    "rn_checks": [
+      "Target SpO2 88 to 92% for patients at risk of hypercapnic (CO2) respiratory failure, such as COPD (BTS 2017). Vera did not check the exact wording inside the GOLD 2027 report",
+      "Never withhold oxygen from a hypoxemic patient; controlled oxygen via nasal cannula or Venturi 24 to 28%, as ordered or per protocol",
+      "Drowsiness can be hypoxia OR rising CO2: call, ABG (arterial blood gas) as ordered",
+      "Story numbers: SpO2 82, then 74%; breathing 28; heart rate 132; hard to wake at 3:20 AM. Realistic?",
+      "Inhalers (asthma) posted Nov 22: this is oxygen in COPD, a different topic. OK under the 30-day rule?",
+      "Memory phrase is NEW: (88 TO 92, NEVER ZERO). Keep or swap?",
+      "Smart Prep labels: BEYOND THE STEM (assumed a baseline), HABIT OVER STANDARD, ACTED TOO LATE. Fit?",
+      "Choice answer B; keyword PHARM (oxygen is a prescribed drug); hook, cover and caption line 1 open with 'Nurses:'"
+    ],
+    "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
   },
-  "rewind": {
-   "clock": "1:10 AM, same patient",
-   "caught_it": [
-    {
-     "text": "Two-person check at the bedside: two identifiers, the unit, the order",
-     "anchor": "SAFETY"
+  {
+    "post_id": "2026-11-23_2100_hffluids",
+    "slot_manila": "Mon Nov 23, 9:00 pm",
+    "slot_utc": "2026-11-23T13:00:00Z",
+    "lane": "PHARM",
+    "keyword": "PHARM",
+    "format": "story (high stakes, night shift)",
+    "title": "PHARM · IV fluids in heart failure (ASSESS BEFORE YOU POUR) (high stakes, night shift, Smart Prep errors)",
+    "hook": "Nurses: weak heart, BP 86/50. Open the fluids?",
+    "hook_backups": [
+      "Nurses: low BP at 3 AM. A fluid bolus fixes it?",
+      "Nurses: BP 86/50 and she's asleep. Bolus now?"
+    ],
+    "belief": "Low blood pressure always means give fluids fast.",
+    "score": {
+      "virality": 23,
+      "difficulty": 22,
+      "search": 23,
+      "value": 24,
+      "total": 92
     },
-    {
-     "text": "The RN stays with her for the first 15 minutes, vitals per policy",
-     "anchor": "SCOPE"
+    "smart_prep": [
+      "ACTED TOO SOON",
+      "SCOPE ERROR",
+      "ACTED TOO LATE"
+    ],
+    "story": {
+      "patient": "79-year-old woman with heart failure (a weak pump), admitted with a urinary infection; she had her evening blood pressure pills",
+      "timeline": [
+        {
+          "clock": "3:05 AM",
+          "beat": "Automatic cuff: BP (blood pressure) 86/50. She's asleep. Patient and nurse in frame with the hook"
+        },
+        {
+          "clock": "3:07 AM",
+          "beat": "'She's dry.' The IV (intravenous) saline goes wide open, 1 liter. Nobody listens to her lungs",
+          "mistake": "MISTAKE 1 · ACTED TOO SOON",
+          "mistake_line": "Treated a number before assessing her"
+        },
+        {
+          "clock": "3:08 AM",
+          "beat": "No call, no order for the bolus",
+          "mistake": "MISTAKE 2 · SCOPE ERROR",
+          "mistake_line": "Gave a fluid bolus with no order"
+        },
+        {
+          "clock": "3:40 AM",
+          "beat": "Crackles, a wet cough, 'I can't lie flat.' 'Just a cold.' Fluids keep running",
+          "mistake": "MISTAKE 3 · ACTED TOO LATE",
+          "mistake_line": "Heard crackles, kept the fluids running"
+        },
+        {
+          "clock": "4:10 AM",
+          "beat": "SpO2 (oxygen saturation) 84%, breathing 32, pink frothy sputum",
+          "banner": "RAPID RESPONSE",
+          "outcome": "Fluid in her lungs. 3 mistakes. Every one avoidable."
+        }
+      ]
     },
-    {
-     "text": "Back pain, chills, fever: STOP the blood now",
-     "anchor": "ABC"
+    "rewind": {
+      "clock": "3:05 AM, same patient",
+      "caught_it": [
+        {
+          "text": "Recheck the BP by hand. Look at her: alert? dizzy?"
+        },
+        {
+          "text": "Listen to her lungs, check swelling and urine, review tonight's BP pills"
+        },
+        {
+          "text": "Call the provider with your findings. Fluids only as ordered, then reassess"
+        },
+        {
+          "text": "Crackles or breathless on fluids: stop them, sit her up, oxygen, call"
+        }
+      ]
     },
-    {
-     "text": "Keep the vein open: normal saline with new tubing. Stay, vitals, call the provider and blood bank",
-     "anchor": "PRIORITY"
-    }
-   ]
+    "choice": {
+      "question": "Heart failure. BP 86/50, asleep, no complaints.",
+      "a": "Open the fluids wide",
+      "b": "Recheck, assess her lungs, call",
+      "answer": "B"
+    },
+    "save_card": {
+      "title": "HEART FAILURE + LOW BP (ASSESS BEFORE YOU POUR)",
+      "items": [
+        "Recheck the BP by hand",
+        "Lungs, swelling, urine, tonight's meds",
+        "Fluids only as ordered, then reassess",
+        "Crackles or breathless: stop, sit up, call"
+      ],
+      "seconds": 4
+    },
+    "memory_line": "Weak pump, low BP: assess before you pour.",
+    "caption_lesson": "🌙 Night shift, 3:05 AM. She's 79 with heart failure (a weak pump). She had her evening blood pressure pills.\n• BP (blood pressure) 86/50 on the automatic cuff. Asleep\n\n❌ 3 mistakes, 3 error types\n1️⃣ Acted too soon: opened 1 liter of saline wide, never assessed her\n2️⃣ Scope error: gave a fluid bolus with no order\n3️⃣ Acted too late: crackles and a wet cough called \"just a cold\", fluids kept running\n➡️ 4:10 AM: SpO2 (oxygen saturation) 84%, pink frothy sputum. Rapid response.\n\n💧 IV (intravenous) fluids in heart failure (ASSESS BEFORE YOU POUR)\n• A weak pump can't move extra fluid forward\n• It backs up into the lungs: crackles, a wet cough, breathless lying flat\n• A low BP has many causes. Find hers first\n\n✅ The right move\n• Recheck the BP by hand and look at her\n• Listen to the lungs, check swelling and urine, review tonight's meds\n• Call the provider. Fluids only as ordered, then reassess\n• Crackles or breathless on fluids: stop them, sit her up, oxygen, call\n\n🧠 Weak pump, low BP: assess before you pour.",
+    "share_line": "📤 Send this to the nurse who'd open the fluids before listening to the lungs.",
+    "sources": [
+      "2022 AHA/ACC/HFSA (American Heart Association, American College of Cardiology, Heart Failure Society of America) Guideline for the Management of Heart Failure",
+      "Lewis's Medical-Surgical Nursing, 13th ed. (2026): heart failure and fluid volume excess"
+    ],
+    "rn_checks": [
+      "Low BP in heart failure after evening antihypertensives: recheck manually and assess before acting",
+      "Nurse can't start a fluid bolus without an order or protocol (SCOPE ERROR label)",
+      "Fluid overload signs: crackles, wet cough, orthopnea, low SpO2, pink frothy sputum (acute pulmonary edema): stop fluids, sit up, oxygen, call",
+      "Diuretic not named on purpose (furosemide vs spironolactone off until Dec 19). OK?",
+      "Story: 1 L saline wide open at 3:07, crackles by 3:40, SpO2 84% with pink frothy sputum by 4:10. Realistic?",
+      "Not a shock-types Reel (off until Dec 5): no shock classification taught. OK?",
+      "Memory phrase is NEW: (ASSESS BEFORE YOU POUR). Keep or swap?",
+      "Smart Prep labels: ACTED TOO SOON, SCOPE ERROR, ACTED TOO LATE. Fit?",
+      "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+    ],
+    "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
   },
-  "choice": {
-   "question": "Blood running. Back pain, chills, fever.",
-   "a": "Slow it down, call the provider",
-   "b": "Stop it, saline with new tubing, call",
-   "answer": "B"
+  {
+    "post_id": "2026-11-23_2300_hydralazine",
+    "slot_manila": "Mon Nov 23, 11:00 pm",
+    "slot_utc": "2026-11-23T15:00:00Z",
+    "lane": "PHARM",
+    "keyword": "PHARM",
+    "format": "story (high stakes, night shift)",
+    "title": "PHARM · Hydralazine vs hydroxyzine (READ EVERY LETTER) (high stakes, night shift, Smart Prep errors)",
+    "hook": "Nurses: hydrALAZINE or hydrOXYzine? One letter. One crash.",
+    "hook_backups": [
+      "Nurses: the scanner beeps 'wrong drug' at 2 AM. Override?",
+      "Nurses: he asked for an anxiety pill. Why did his BP crash?"
+    ],
+    "belief": "Drugs that start the same are close enough to grab fast.",
+    "score": {
+      "virality": 23,
+      "difficulty": 22,
+      "search": 23,
+      "value": 23,
+      "total": 91
+    },
+    "smart_prep": [
+      "MISSED KEYWORD",
+      "HABIT OVER STANDARD",
+      "WRONG PRIORITY"
+    ],
+    "story": {
+      "patient": "81-year-old man who can't sleep and feels anxious; as-needed order: hydrOXYzine 25 mg by mouth for anxiety",
+      "timeline": [
+        {
+          "clock": "2:30 AM",
+          "beat": "'I'm so anxious, I can't sleep.' Patient and nurse in frame with the hook"
+        },
+        {
+          "clock": "2:33 AM",
+          "beat": "Two bins side by side. The nurse reads 'hydr...' and grabs hydrALAZINE 25 mg",
+          "mistake": "MISTAKE 1 · MISSED KEYWORD",
+          "mistake_line": "Read 'hydr' and stopped reading"
+        },
+        {
+          "clock": "2:34 AM",
+          "beat": "The scanner beeps 'wrong drug'. 'It's acting up.' Override",
+          "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
+          "mistake_line": "Overrode the scanner"
+        },
+        {
+          "clock": "3:30 AM",
+          "beat": "'I feel dizzy.' The nurse finishes the med pass first",
+          "mistake": "MISTAKE 3 · WRONG PRIORITY",
+          "mistake_line": "Finished the med pass before the dizzy patient"
+        },
+        {
+          "clock": "3:45 AM",
+          "beat": "BP (blood pressure) 84/48, heart rate 112, dizzy and confused",
+          "banner": "RAPID RESPONSE",
+          "outcome": "One letter. 3 mistakes. Every one avoidable."
+        }
+      ]
+    },
+    "rewind": {
+      "clock": "2:30 AM, same patient",
+      "caught_it": [
+        {
+          "text": "Read the whole name. Tall-man letters: hydrALAZINE, hydrOXYzine"
+        },
+        {
+          "text": "Scan every dose. A scanner alert means stop and check"
+        },
+        {
+          "text": "Match the drug to the reason: anxiety is hydroxyzine, blood pressure is hydralazine"
+        },
+        {
+          "text": "Dizzy after a dose? Him first: BP, stay with him, call"
+        }
+      ]
+    },
+    "choice": {
+      "question": "2 AM. The scanner says 'wrong drug'.",
+      "a": "Override it: it's acting up",
+      "b": "Stop, read every letter, check the order",
+      "answer": "B"
+    },
+    "save_card": {
+      "title": "HYDRALAZINE VS HYDROXYZINE (READ EVERY LETTER)",
+      "items": [
+        "hydrALAZINE: lowers blood pressure",
+        "hydrOXYzine: eases anxiety and itching",
+        "Scanner alert: stop and check",
+        "Dizzy after a dose: BP first, then call"
+      ],
+      "seconds": 4
+    },
+    "memory_line": "One letter apart. Read every letter.",
+    "caption_lesson": "🌙 Night shift, 2:30 AM. He's 81, anxious, can't sleep. His as-needed order: hydrOXYzine 25 mg by mouth.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: read \"hydr...\" and grabbed hydrALAZINE\n2️⃣ Habit over standard: the scanner said \"wrong drug\", and the nurse overrode it\n3️⃣ Wrong priority: \"I feel dizzy\", and the med pass came first\n➡️ 3:45 AM: BP (blood pressure) 84/48, dizzy and confused. Rapid response.\n\n🔤 Hydralazine vs hydroxyzine (READ EVERY LETTER)\n• hydrALAZINE: relaxes the arteries and lowers blood pressure\n• hydrOXYzine: an antihistamine for anxiety and itching\n• Look-alike, sound-alike names: tall-man letters show the difference\n\n✅ The right move\n• Read the whole name, every letter\n• Scan every dose. A scanner alert means stop and check\n• Match the drug to the reason it's ordered\n• Dizzy after a dose? Check BP, stay with him, call\n\n🧠 One letter apart. Read every letter.",
+    "share_line": "📤 Send this to the nurse who'd override the scanner at 2 AM.",
+    "sources": [
+      "ISMP (Institute for Safe Medication Practices) List of Confused Drug Names",
+      "ISMP and FDA (U.S. Food and Drug Administration) lists of look-alike drug names with recommended tall-man letters",
+      "Hydralazine hydrochloride tablets prescribing information (DailyMed)"
+    ],
+    "rn_checks": [
+      "hydrALAZINE / hydrOXYzine is a listed look-alike, sound-alike pair with tall-man lettering (ISMP)",
+      "Hydralazine: arterial vasodilator; hypotension with reflex tachycardia",
+      "Story: hydralazine 25 mg by mouth given in error to an 81-year-old not on it (usual start is 10 mg four times a day); BP 84/48, heart rate 112, dizzy and confused about 70 minutes later (onset about 45 min, peak about 2 h). Softened from 72/40 after Vera's check. Realistic?",
+      "Hydroxyzine in an 81-year-old is itself on the Beers list (anticholinergic). Not raised in the Reel to keep one lesson; diphenhydramine Beers Reel posted Nov 23. OK?",
+      "Labetalol (HTN emergency, Nov 23) is a different drug. OK under the 30-day rule?",
+      "Memory phrase is NEW: (READ EVERY LETTER). Keep or swap?",
+      "Smart Prep labels: MISSED KEYWORD, HABIT OVER STANDARD, WRONG PRIORITY. Fit?",
+      "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+    ],
+    "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
   },
-  "save_card": {
-   "title": "TRANSFUSION REACTION (STOP THE BLOOD, KEEP THE VEIN)",
-   "items": [
-    "First 15 minutes: the RN stays",
-    "Back pain, chills, fever: stop the blood",
-    "Keep the vein open: saline, new tubing",
-    "Call the provider and blood bank, send the bag and tubing back"
-   ],
-   "seconds": 4
+  {
+    "post_id": "2026-11-24_0100_bupropion",
+    "slot_manila": "Tue Nov 24, 1:00 am",
+    "slot_utc": "2026-11-23T17:00:00Z",
+    "lane": "PHARM",
+    "keyword": "PHARM",
+    "format": "story (high stakes, night shift)",
+    "title": "PHARM · Bupropion XL: do not crush (XL MEANS WHOLE) (high stakes, night shift, Smart Prep errors)",
+    "hook": "Nurses: she can't swallow pills. Crush the XL?",
+    "hook_backups": [
+      "Nurses: crushed into applesauce at 5 AM. Then a seizure.",
+      "Nurses: two letters on the label decide everything. Which?"
+    ],
+    "belief": "Any pill can be crushed if the patient can't swallow it.",
+    "score": {
+      "virality": 23,
+      "difficulty": 21,
+      "search": 23,
+      "value": 23,
+      "total": 90
+    },
+    "smart_prep": [
+      "MISSED KEYWORD",
+      "SCOPE ERROR",
+      "ACTED TOO LATE"
+    ],
+    "story": {
+      "patient": "73-year-old woman with trouble swallowing since a stroke last year; bupropion XL (extended release) 300 mg every morning for depression",
+      "timeline": [
+        {
+          "clock": "5:20 AM",
+          "beat": "Early med pass. 'I can't swallow big pills.' Patient and nurse in frame with the hook"
+        },
+        {
+          "clock": "5:22 AM",
+          "beat": "Every pill crushed into applesauce. Nobody reads 'XL' on the label",
+          "mistake": "MISTAKE 1 · MISSED KEYWORD",
+          "mistake_line": "Never read 'XL' on the label"
+        },
+        {
+          "clock": "5:25 AM",
+          "beat": "'Can you give her this?' The cup goes to the nursing assistant",
+          "mistake": "MISTAKE 2 · SCOPE ERROR",
+          "mistake_line": "Asked the aide to give the meds"
+        },
+        {
+          "clock": "6:05 AM",
+          "beat": "Jittery, twitching, heart rate 116. 'Just anxious.'",
+          "mistake": "MISTAKE 3 · ACTED TOO LATE",
+          "mistake_line": "Called twitching 'anxiety'"
+        },
+        {
+          "clock": "6:30 AM",
+          "beat": "A seizure",
+          "banner": "RAPID RESPONSE",
+          "outcome": "The whole day's dose, all at once. 3 mistakes. Every one avoidable."
+        }
+      ]
+    },
+    "rewind": {
+      "clock": "5:20 AM, same patient",
+      "caught_it": [
+        {
+          "text": "XL, ER, SR, CR, LA on the label: never crush. A few can be split or opened: ask pharmacy"
+        },
+        {
+          "text": "Can't swallow it whole? Hold it, call pharmacy and the provider for another form"
+        },
+        {
+          "text": "In the hospital, the nurse gives the meds"
+        },
+        {
+          "text": "New twitching or jitters after a dose: check her, seizure precautions, report"
+        }
+      ]
+    },
+    "choice": {
+      "question": "Bupropion XL due. She can't swallow tablets.",
+      "a": "Crush it into applesauce",
+      "b": "Hold it, call pharmacy for another form",
+      "answer": "B"
+    },
+    "save_card": {
+      "title": "DO NOT CRUSH (XL MEANS WHOLE)",
+      "items": [
+        "XL, ER, SR, CR, LA: never crush",
+        "Crushed XL: the whole dose at once",
+        "Can't swallow? Ask pharmacy for another form",
+        "Bupropion too fast: seizure risk"
+      ],
+      "seconds": 4
+    },
+    "memory_line": "XL means whole. Never crush.",
+    "caption_lesson": "🌙 Night shift, 5:20 AM med pass. She's 73, trouble swallowing since a stroke. Bupropion XL (extended release) 300 mg every morning.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: crushed every pill, never read \"XL\"\n2️⃣ Scope error: handed the cup to the nursing assistant to give\n3️⃣ Acted too late: twitching and jitters called \"just anxious\"\n➡️ 6:30 AM: a seizure. Rapid response.\n\n💊 Bupropion XL (XL MEANS WHOLE)\n• XL tablets release the dose slowly over the day\n• Crushed, the whole day's dose hits at once\n• Bupropion's seizure risk climbs with dose and speed\n\n✅ The right move\n• XL, ER (extended release), SR (sustained release), CR (controlled release), LA (long acting) on the label: never crush. A few can be split or opened: ask pharmacy\n• Can't swallow it? Hold it and call pharmacy and the provider for another form\n• In the hospital, the nurse gives the meds\n• New twitching or jitters: check her, seizure precautions, report\n\n🧠 XL means whole. Never crush.",
+    "share_line": "📤 Send this to the nurse who crushes everything into applesauce.",
+    "sources": [
+      "Bupropion hydrochloride extended-release (XL) tablets prescribing information (DailyMed): do not crush, chew or divide; seizure risk",
+      "ISMP (Institute for Safe Medication Practices) Oral Dosage Forms That Should Not Be Crushed"
+    ],
+    "rn_checks": [
+      "Bupropion XL must be swallowed whole; crushing raises the risk of adverse effects including seizures (label)",
+      "Bupropion seizure risk is dose-related",
+      "Story: crushed 300 mg XL at 5:22, jitters and twitching by 6:05, seizure 6:30. Realistic timing?",
+      "Hospital wording: 'In the hospital, the nurse gives the meds' (certified medication aides give meds in some long-term care settings)",
+      "Extended-release forms: never crush; a few can be split or opened (for example some ER tablets and capsules), so 'ask pharmacy'. Bupropion XL itself: swallow whole (label). OK?",
+      "Memory phrase is NEW: (XL MEANS WHOLE). Keep or swap?",
+      "Story clock is the 5 to 6 AM med pass (bupropion XL is a morning dose). OK for the night-shift rule?",
+      "Smart Prep labels: MISSED KEYWORD, SCOPE ERROR, ACTED TOO LATE. Fit?",
+      "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'",
+      "Severe stroke is a listed predisposing factor for bupropion seizures (label), which fits this patient"
+    ],
+    "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
   },
-  "memory_line": "Reaction? Stop the blood, keep the vein.",
-  "caption_lesson": "🌙 Night shift, 1:10 AM. She's 76, a stomach bleed, hemoglobin 6.8. Her first unit of blood starts.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Scope error: left the first 15 minutes to the aide\n2️⃣ Habit over standard: back pain and chills, so the nurse slowed the blood\n3️⃣ Wrong priority: paged the provider and waited, blood still running\n➡️ 1:45 AM: BP (blood pressure) 78/44, dark red urine. Rapid response.\n\n🩸 Transfusion reaction (STOP THE BLOOD, KEEP THE VEIN)\n• Watch closely in the first 15 minutes: the most dangerous reactions often start early\n• Signs: back pain, chills, fever, fast heart rate, low BP, dark urine, trouble breathing, hives\n\n✅ The right move\n• Two-person check at the bedside before it starts\n• The RN (registered nurse) stays for the first 15 minutes, vitals per policy\n• Any reaction sign: stop the blood first\n• Keep the vein open with normal saline and new tubing\n• Stay, vitals, call the provider and the blood bank. Send the bag and tubing back, per policy\n\n🧠 Reaction? Stop the blood, keep the vein.",
-  "share_line": "📤 Send this to the nurse who'd slow the blood and wait for a call back.",
-  "sources": [
-   "AABB (Association for the Advancement of Blood and Biotherapies) Technical Manual, current edition: recognizing and managing transfusion reactions",
-   "Lewis's Medical-Surgical Nursing, 13th ed. (2026): blood transfusion and acute transfusion reactions"
-  ],
-  "rn_checks": [
-   "Signs: back pain, chills, fever, tachycardia, hypotension, dark urine (hemoglobinuria), oozing at the IV site suggest an acute hemolytic reaction; the cause (usually a mismatch) is not shown. OK?",
-   "Stop the transfusion first; keep the vein open with normal saline through NEW tubing (not the blood set); stay, vitals, notify the provider and blood bank; return the bag and tubing per policy",
-   "RN stays with the patient and assesses during the first 15 minutes (common policy wording, 'per policy' on screen)",
-   "Two-person bedside check: two identifiers, the unit, the order",
-   "Story numbers: temp 38.6 °C, heart rate 118, then BP 78/44 over about 35 minutes. Realistic?",
-   "Lane: blood is a biologic, keyword PHARM. OK?",
-   "Memory phrase is NEW: (STOP THE BLOOD, KEEP THE VEIN). Keep or swap?",
-   "Smart Prep labels on the stamps: SCOPE ERROR, HABIT OVER STANDARD, WRONG PRIORITY. Fit?",
-   "Choice answer B; hook, cover and caption line 1 open with 'Nurses:'"
-  ],
-  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
- },
- {
-  "post_id": "2026-11-23_1700_copdo2",
-  "slot_manila": "Mon Nov 23, 5:00 pm",
-  "slot_utc": "2026-11-23T09:00:00Z",
-  "lane": "PHARM",
-  "keyword": "PHARM",
-  "format": "story (high stakes, night shift)",
-  "title": "PHARM · Oxygen in COPD (88 TO 92, NEVER ZERO) (high stakes, night shift, Smart Prep errors)",
-  "hook": "Nurses: COPD, SpO2 82% at 2 AM. Hold the oxygen?",
-  "hook_backups": [
-   "Nurses: oxygen stops a COPD patient breathing. True?",
-   "Nurses: his sats are 82. 'That's his normal.' Is it?"
-  ],
-  "belief": "Oxygen is dangerous in COPD, so you hold it even when sats are low.",
-  "score": {
-   "virality": 24,
-   "difficulty": 22,
-   "search": 24,
-   "value": 24,
-   "total": 94
-  },
-  "smart_prep": [
-   "BEYOND THE STEM",
-   "HABIT OVER STANDARD",
-   "ACTED TOO LATE"
-  ],
-  "story": {
-   "patient": "72-year-old man with COPD (chronic obstructive pulmonary disease), admitted with pneumonia",
-   "timeline": [
-    {
-     "clock": "2:15 AM",
-     "beat": "Alarm: SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles. Patient and nurse in frame with the hook"
+  {
+    "post_id": "2026-11-24_0500_promethazine",
+    "slot_manila": "Tue Nov 24, 5:00 am",
+    "slot_utc": "2026-11-23T21:00:00Z",
+    "lane": "PHARM",
+    "keyword": "PHARM",
+    "format": "story (high stakes, night shift)",
+    "title": "PHARM · Promethazine IV (NEVER PUSH IT) (high stakes, night shift, Smart Prep errors)",
+    "hook": "Nurses: 2 AM nausea. Push promethazine in her hand IV?",
+    "hook_backups": [
+      "Nurses: 'It burns!' Keep pushing the promethazine?",
+      "Nurses: one quick IV push. Her hand turns white by morning."
+    ],
+    "belief": "Promethazine is a routine quick IV push for nausea.",
+    "score": {
+      "virality": 24,
+      "difficulty": 22,
+      "search": 21,
+      "value": 23,
+      "total": 90
     },
-    {
-     "clock": "2:17 AM",
-     "beat": "'His normal's probably low.' No baseline is charted anywhere",
-     "mistake": "MISTAKE 1 · BEYOND THE STEM",
-     "mistake_line": "Assumed a baseline nobody charted"
+    "smart_prep": [
+      "KNOWLEDGE GAP",
+      "MISSED KEYWORD",
+      "ACTED TOO LATE"
+    ],
+    "story": {
+      "patient": "68-year-old woman after gallbladder surgery, nauseated; order: promethazine 12.5 mg IV (intravenous) every 6 hours as needed. Her only IV is in the back of her hand",
+      "timeline": [
+        {
+          "clock": "2:10 AM",
+          "beat": "'I'm going to be sick.' Patient and nurse in frame with the hook"
+        },
+        {
+          "clock": "2:12 AM",
+          "beat": "Pushes it straight from the vial, undiluted, in under a minute",
+          "mistake": "MISTAKE 1 · KNOWLEDGE GAP",
+          "mistake_line": "Pushed it undiluted: the label changed in 2023"
+        },
+        {
+          "clock": "2:12 AM",
+          "beat": "Into the hand IV. The label says never a hand or wrist vein",
+          "mistake": "MISTAKE 2 · MISSED KEYWORD",
+          "mistake_line": "Skipped 'never in the hand or wrist'"
+        },
+        {
+          "clock": "2:13 AM",
+          "beat": "'It burns!' The nurse keeps pushing",
+          "mistake": "MISTAKE 3 · ACTED TOO LATE",
+          "mistake_line": "Kept pushing through 'it burns'"
+        },
+        {
+          "clock": "6:30 AM",
+          "beat": "Her hand is pale, cold and swollen, the fingers dusky, blisters forming",
+          "banner": "URGENT SURGERY CONSULT",
+          "outcome": "A badly injured hand from one push. 3 mistakes. Every one avoidable."
+        }
+      ]
     },
-    {
-     "clock": "2:18 AM",
-     "beat": "'Oxygen stops his drive to breathe.' The oxygen stays off",
-     "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
-     "mistake_line": "Held oxygen for 'COPD drive'"
+    "rewind": {
+      "clock": "2:10 AM, same patient",
+      "caught_it": [
+        {
+          "text": "Preferred route: deep IM (intramuscular)"
+        },
+        {
+          "text": "IV only if needed: dilute in normal saline (1 mg/mL max), infuse over 20 to 40 minutes"
+        },
+        {
+          "text": "A large vein, ideally central. Never the hand or wrist"
+        },
+        {
+          "text": "Burning or pain: stop now and report"
+        }
+      ]
     },
-    {
-     "clock": "2:50 AM",
-     "beat": "He's drowsy. 'Finally sleeping.' No recheck",
-     "mistake": "MISTAKE 3 · ACTED TOO LATE",
-     "mistake_line": "Called drowsy 'sleeping', no recheck"
+    "choice": {
+      "question": "Promethazine IV ordered. Her only IV is in her hand.",
+      "a": "Push it: it's a small dose",
+      "b": "Ask for IM or a large vein, dilute, infuse",
+      "answer": "B"
     },
-    {
-     "clock": "3:20 AM",
-     "beat": "SpO2 74%, hard to wake, heart rate 132",
-     "banner": "RAPID RESPONSE",
-     "outcome": "Too little oxygen, not too much. 3 mistakes. Every one avoidable."
-    }
-   ]
-  },
-  "rewind": {
-   "clock": "2:15 AM, same patient",
-   "caught_it": [
-    {
-     "text": "Low oxygen? Give oxygen. Never withhold it",
-     "anchor": "ABC"
+    "save_card": {
+      "title": "PROMETHAZINE IV (NEVER PUSH IT)",
+      "items": [
+        "Preferred: deep IM (into the muscle)",
+        "IV: dilute (1 mg/mL max), infuse over 20 to 40 min",
+        "Large vein. Never the hand or wrist",
+        "Burning or pain: stop and report"
+      ],
+      "seconds": 4
     },
-    {
-     "text": "COPD with a CO2 (carbon dioxide) risk: controlled oxygen, target SpO2 88 to 92%",
-     "anchor": "STANDARD"
-    },
-    {
-     "text": "Nasal cannula or a Venturi mask, as ordered or per protocol",
-     "anchor": "STANDARD"
-    },
-    {
-     "text": "Recheck SpO2, breathing, alertness. Drowsy or confused? Call now, blood gas as ordered",
-     "anchor": "STABLE VS UNSTABLE"
-    }
-   ]
-  },
-  "choice": {
-   "question": "COPD. SpO2 82%, breathing 28.",
-   "a": "Hold oxygen to protect his drive",
-   "b": "Oxygen now, aim 88 to 92%, call",
-   "answer": "B"
-  },
-  "save_card": {
-   "title": "COPD + LOW OXYGEN (88 TO 92, NEVER ZERO)",
-   "items": [
-    "Low oxygen? Never withhold it",
-    "Target SpO2 88 to 92% if CO2 risk",
-    "Controlled oxygen, as ordered",
-    "Drowsy or confused: call, blood gas"
-   ],
-   "seconds": 4
-  },
-  "memory_line": "COPD: aim for 88 to 92. Never zero.",
-  "caption_lesson": "🌙 Night shift, 2:15 AM. He's 72 with COPD (chronic obstructive pulmonary disease), admitted with pneumonia.\n• SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles\n\n❌ 3 mistakes, 3 error types\n1️⃣ Beyond the stem: \"His normal's probably low.\" No baseline was charted\n2️⃣ Habit over standard: held the oxygen for \"COPD drive\"\n3️⃣ Acted too late: called drowsy \"sleeping\", no recheck\n➡️ 3:20 AM: SpO2 74%, hard to wake. Rapid response.\n\n🫁 Oxygen in COPD (88 TO 92, NEVER ZERO)\n• Low oxygen kills faster than high CO2 (carbon dioxide)\n• Some COPD patients hold on to CO2, so too much oxygen can also make them drowsy\n• The answer is controlled oxygen, not none\n\n✅ The right move\n• Low oxygen? Give oxygen. Never withhold it\n• COPD with a CO2 risk: aim for SpO2 88 to 92%, as ordered\n• Nasal cannula or a Venturi mask, as ordered or per protocol\n• Recheck SpO2, breathing and alertness. Drowsy or confused? Call now, blood gas as ordered\n\n🧠 COPD: aim for 88 to 92. Never zero.",
-  "share_line": "📤 Send this to the nurse who still believes oxygen stops COPD patients breathing.",
-  "sources": [
-   "BTS (British Thoracic Society) Guideline for oxygen use in adults in healthcare and emergency settings (O'Driscoll et al., Thorax 2017)",
-   "GOLD (Global Initiative for Chronic Obstructive Lung Disease) Global Strategy for Prevention, Diagnosis and Management of COPD: 2027 Report"
-  ],
-  "rn_checks": [
-   "Target SpO2 88 to 92% for patients at risk of hypercapnic (CO2) respiratory failure, such as COPD (BTS 2017). Vera did not check the exact wording inside the GOLD 2027 report",
-   "Never withhold oxygen from a hypoxemic patient; controlled oxygen via nasal cannula or Venturi 24 to 28%, as ordered or per protocol",
-   "Drowsiness can be hypoxia OR rising CO2: call, ABG (arterial blood gas) as ordered",
-   "Story numbers: SpO2 82, then 74%; breathing 28; heart rate 132; hard to wake at 3:20 AM. Realistic?",
-   "Inhalers (asthma) posted Nov 22: this is oxygen in COPD, a different topic. OK under the 30-day rule?",
-   "Memory phrase is NEW: (88 TO 92, NEVER ZERO). Keep or swap?",
-   "Smart Prep labels: BEYOND THE STEM (assumed a baseline), HABIT OVER STANDARD, ACTED TOO LATE. Fit?",
-   "Choice answer B; keyword PHARM (oxygen is a prescribed drug); hook, cover and caption line 1 open with 'Nurses:'"
-  ],
-  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
- },
- {
-  "post_id": "2026-11-23_2100_hffluids",
-  "slot_manila": "Mon Nov 23, 9:00 pm",
-  "slot_utc": "2026-11-23T13:00:00Z",
-  "lane": "PHARM",
-  "keyword": "PHARM",
-  "format": "story (high stakes, night shift)",
-  "title": "PHARM · IV fluids in heart failure (ASSESS BEFORE YOU POUR) (high stakes, night shift, Smart Prep errors)",
-  "hook": "Nurses: weak heart, BP 86/50. Open the fluids?",
-  "hook_backups": [
-   "Nurses: low BP at 3 AM. A fluid bolus fixes it?",
-   "Nurses: BP 86/50 and she's asleep. Bolus now?"
-  ],
-  "belief": "Low blood pressure always means give fluids fast.",
-  "score": {
-   "virality": 23,
-   "difficulty": 22,
-   "search": 23,
-   "value": 24,
-   "total": 92
-  },
-  "smart_prep": [
-   "ACTED TOO SOON",
-   "SCOPE ERROR",
-   "ACTED TOO LATE"
-  ],
-  "story": {
-   "patient": "79-year-old woman with heart failure (a weak pump), admitted with a urinary infection; she had her evening blood pressure pills",
-   "timeline": [
-    {
-     "clock": "3:05 AM",
-     "beat": "Automatic cuff: BP (blood pressure) 86/50. She's asleep. Patient and nurse in frame with the hook"
-    },
-    {
-     "clock": "3:07 AM",
-     "beat": "'She's dry.' The IV (intravenous) saline goes wide open, 1 liter. Nobody listens to her lungs",
-     "mistake": "MISTAKE 1 · ACTED TOO SOON",
-     "mistake_line": "Treated a number before assessing her"
-    },
-    {
-     "clock": "3:08 AM",
-     "beat": "No call, no order for the bolus",
-     "mistake": "MISTAKE 2 · SCOPE ERROR",
-     "mistake_line": "Gave a fluid bolus with no order"
-    },
-    {
-     "clock": "3:40 AM",
-     "beat": "Crackles, a wet cough, 'I can't lie flat.' 'Just a cold.' Fluids keep running",
-     "mistake": "MISTAKE 3 · ACTED TOO LATE",
-     "mistake_line": "Heard crackles, kept the fluids running"
-    },
-    {
-     "clock": "4:10 AM",
-     "beat": "SpO2 (oxygen saturation) 84%, breathing 32, pink frothy sputum",
-     "banner": "RAPID RESPONSE",
-     "outcome": "Fluid in her lungs. 3 mistakes. Every one avoidable."
-    }
-   ]
-  },
-  "rewind": {
-   "clock": "3:05 AM, same patient",
-   "caught_it": [
-    {
-     "text": "Recheck the BP by hand. Look at her: alert? dizzy?",
-     "anchor": "ASSESS FIRST"
-    },
-    {
-     "text": "Listen to her lungs, check swelling and urine, review tonight's BP pills",
-     "anchor": "NURSING PROCESS"
-    },
-    {
-     "text": "Call the provider with your findings. Fluids only as ordered, then reassess",
-     "anchor": "SCOPE"
-    },
-    {
-     "text": "Crackles or breathless on fluids: stop them, sit her up, oxygen, call",
-     "anchor": "ABC"
-    }
-   ]
-  },
-  "choice": {
-   "question": "Heart failure. BP 86/50, asleep, no complaints.",
-   "a": "Open the fluids wide",
-   "b": "Recheck, assess her lungs, call",
-   "answer": "B"
-  },
-  "save_card": {
-   "title": "HEART FAILURE + LOW BP (ASSESS BEFORE YOU POUR)",
-   "items": [
-    "Recheck the BP by hand",
-    "Lungs, swelling, urine, tonight's meds",
-    "Fluids only as ordered, then reassess",
-    "Crackles or breathless: stop, sit up, call"
-   ],
-   "seconds": 4
-  },
-  "memory_line": "Weak pump, low BP: assess before you pour.",
-  "caption_lesson": "🌙 Night shift, 3:05 AM. She's 79 with heart failure (a weak pump). She had her evening blood pressure pills.\n• BP (blood pressure) 86/50 on the automatic cuff. Asleep\n\n❌ 3 mistakes, 3 error types\n1️⃣ Acted too soon: opened 1 liter of saline wide, never assessed her\n2️⃣ Scope error: gave a fluid bolus with no order\n3️⃣ Acted too late: crackles and a wet cough called \"just a cold\", fluids kept running\n➡️ 4:10 AM: SpO2 (oxygen saturation) 84%, pink frothy sputum. Rapid response.\n\n💧 IV (intravenous) fluids in heart failure (ASSESS BEFORE YOU POUR)\n• A weak pump can't move extra fluid forward\n• It backs up into the lungs: crackles, a wet cough, breathless lying flat\n• A low BP has many causes. Find hers first\n\n✅ The right move\n• Recheck the BP by hand and look at her\n• Listen to the lungs, check swelling and urine, review tonight's meds\n• Call the provider. Fluids only as ordered, then reassess\n• Crackles or breathless on fluids: stop them, sit her up, oxygen, call\n\n🧠 Weak pump, low BP: assess before you pour.",
-  "share_line": "📤 Send this to the nurse who'd open the fluids before listening to the lungs.",
-  "sources": [
-   "2022 AHA/ACC/HFSA (American Heart Association, American College of Cardiology, Heart Failure Society of America) Guideline for the Management of Heart Failure",
-   "Lewis's Medical-Surgical Nursing, 13th ed. (2026): heart failure and fluid volume excess"
-  ],
-  "rn_checks": [
-   "Low BP in heart failure after evening antihypertensives: recheck manually and assess before acting",
-   "Nurse can't start a fluid bolus without an order or protocol (SCOPE ERROR label)",
-   "Fluid overload signs: crackles, wet cough, orthopnea, low SpO2, pink frothy sputum (acute pulmonary edema): stop fluids, sit up, oxygen, call",
-   "Diuretic not named on purpose (furosemide vs spironolactone off until Dec 19). OK?",
-   "Story: 1 L saline wide open at 3:07, crackles by 3:40, SpO2 84% with pink frothy sputum by 4:10. Realistic?",
-   "Not a shock-types Reel (off until Dec 5): no shock classification taught. OK?",
-   "Memory phrase is NEW: (ASSESS BEFORE YOU POUR). Keep or swap?",
-   "Smart Prep labels: ACTED TOO SOON, SCOPE ERROR, ACTED TOO LATE. Fit?",
-   "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
-  ],
-  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
- },
- {
-  "post_id": "2026-11-23_2300_hydralazine",
-  "slot_manila": "Mon Nov 23, 11:00 pm",
-  "slot_utc": "2026-11-23T15:00:00Z",
-  "lane": "PHARM",
-  "keyword": "PHARM",
-  "format": "story (high stakes, night shift)",
-  "title": "PHARM · Hydralazine vs hydroxyzine (READ EVERY LETTER) (high stakes, night shift, Smart Prep errors)",
-  "hook": "Nurses: hydrALAZINE or hydrOXYzine? One letter. One crash.",
-  "hook_backups": [
-   "Nurses: the scanner beeps 'wrong drug' at 2 AM. Override?",
-   "Nurses: he asked for an anxiety pill. Why did his BP crash?"
-  ],
-  "belief": "Drugs that start the same are close enough to grab fast.",
-  "score": {
-   "virality": 23,
-   "difficulty": 22,
-   "search": 23,
-   "value": 23,
-   "total": 91
-  },
-  "smart_prep": [
-   "MISSED KEYWORD",
-   "HABIT OVER STANDARD",
-   "WRONG PRIORITY"
-  ],
-  "story": {
-   "patient": "81-year-old man who can't sleep and feels anxious; as-needed order: hydrOXYzine 25 mg by mouth for anxiety",
-   "timeline": [
-    {
-     "clock": "2:30 AM",
-     "beat": "'I'm so anxious, I can't sleep.' Patient and nurse in frame with the hook"
-    },
-    {
-     "clock": "2:33 AM",
-     "beat": "Two bins side by side. The nurse reads 'hydr...' and grabs hydrALAZINE 25 mg",
-     "mistake": "MISTAKE 1 · MISSED KEYWORD",
-     "mistake_line": "Read 'hydr' and stopped reading"
-    },
-    {
-     "clock": "2:34 AM",
-     "beat": "The scanner beeps 'wrong drug'. 'It's acting up.' Override",
-     "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
-     "mistake_line": "Overrode the scanner"
-    },
-    {
-     "clock": "3:30 AM",
-     "beat": "'I feel dizzy.' The nurse finishes the med pass first",
-     "mistake": "MISTAKE 3 · WRONG PRIORITY",
-     "mistake_line": "Finished the med pass before the dizzy patient"
-    },
-    {
-     "clock": "3:45 AM",
-     "beat": "BP (blood pressure) 84/48, heart rate 112, dizzy and confused",
-     "banner": "RAPID RESPONSE",
-     "outcome": "One letter. 3 mistakes. Every one avoidable."
-    }
-   ]
-  },
-  "rewind": {
-   "clock": "2:30 AM, same patient",
-   "caught_it": [
-    {
-     "text": "Read the whole name. Tall-man letters: hydrALAZINE, hydrOXYzine",
-     "anchor": "READ EVERY LETTER"
-    },
-    {
-     "text": "Scan every dose. A scanner alert means stop and check",
-     "anchor": "STANDARD"
-    },
-    {
-     "text": "Match the drug to the reason: anxiety is hydroxyzine, blood pressure is hydralazine",
-     "anchor": "STANDARD"
-    },
-    {
-     "text": "Dizzy after a dose? Him first: BP, stay with him, call",
-     "anchor": "PRIORITY"
-    }
-   ]
-  },
-  "choice": {
-   "question": "2 AM. The scanner says 'wrong drug'.",
-   "a": "Override it: it's acting up",
-   "b": "Stop, read every letter, check the order",
-   "answer": "B"
-  },
-  "save_card": {
-   "title": "HYDRALAZINE VS HYDROXYZINE (READ EVERY LETTER)",
-   "items": [
-    "hydrALAZINE: lowers blood pressure",
-    "hydrOXYzine: eases anxiety and itching",
-    "Scanner alert: stop and check",
-    "Dizzy after a dose: BP first, then call"
-   ],
-   "seconds": 4
-  },
-  "memory_line": "One letter apart. Read every letter.",
-  "caption_lesson": "🌙 Night shift, 2:30 AM. He's 81, anxious, can't sleep. His as-needed order: hydrOXYzine 25 mg by mouth.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: read \"hydr...\" and grabbed hydrALAZINE\n2️⃣ Habit over standard: the scanner said \"wrong drug\", and the nurse overrode it\n3️⃣ Wrong priority: \"I feel dizzy\", and the med pass came first\n➡️ 3:45 AM: BP (blood pressure) 84/48, dizzy and confused. Rapid response.\n\n🔤 Hydralazine vs hydroxyzine (READ EVERY LETTER)\n• hydrALAZINE: relaxes the arteries and lowers blood pressure\n• hydrOXYzine: an antihistamine for anxiety and itching\n• Look-alike, sound-alike names: tall-man letters show the difference\n\n✅ The right move\n• Read the whole name, every letter\n• Scan every dose. A scanner alert means stop and check\n• Match the drug to the reason it's ordered\n• Dizzy after a dose? Check BP, stay with him, call\n\n🧠 One letter apart. Read every letter.",
-  "share_line": "📤 Send this to the nurse who'd override the scanner at 2 AM.",
-  "sources": [
-   "ISMP (Institute for Safe Medication Practices) List of Confused Drug Names",
-   "ISMP and FDA (U.S. Food and Drug Administration) lists of look-alike drug names with recommended tall-man letters",
-   "Hydralazine hydrochloride tablets prescribing information (DailyMed)"
-  ],
-  "rn_checks": [
-   "hydrALAZINE / hydrOXYzine is a listed look-alike, sound-alike pair with tall-man lettering (ISMP)",
-   "Hydralazine: arterial vasodilator; hypotension with reflex tachycardia",
-   "Story: hydralazine 25 mg by mouth given in error to an 81-year-old not on it (usual start is 10 mg four times a day); BP 84/48, heart rate 112, dizzy and confused about 70 minutes later (onset about 45 min, peak about 2 h). Softened from 72/40 after Vera's check. Realistic?",
-   "Hydroxyzine in an 81-year-old is itself on the Beers list (anticholinergic). Not raised in the Reel to keep one lesson; diphenhydramine Beers Reel posted Nov 23. OK?",
-   "Labetalol (HTN emergency, Nov 23) is a different drug. OK under the 30-day rule?",
-   "Memory phrase is NEW: (READ EVERY LETTER). Keep or swap?",
-   "Smart Prep labels: MISSED KEYWORD, HABIT OVER STANDARD, WRONG PRIORITY. Fit?",
-   "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
-  ],
-  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
- },
- {
-  "post_id": "2026-11-24_0100_bupropion",
-  "slot_manila": "Tue Nov 24, 1:00 am",
-  "slot_utc": "2026-11-23T17:00:00Z",
-  "lane": "PHARM",
-  "keyword": "PHARM",
-  "format": "story (high stakes, night shift)",
-  "title": "PHARM · Bupropion XL: do not crush (XL MEANS WHOLE) (high stakes, night shift, Smart Prep errors)",
-  "hook": "Nurses: she can't swallow pills. Crush the XL?",
-  "hook_backups": [
-   "Nurses: crushed into applesauce at 5 AM. Then a seizure.",
-   "Nurses: two letters on the label decide everything. Which?"
-  ],
-  "belief": "Any pill can be crushed if the patient can't swallow it.",
-  "score": {
-   "virality": 23,
-   "difficulty": 21,
-   "search": 23,
-   "value": 23,
-   "total": 90
-  },
-  "smart_prep": [
-   "MISSED KEYWORD",
-   "SCOPE ERROR",
-   "ACTED TOO LATE"
-  ],
-  "story": {
-   "patient": "73-year-old woman with trouble swallowing since a stroke last year; bupropion XL (extended release) 300 mg every morning for depression",
-   "timeline": [
-    {
-     "clock": "5:20 AM",
-     "beat": "Early med pass. 'I can't swallow big pills.' Patient and nurse in frame with the hook"
-    },
-    {
-     "clock": "5:22 AM",
-     "beat": "Every pill crushed into applesauce. Nobody reads 'XL' on the label",
-     "mistake": "MISTAKE 1 · MISSED KEYWORD",
-     "mistake_line": "Never read 'XL' on the label"
-    },
-    {
-     "clock": "5:25 AM",
-     "beat": "'Can you give her this?' The cup goes to the nursing assistant",
-     "mistake": "MISTAKE 2 · SCOPE ERROR",
-     "mistake_line": "Asked the aide to give the meds"
-    },
-    {
-     "clock": "6:05 AM",
-     "beat": "Jittery, twitching, heart rate 116. 'Just anxious.'",
-     "mistake": "MISTAKE 3 · ACTED TOO LATE",
-     "mistake_line": "Called twitching 'anxiety'"
-    },
-    {
-     "clock": "6:30 AM",
-     "beat": "A seizure",
-     "banner": "RAPID RESPONSE",
-     "outcome": "The whole day's dose, all at once. 3 mistakes. Every one avoidable."
-    }
-   ]
-  },
-  "rewind": {
-   "clock": "5:20 AM, same patient",
-   "caught_it": [
-    {
-     "text": "XL, ER, SR, CR, LA on the label: never crush. A few can be split or opened: ask pharmacy",
-     "anchor": "READ EVERY LETTER"
-    },
-    {
-     "text": "Can't swallow it whole? Hold it, call pharmacy and the provider for another form",
-     "anchor": "STANDARD"
-    },
-    {
-     "text": "In the hospital, the nurse gives the meds",
-     "anchor": "SCOPE"
-    },
-    {
-     "text": "New twitching or jitters after a dose: check her, seizure precautions, report",
-     "anchor": "STABLE VS UNSTABLE"
-    }
-   ]
-  },
-  "choice": {
-   "question": "Bupropion XL due. She can't swallow tablets.",
-   "a": "Crush it into applesauce",
-   "b": "Hold it, call pharmacy for another form",
-   "answer": "B"
-  },
-  "save_card": {
-   "title": "DO NOT CRUSH (XL MEANS WHOLE)",
-   "items": [
-    "XL, ER, SR, CR, LA: never crush",
-    "Crushed XL: the whole dose at once",
-    "Can't swallow? Ask pharmacy for another form",
-    "Bupropion too fast: seizure risk"
-   ],
-   "seconds": 4
-  },
-  "memory_line": "XL means whole. Never crush.",
-  "caption_lesson": "🌙 Night shift, 5:20 AM med pass. She's 73, trouble swallowing since a stroke. Bupropion XL (extended release) 300 mg every morning.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: crushed every pill, never read \"XL\"\n2️⃣ Scope error: handed the cup to the nursing assistant to give\n3️⃣ Acted too late: twitching and jitters called \"just anxious\"\n➡️ 6:30 AM: a seizure. Rapid response.\n\n💊 Bupropion XL (XL MEANS WHOLE)\n• XL tablets release the dose slowly over the day\n• Crushed, the whole day's dose hits at once\n• Bupropion's seizure risk climbs with dose and speed\n\n✅ The right move\n• XL, ER (extended release), SR (sustained release), CR (controlled release), LA (long acting) on the label: never crush. A few can be split or opened: ask pharmacy\n• Can't swallow it? Hold it and call pharmacy and the provider for another form\n• In the hospital, the nurse gives the meds\n• New twitching or jitters: check her, seizure precautions, report\n\n🧠 XL means whole. Never crush.",
-  "share_line": "📤 Send this to the nurse who crushes everything into applesauce.",
-  "sources": [
-   "Bupropion hydrochloride extended-release (XL) tablets prescribing information (DailyMed): do not crush, chew or divide; seizure risk",
-   "ISMP (Institute for Safe Medication Practices) Oral Dosage Forms That Should Not Be Crushed"
-  ],
-  "rn_checks": [
-   "Bupropion XL must be swallowed whole; crushing raises the risk of adverse effects including seizures (label)",
-   "Bupropion seizure risk is dose-related",
-   "Story: crushed 300 mg XL at 5:22, jitters and twitching by 6:05, seizure 6:30. Realistic timing?",
-   "Hospital wording: 'In the hospital, the nurse gives the meds' (certified medication aides give meds in some long-term care settings)",
-   "Extended-release forms: never crush; a few can be split or opened (for example some ER tablets and capsules), so 'ask pharmacy'. Bupropion XL itself: swallow whole (label). OK?",
-   "Memory phrase is NEW: (XL MEANS WHOLE). Keep or swap?",
-   "Story clock is the 5 to 6 AM med pass (bupropion XL is a morning dose). OK for the night-shift rule?",
-   "Smart Prep labels: MISSED KEYWORD, SCOPE ERROR, ACTED TOO LATE. Fit?",
-   "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'",
-   "Severe stroke is a listed predisposing factor for bupropion seizures (label), which fits this patient"
-  ],
-  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
- },
- {
-  "post_id": "2026-11-24_0500_promethazine",
-  "slot_manila": "Tue Nov 24, 5:00 am",
-  "slot_utc": "2026-11-23T21:00:00Z",
-  "lane": "PHARM",
-  "keyword": "PHARM",
-  "format": "story (high stakes, night shift)",
-  "title": "PHARM · Promethazine IV (NEVER PUSH IT) (high stakes, night shift, Smart Prep errors)",
-  "hook": "Nurses: 2 AM nausea. Push promethazine in her hand IV?",
-  "hook_backups": [
-   "Nurses: 'It burns!' Keep pushing the promethazine?",
-   "Nurses: one quick IV push. Her hand turns white by morning."
-  ],
-  "belief": "Promethazine is a routine quick IV push for nausea.",
-  "score": {
-   "virality": 24,
-   "difficulty": 22,
-   "search": 21,
-   "value": 23,
-   "total": 90
-  },
-  "smart_prep": [
-   "KNOWLEDGE GAP",
-   "MISSED KEYWORD",
-   "ACTED TOO LATE"
-  ],
-  "story": {
-   "patient": "68-year-old woman after gallbladder surgery, nauseated; order: promethazine 12.5 mg IV (intravenous) every 6 hours as needed. Her only IV is in the back of her hand",
-   "timeline": [
-    {
-     "clock": "2:10 AM",
-     "beat": "'I'm going to be sick.' Patient and nurse in frame with the hook"
-    },
-    {
-     "clock": "2:12 AM",
-     "beat": "Pushes it straight from the vial, undiluted, in under a minute",
-     "mistake": "MISTAKE 1 · KNOWLEDGE GAP",
-     "mistake_line": "Pushed it undiluted: the label changed in 2023"
-    },
-    {
-     "clock": "2:12 AM",
-     "beat": "Into the hand IV. The label says never a hand or wrist vein",
-     "mistake": "MISTAKE 2 · MISSED KEYWORD",
-     "mistake_line": "Skipped 'never in the hand or wrist'"
-    },
-    {
-     "clock": "2:13 AM",
-     "beat": "'It burns!' The nurse keeps pushing",
-     "mistake": "MISTAKE 3 · ACTED TOO LATE",
-     "mistake_line": "Kept pushing through 'it burns'"
-    },
-    {
-     "clock": "6:30 AM",
-     "beat": "Her hand is pale, cold and swollen, the fingers dusky, blisters forming",
-     "banner": "URGENT SURGERY CONSULT",
-     "outcome": "A badly injured hand from one push. 3 mistakes. Every one avoidable."
-    }
-   ]
-  },
-  "rewind": {
-   "clock": "2:10 AM, same patient",
-   "caught_it": [
-    {
-     "text": "Preferred route: deep IM (intramuscular)",
-     "anchor": "STANDARD"
-    },
-    {
-     "text": "IV only if needed: dilute in normal saline (1 mg/mL max), infuse over 20 to 40 minutes",
-     "anchor": "KNOW THE LABEL"
-    },
-    {
-     "text": "A large vein, ideally central. Never the hand or wrist",
-     "anchor": "READ EVERY WORD"
-    },
-    {
-     "text": "Burning or pain: stop now and report",
-     "anchor": "ACT"
-    }
-   ]
-  },
-  "choice": {
-   "question": "Promethazine IV ordered. Her only IV is in her hand.",
-   "a": "Push it: it's a small dose",
-   "b": "Ask for IM or a large vein, dilute, infuse",
-   "answer": "B"
-  },
-  "save_card": {
-   "title": "PROMETHAZINE IV (NEVER PUSH IT)",
-   "items": [
-    "Preferred: deep IM (into the muscle)",
-    "IV: dilute (1 mg/mL max), infuse over 20 to 40 min",
-    "Large vein. Never the hand or wrist",
-    "Burning or pain: stop and report"
-   ],
-   "seconds": 4
-  },
-  "memory_line": "Promethazine: dilute, drip, big vein. Never push.",
-  "caption_lesson": "🌙 Night shift, 2:10 AM. She's 68, nauseated after gallbladder surgery. Promethazine 12.5 mg IV (intravenous) as needed. Her only IV is in her hand.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Knowledge gap: pushed it undiluted. The label changed in 2023\n2️⃣ Missed keyword: into a hand vein, which the label rules out\n3️⃣ Acted too late: \"It burns!\" and the nurse kept pushing\n➡️ 6:30 AM: her hand pale, cold, fingers dusky. Urgent surgery consult.\n\n💉 Promethazine IV (NEVER PUSH IT)\n• It can damage tissue badly if it leaks from the vein or enters an artery\n• Injuries have included gangrene and amputation\n• Deep IM (intramuscular) is the preferred route\n\n✅ The right move\n• Ask whether IM, or another antiemetic, is an option\n• IV only if needed: dilute in normal saline (1 mg/mL or less) and infuse over 20 to 40 minutes, per the label\n• A large vein, ideally central. Never the hand or wrist\n• Burning or pain: stop now and report\n\n🧠 Promethazine: dilute, drip, big vein. Never push.",
-  "share_line": "📤 Send this to the nurse who still pushes promethazine in 30 seconds.",
-  "sources": [
-   "FDA (U.S. Food and Drug Administration): updates to labeling for promethazine hydrochloride injection products (December 2023)",
-   "Promethazine hydrochloride injection prescribing information (DailyMed): boxed warning, severe tissue injury including gangrene",
-   "Promethazine injection label: stop the infusion right away for pain or burning"
-  ],
-  "rn_checks": [
-   "FDA Dec 2023 labeling: deep IM preferred; IV only after dilution in 0.9% sodium chloride (contraindicated IV above 1 mg/mL; adult 12.5 to 50 mg in 50 mL), infused over 20 to 40 minutes through a large vein, preferably central; never through IV catheters in the hand or wrist; label: stop the infusion right away for pain or burning",
-   "Boxed warning: severe tissue injury including gangrene, regardless of route",
-   "Promethazine in a 68-year-old is on the 2023 AGS Beers list (avoid). Not raised in the Reel to keep one lesson; the caption says 'or another antiemetic'. OK?",
-   "Outcome: about 4 hours later, a pale, cold, swollen hand with dusky fingers and blisters; urgent surgery consult (not graphic). Realistic?",
-   "Banner 'URGENT SURGERY CONSULT' instead of RAPID RESPONSE. OK?",
-   "Memory phrase is NEW: (NEVER PUSH IT). Keep or swap?",
-   "Smart Prep labels: KNOWLEDGE GAP, MISSED KEYWORD, ACTED TOO LATE. Fit?",
-   "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
-  ],
-  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
- }
+    "memory_line": "Promethazine: dilute, drip, big vein. Never push.",
+    "caption_lesson": "🌙 Night shift, 2:10 AM. She's 68, nauseated after gallbladder surgery. Promethazine 12.5 mg IV (intravenous) as needed. Her only IV is in her hand.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Knowledge gap: pushed it undiluted. The label changed in 2023\n2️⃣ Missed keyword: into a hand vein, which the label rules out\n3️⃣ Acted too late: \"It burns!\" and the nurse kept pushing\n➡️ 6:30 AM: her hand pale, cold, fingers dusky. Urgent surgery consult.\n\n💉 Promethazine IV (NEVER PUSH IT)\n• It can damage tissue badly if it leaks from the vein or enters an artery\n• Injuries have included gangrene and amputation\n• Deep IM (intramuscular) is the preferred route\n\n✅ The right move\n• Ask whether IM, or another antiemetic, is an option\n• IV only if needed: dilute in normal saline (1 mg/mL or less) and infuse over 20 to 40 minutes, per the label\n• A large vein, ideally central. Never the hand or wrist\n• Burning or pain: stop now and report\n\n🧠 Promethazine: dilute, drip, big vein. Never push.",
+    "share_line": "📤 Send this to the nurse who still pushes promethazine in 30 seconds.",
+    "sources": [
+      "FDA (U.S. Food and Drug Administration): updates to labeling for promethazine hydrochloride injection products (December 2023)",
+      "Promethazine hydrochloride injection prescribing information (DailyMed): boxed warning, severe tissue injury including gangrene",
+      "Promethazine injection label: stop the infusion right away for pain or burning"
+    ],
+    "rn_checks": [
+      "FDA Dec 2023 labeling: deep IM preferred; IV only after dilution in 0.9% sodium chloride (contraindicated IV above 1 mg/mL; adult 12.5 to 50 mg in 50 mL), infused over 20 to 40 minutes through a large vein, preferably central; never through IV catheters in the hand or wrist; label: stop the infusion right away for pain or burning",
+      "Boxed warning: severe tissue injury including gangrene, regardless of route",
+      "Promethazine in a 68-year-old is on the 2023 AGS Beers list (avoid). Not raised in the Reel to keep one lesson; the caption says 'or another antiemetic'. OK?",
+      "Outcome: about 4 hours later, a pale, cold, swollen hand with dusky fingers and blisters; urgent surgery consult (not graphic). Realistic?",
+      "Banner 'URGENT SURGERY CONSULT' instead of RAPID RESPONSE. OK?",
+      "Memory phrase is NEW: (NEVER PUSH IT). Keep or swap?",
+      "Smart Prep labels: KNOWLEDGE GAP, MISSED KEYWORD, ACTED TOO LATE. Fit?",
+      "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+    ],
+    "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
+  }
 ]

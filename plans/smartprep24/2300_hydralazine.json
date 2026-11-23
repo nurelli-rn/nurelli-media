@@ -1,116 +1,112 @@
 {
- "post_id": "2026-11-23_2300_hydralazine",
- "slot_manila": "Mon Nov 23, 11:00 pm",
- "slot_utc": "2026-11-23T15:00:00Z",
- "lane": "PHARM",
- "keyword": "PHARM",
- "format": "story (high stakes, night shift)",
- "title": "PHARM · Hydralazine vs hydroxyzine (READ EVERY LETTER) (high stakes, night shift, Smart Prep errors)",
- "hook": "Nurses: hydrALAZINE or hydrOXYzine? One letter. One crash.",
- "hook_backups": [
-  "Nurses: the scanner beeps 'wrong drug' at 2 AM. Override?",
-  "Nurses: he asked for an anxiety pill. Why did his BP crash?"
- ],
- "belief": "Drugs that start the same are close enough to grab fast.",
- "score": {
-  "virality": 23,
-  "difficulty": 22,
-  "search": 23,
-  "value": 23,
-  "total": 91
- },
- "smart_prep": [
-  "MISSED KEYWORD",
-  "HABIT OVER STANDARD",
-  "WRONG PRIORITY"
- ],
- "story": {
-  "patient": "81-year-old man who can't sleep and feels anxious; as-needed order: hydrOXYzine 25 mg by mouth for anxiety",
-  "timeline": [
-   {
-    "clock": "2:30 AM",
-    "beat": "'I'm so anxious, I can't sleep.' Patient and nurse in frame with the hook"
-   },
-   {
-    "clock": "2:33 AM",
-    "beat": "Two bins side by side. The nurse reads 'hydr...' and grabs hydrALAZINE 25 mg",
-    "mistake": "MISTAKE 1 · MISSED KEYWORD",
-    "mistake_line": "Read 'hydr' and stopped reading"
-   },
-   {
-    "clock": "2:34 AM",
-    "beat": "The scanner beeps 'wrong drug'. 'It's acting up.' Override",
-    "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
-    "mistake_line": "Overrode the scanner"
-   },
-   {
-    "clock": "3:30 AM",
-    "beat": "'I feel dizzy.' The nurse finishes the med pass first",
-    "mistake": "MISTAKE 3 · WRONG PRIORITY",
-    "mistake_line": "Finished the med pass before the dizzy patient"
-   },
-   {
-    "clock": "3:45 AM",
-    "beat": "BP (blood pressure) 84/48, heart rate 112, dizzy and confused",
-    "banner": "RAPID RESPONSE",
-    "outcome": "One letter. 3 mistakes. Every one avoidable."
-   }
-  ]
- },
- "rewind": {
-  "clock": "2:30 AM, same patient",
-  "caught_it": [
-   {
-    "text": "Read the whole name. Tall-man letters: hydrALAZINE, hydrOXYzine",
-    "anchor": "READ EVERY LETTER"
-   },
-   {
-    "text": "Scan every dose. A scanner alert means stop and check",
-    "anchor": "STANDARD"
-   },
-   {
-    "text": "Match the drug to the reason: anxiety is hydroxyzine, blood pressure is hydralazine",
-    "anchor": "STANDARD"
-   },
-   {
-    "text": "Dizzy after a dose? Him first: BP, stay with him, call",
-    "anchor": "PRIORITY"
-   }
-  ]
- },
- "choice": {
-  "question": "2 AM. The scanner says 'wrong drug'.",
-  "a": "Override it: it's acting up",
-  "b": "Stop, read every letter, check the order",
-  "answer": "B"
- },
- "save_card": {
-  "title": "HYDRALAZINE VS HYDROXYZINE (READ EVERY LETTER)",
-  "items": [
-   "hydrALAZINE: lowers blood pressure",
-   "hydrOXYzine: eases anxiety and itching",
-   "Scanner alert: stop and check",
-   "Dizzy after a dose: BP first, then call"
+  "post_id": "2026-11-23_2300_hydralazine",
+  "slot_manila": "Mon Nov 23, 11:00 pm",
+  "slot_utc": "2026-11-23T15:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Hydralazine vs hydroxyzine (READ EVERY LETTER) (high stakes, night shift, Smart Prep errors)",
+  "hook": "Nurses: hydrALAZINE or hydrOXYzine? One letter. One crash.",
+  "hook_backups": [
+    "Nurses: the scanner beeps 'wrong drug' at 2 AM. Override?",
+    "Nurses: he asked for an anxiety pill. Why did his BP crash?"
   ],
-  "seconds": 4
- },
- "memory_line": "One letter apart. Read every letter.",
- "caption_lesson": "🌙 Night shift, 2:30 AM. He's 81, anxious, can't sleep. His as-needed order: hydrOXYzine 25 mg by mouth.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: read \"hydr...\" and grabbed hydrALAZINE\n2️⃣ Habit over standard: the scanner said \"wrong drug\", and the nurse overrode it\n3️⃣ Wrong priority: \"I feel dizzy\", and the med pass came first\n➡️ 3:45 AM: BP (blood pressure) 84/48, dizzy and confused. Rapid response.\n\n🔤 Hydralazine vs hydroxyzine (READ EVERY LETTER)\n• hydrALAZINE: relaxes the arteries and lowers blood pressure\n• hydrOXYzine: an antihistamine for anxiety and itching\n• Look-alike, sound-alike names: tall-man letters show the difference\n\n✅ The right move\n• Read the whole name, every letter\n• Scan every dose. A scanner alert means stop and check\n• Match the drug to the reason it's ordered\n• Dizzy after a dose? Check BP, stay with him, call\n\n🧠 One letter apart. Read every letter.",
- "share_line": "📤 Send this to the nurse who'd override the scanner at 2 AM.",
- "sources": [
-  "ISMP (Institute for Safe Medication Practices) List of Confused Drug Names",
-  "ISMP and FDA (U.S. Food and Drug Administration) lists of look-alike drug names with recommended tall-man letters",
-  "Hydralazine hydrochloride tablets prescribing information (DailyMed)"
- ],
- "rn_checks": [
-  "hydrALAZINE / hydrOXYzine is a listed look-alike, sound-alike pair with tall-man lettering (ISMP)",
-  "Hydralazine: arterial vasodilator; hypotension with reflex tachycardia",
-  "Story: hydralazine 25 mg by mouth given in error to an 81-year-old not on it (usual start is 10 mg four times a day); BP 84/48, heart rate 112, dizzy and confused about 70 minutes later (onset about 45 min, peak about 2 h). Softened from 72/40 after Vera's check. Realistic?",
-  "Hydroxyzine in an 81-year-old is itself on the Beers list (anticholinergic). Not raised in the Reel to keep one lesson; diphenhydramine Beers Reel posted Nov 23. OK?",
-  "Labetalol (HTN emergency, Nov 23) is a different drug. OK under the 30-day rule?",
-  "Memory phrase is NEW: (READ EVERY LETTER). Keep or swap?",
-  "Smart Prep labels: MISSED KEYWORD, HABIT OVER STANDARD, WRONG PRIORITY. Fit?",
-  "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
- ],
- "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
+  "belief": "Drugs that start the same are close enough to grab fast.",
+  "score": {
+    "virality": 23,
+    "difficulty": 22,
+    "search": 23,
+    "value": 23,
+    "total": 91
+  },
+  "smart_prep": [
+    "MISSED KEYWORD",
+    "HABIT OVER STANDARD",
+    "WRONG PRIORITY"
+  ],
+  "story": {
+    "patient": "81-year-old man who can't sleep and feels anxious; as-needed order: hydrOXYzine 25 mg by mouth for anxiety",
+    "timeline": [
+      {
+        "clock": "2:30 AM",
+        "beat": "'I'm so anxious, I can't sleep.' Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "2:33 AM",
+        "beat": "Two bins side by side. The nurse reads 'hydr...' and grabs hydrALAZINE 25 mg",
+        "mistake": "MISTAKE 1 · MISSED KEYWORD",
+        "mistake_line": "Read 'hydr' and stopped reading"
+      },
+      {
+        "clock": "2:34 AM",
+        "beat": "The scanner beeps 'wrong drug'. 'It's acting up.' Override",
+        "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
+        "mistake_line": "Overrode the scanner"
+      },
+      {
+        "clock": "3:30 AM",
+        "beat": "'I feel dizzy.' The nurse finishes the med pass first",
+        "mistake": "MISTAKE 3 · WRONG PRIORITY",
+        "mistake_line": "Finished the med pass before the dizzy patient"
+      },
+      {
+        "clock": "3:45 AM",
+        "beat": "BP (blood pressure) 84/48, heart rate 112, dizzy and confused",
+        "banner": "RAPID RESPONSE",
+        "outcome": "One letter. 3 mistakes. Every one avoidable."
+      }
+    ]
+  },
+  "rewind": {
+    "clock": "2:30 AM, same patient",
+    "caught_it": [
+      {
+        "text": "Read the whole name. Tall-man letters: hydrALAZINE, hydrOXYzine"
+      },
+      {
+        "text": "Scan every dose. A scanner alert means stop and check"
+      },
+      {
+        "text": "Match the drug to the reason: anxiety is hydroxyzine, blood pressure is hydralazine"
+      },
+      {
+        "text": "Dizzy after a dose? Him first: BP, stay with him, call"
+      }
+    ]
+  },
+  "choice": {
+    "question": "2 AM. The scanner says 'wrong drug'.",
+    "a": "Override it: it's acting up",
+    "b": "Stop, read every letter, check the order",
+    "answer": "B"
+  },
+  "save_card": {
+    "title": "HYDRALAZINE VS HYDROXYZINE (READ EVERY LETTER)",
+    "items": [
+      "hydrALAZINE: lowers blood pressure",
+      "hydrOXYzine: eases anxiety and itching",
+      "Scanner alert: stop and check",
+      "Dizzy after a dose: BP first, then call"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "One letter apart. Read every letter.",
+  "caption_lesson": "🌙 Night shift, 2:30 AM. He's 81, anxious, can't sleep. His as-needed order: hydrOXYzine 25 mg by mouth.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: read \"hydr...\" and grabbed hydrALAZINE\n2️⃣ Habit over standard: the scanner said \"wrong drug\", and the nurse overrode it\n3️⃣ Wrong priority: \"I feel dizzy\", and the med pass came first\n➡️ 3:45 AM: BP (blood pressure) 84/48, dizzy and confused. Rapid response.\n\n🔤 Hydralazine vs hydroxyzine (READ EVERY LETTER)\n• hydrALAZINE: relaxes the arteries and lowers blood pressure\n• hydrOXYzine: an antihistamine for anxiety and itching\n• Look-alike, sound-alike names: tall-man letters show the difference\n\n✅ The right move\n• Read the whole name, every letter\n• Scan every dose. A scanner alert means stop and check\n• Match the drug to the reason it's ordered\n• Dizzy after a dose? Check BP, stay with him, call\n\n🧠 One letter apart. Read every letter.",
+  "share_line": "📤 Send this to the nurse who'd override the scanner at 2 AM.",
+  "sources": [
+    "ISMP (Institute for Safe Medication Practices) List of Confused Drug Names",
+    "ISMP and FDA (U.S. Food and Drug Administration) lists of look-alike drug names with recommended tall-man letters",
+    "Hydralazine hydrochloride tablets prescribing information (DailyMed)"
+  ],
+  "rn_checks": [
+    "hydrALAZINE / hydrOXYzine is a listed look-alike, sound-alike pair with tall-man lettering (ISMP)",
+    "Hydralazine: arterial vasodilator; hypotension with reflex tachycardia",
+    "Story: hydralazine 25 mg by mouth given in error to an 81-year-old not on it (usual start is 10 mg four times a day); BP 84/48, heart rate 112, dizzy and confused about 70 minutes later (onset about 45 min, peak about 2 h). Softened from 72/40 after Vera's check. Realistic?",
+    "Hydroxyzine in an 81-year-old is itself on the Beers list (anticholinergic). Not raised in the Reel to keep one lesson; diphenhydramine Beers Reel posted Nov 23. OK?",
+    "Labetalol (HTN emergency, Nov 23) is a different drug. OK under the 30-day rule?",
+    "Memory phrase is NEW: (READ EVERY LETTER). Keep or swap?",
+    "Smart Prep labels: MISSED KEYWORD, HABIT OVER STANDARD, WRONG PRIORITY. Fit?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'"
+  ],
+  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
 }

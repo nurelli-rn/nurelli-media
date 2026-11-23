@@ -1,115 +1,111 @@
 {
- "post_id": "2026-11-23_1700_copdo2",
- "slot_manila": "Mon Nov 23, 5:00 pm",
- "slot_utc": "2026-11-23T09:00:00Z",
- "lane": "PHARM",
- "keyword": "PHARM",
- "format": "story (high stakes, night shift)",
- "title": "PHARM · Oxygen in COPD (88 TO 92, NEVER ZERO) (high stakes, night shift, Smart Prep errors)",
- "hook": "Nurses: COPD, SpO2 82% at 2 AM. Hold the oxygen?",
- "hook_backups": [
-  "Nurses: oxygen stops a COPD patient breathing. True?",
-  "Nurses: his sats are 82. 'That's his normal.' Is it?"
- ],
- "belief": "Oxygen is dangerous in COPD, so you hold it even when sats are low.",
- "score": {
-  "virality": 24,
-  "difficulty": 22,
-  "search": 24,
-  "value": 24,
-  "total": 94
- },
- "smart_prep": [
-  "BEYOND THE STEM",
-  "HABIT OVER STANDARD",
-  "ACTED TOO LATE"
- ],
- "story": {
-  "patient": "72-year-old man with COPD (chronic obstructive pulmonary disease), admitted with pneumonia",
-  "timeline": [
-   {
-    "clock": "2:15 AM",
-    "beat": "Alarm: SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles. Patient and nurse in frame with the hook"
-   },
-   {
-    "clock": "2:17 AM",
-    "beat": "'His normal's probably low.' No baseline is charted anywhere",
-    "mistake": "MISTAKE 1 · BEYOND THE STEM",
-    "mistake_line": "Assumed a baseline nobody charted"
-   },
-   {
-    "clock": "2:18 AM",
-    "beat": "'Oxygen stops his drive to breathe.' The oxygen stays off",
-    "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
-    "mistake_line": "Held oxygen for 'COPD drive'"
-   },
-   {
-    "clock": "2:50 AM",
-    "beat": "He's drowsy. 'Finally sleeping.' No recheck",
-    "mistake": "MISTAKE 3 · ACTED TOO LATE",
-    "mistake_line": "Called drowsy 'sleeping', no recheck"
-   },
-   {
-    "clock": "3:20 AM",
-    "beat": "SpO2 74%, hard to wake, heart rate 132",
-    "banner": "RAPID RESPONSE",
-    "outcome": "Too little oxygen, not too much. 3 mistakes. Every one avoidable."
-   }
-  ]
- },
- "rewind": {
-  "clock": "2:15 AM, same patient",
-  "caught_it": [
-   {
-    "text": "Low oxygen? Give oxygen. Never withhold it",
-    "anchor": "ABC"
-   },
-   {
-    "text": "COPD with a CO2 (carbon dioxide) risk: controlled oxygen, target SpO2 88 to 92%",
-    "anchor": "STANDARD"
-   },
-   {
-    "text": "Nasal cannula or a Venturi mask, as ordered or per protocol",
-    "anchor": "STANDARD"
-   },
-   {
-    "text": "Recheck SpO2, breathing, alertness. Drowsy or confused? Call now, blood gas as ordered",
-    "anchor": "STABLE VS UNSTABLE"
-   }
-  ]
- },
- "choice": {
-  "question": "COPD. SpO2 82%, breathing 28.",
-  "a": "Hold oxygen to protect his drive",
-  "b": "Oxygen now, aim 88 to 92%, call",
-  "answer": "B"
- },
- "save_card": {
-  "title": "COPD + LOW OXYGEN (88 TO 92, NEVER ZERO)",
-  "items": [
-   "Low oxygen? Never withhold it",
-   "Target SpO2 88 to 92% if CO2 risk",
-   "Controlled oxygen, as ordered",
-   "Drowsy or confused: call, blood gas"
+  "post_id": "2026-11-23_1700_copdo2",
+  "slot_manila": "Mon Nov 23, 5:00 pm",
+  "slot_utc": "2026-11-23T09:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Oxygen in COPD (88 TO 92, NEVER ZERO) (high stakes, night shift, Smart Prep errors)",
+  "hook": "Nurses: COPD, SpO2 82% at 2 AM. Hold the oxygen?",
+  "hook_backups": [
+    "Nurses: oxygen stops a COPD patient breathing. True?",
+    "Nurses: his sats are 82. 'That's his normal.' Is it?"
   ],
-  "seconds": 4
- },
- "memory_line": "COPD: aim for 88 to 92. Never zero.",
- "caption_lesson": "🌙 Night shift, 2:15 AM. He's 72 with COPD (chronic obstructive pulmonary disease), admitted with pneumonia.\n• SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles\n\n❌ 3 mistakes, 3 error types\n1️⃣ Beyond the stem: \"His normal's probably low.\" No baseline was charted\n2️⃣ Habit over standard: held the oxygen for \"COPD drive\"\n3️⃣ Acted too late: called drowsy \"sleeping\", no recheck\n➡️ 3:20 AM: SpO2 74%, hard to wake. Rapid response.\n\n🫁 Oxygen in COPD (88 TO 92, NEVER ZERO)\n• Low oxygen kills faster than high CO2 (carbon dioxide)\n• Some COPD patients hold on to CO2, so too much oxygen can also make them drowsy\n• The answer is controlled oxygen, not none\n\n✅ The right move\n• Low oxygen? Give oxygen. Never withhold it\n• COPD with a CO2 risk: aim for SpO2 88 to 92%, as ordered\n• Nasal cannula or a Venturi mask, as ordered or per protocol\n• Recheck SpO2, breathing and alertness. Drowsy or confused? Call now, blood gas as ordered\n\n🧠 COPD: aim for 88 to 92. Never zero.",
- "share_line": "📤 Send this to the nurse who still believes oxygen stops COPD patients breathing.",
- "sources": [
-  "BTS (British Thoracic Society) Guideline for oxygen use in adults in healthcare and emergency settings (O'Driscoll et al., Thorax 2017)",
-  "GOLD (Global Initiative for Chronic Obstructive Lung Disease) Global Strategy for Prevention, Diagnosis and Management of COPD: 2027 Report"
- ],
- "rn_checks": [
-  "Target SpO2 88 to 92% for patients at risk of hypercapnic (CO2) respiratory failure, such as COPD (BTS 2017). Vera did not check the exact wording inside the GOLD 2027 report",
-  "Never withhold oxygen from a hypoxemic patient; controlled oxygen via nasal cannula or Venturi 24 to 28%, as ordered or per protocol",
-  "Drowsiness can be hypoxia OR rising CO2: call, ABG (arterial blood gas) as ordered",
-  "Story numbers: SpO2 82, then 74%; breathing 28; heart rate 132; hard to wake at 3:20 AM. Realistic?",
-  "Inhalers (asthma) posted Nov 22: this is oxygen in COPD, a different topic. OK under the 30-day rule?",
-  "Memory phrase is NEW: (88 TO 92, NEVER ZERO). Keep or swap?",
-  "Smart Prep labels: BEYOND THE STEM (assumed a baseline), HABIT OVER STANDARD, ACTED TOO LATE. Fit?",
-  "Choice answer B; keyword PHARM (oxygen is a prescribed drug); hook, cover and caption line 1 open with 'Nurses:'"
- ],
- "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
+  "belief": "Oxygen is dangerous in COPD, so you hold it even when sats are low.",
+  "score": {
+    "virality": 24,
+    "difficulty": 22,
+    "search": 24,
+    "value": 24,
+    "total": 94
+  },
+  "smart_prep": [
+    "BEYOND THE STEM",
+    "HABIT OVER STANDARD",
+    "ACTED TOO LATE"
+  ],
+  "story": {
+    "patient": "72-year-old man with COPD (chronic obstructive pulmonary disease), admitted with pneumonia",
+    "timeline": [
+      {
+        "clock": "2:15 AM",
+        "beat": "Alarm: SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles. Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "2:17 AM",
+        "beat": "'His normal's probably low.' No baseline is charted anywhere",
+        "mistake": "MISTAKE 1 · BEYOND THE STEM",
+        "mistake_line": "Assumed a baseline nobody charted"
+      },
+      {
+        "clock": "2:18 AM",
+        "beat": "'Oxygen stops his drive to breathe.' The oxygen stays off",
+        "mistake": "MISTAKE 2 · HABIT OVER STANDARD",
+        "mistake_line": "Held oxygen for 'COPD drive'"
+      },
+      {
+        "clock": "2:50 AM",
+        "beat": "He's drowsy. 'Finally sleeping.' No recheck",
+        "mistake": "MISTAKE 3 · ACTED TOO LATE",
+        "mistake_line": "Called drowsy 'sleeping', no recheck"
+      },
+      {
+        "clock": "3:20 AM",
+        "beat": "SpO2 74%, hard to wake, heart rate 132",
+        "banner": "RAPID RESPONSE",
+        "outcome": "Too little oxygen, not too much. 3 mistakes. Every one avoidable."
+      }
+    ]
+  },
+  "rewind": {
+    "clock": "2:15 AM, same patient",
+    "caught_it": [
+      {
+        "text": "Low oxygen? Give oxygen. Never withhold it"
+      },
+      {
+        "text": "COPD with a CO2 (carbon dioxide) risk: controlled oxygen, target SpO2 88 to 92%"
+      },
+      {
+        "text": "Nasal cannula or a Venturi mask, as ordered or per protocol"
+      },
+      {
+        "text": "Recheck SpO2, breathing, alertness. Drowsy or confused? Call now, blood gas as ordered"
+      }
+    ]
+  },
+  "choice": {
+    "question": "COPD. SpO2 82%, breathing 28.",
+    "a": "Hold oxygen to protect his drive",
+    "b": "Oxygen now, aim 88 to 92%, call",
+    "answer": "B"
+  },
+  "save_card": {
+    "title": "COPD + LOW OXYGEN (88 TO 92, NEVER ZERO)",
+    "items": [
+      "Low oxygen? Never withhold it",
+      "Target SpO2 88 to 92% if CO2 risk",
+      "Controlled oxygen, as ordered",
+      "Drowsy or confused: call, blood gas"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "COPD: aim for 88 to 92. Never zero.",
+  "caption_lesson": "🌙 Night shift, 2:15 AM. He's 72 with COPD (chronic obstructive pulmonary disease), admitted with pneumonia.\n• SpO2 (oxygen saturation) 82%, breathing 28, using his neck muscles\n\n❌ 3 mistakes, 3 error types\n1️⃣ Beyond the stem: \"His normal's probably low.\" No baseline was charted\n2️⃣ Habit over standard: held the oxygen for \"COPD drive\"\n3️⃣ Acted too late: called drowsy \"sleeping\", no recheck\n➡️ 3:20 AM: SpO2 74%, hard to wake. Rapid response.\n\n🫁 Oxygen in COPD (88 TO 92, NEVER ZERO)\n• Low oxygen kills faster than high CO2 (carbon dioxide)\n• Some COPD patients hold on to CO2, so too much oxygen can also make them drowsy\n• The answer is controlled oxygen, not none\n\n✅ The right move\n• Low oxygen? Give oxygen. Never withhold it\n• COPD with a CO2 risk: aim for SpO2 88 to 92%, as ordered\n• Nasal cannula or a Venturi mask, as ordered or per protocol\n• Recheck SpO2, breathing and alertness. Drowsy or confused? Call now, blood gas as ordered\n\n🧠 COPD: aim for 88 to 92. Never zero.",
+  "share_line": "📤 Send this to the nurse who still believes oxygen stops COPD patients breathing.",
+  "sources": [
+    "BTS (British Thoracic Society) Guideline for oxygen use in adults in healthcare and emergency settings (O'Driscoll et al., Thorax 2017)",
+    "GOLD (Global Initiative for Chronic Obstructive Lung Disease) Global Strategy for Prevention, Diagnosis and Management of COPD: 2027 Report"
+  ],
+  "rn_checks": [
+    "Target SpO2 88 to 92% for patients at risk of hypercapnic (CO2) respiratory failure, such as COPD (BTS 2017). Vera did not check the exact wording inside the GOLD 2027 report",
+    "Never withhold oxygen from a hypoxemic patient; controlled oxygen via nasal cannula or Venturi 24 to 28%, as ordered or per protocol",
+    "Drowsiness can be hypoxia OR rising CO2: call, ABG (arterial blood gas) as ordered",
+    "Story numbers: SpO2 82, then 74%; breathing 28; heart rate 132; hard to wake at 3:20 AM. Realistic?",
+    "Inhalers (asthma) posted Nov 22: this is oxygen in COPD, a different topic. OK under the 30-day rule?",
+    "Memory phrase is NEW: (88 TO 92, NEVER ZERO). Keep or swap?",
+    "Smart Prep labels: BEYOND THE STEM (assumed a baseline), HABIT OVER STANDARD, ACTED TOO LATE. Fit?",
+    "Choice answer B; keyword PHARM (oxygen is a prescribed drug); hook, cover and caption line 1 open with 'Nurses:'"
+  ],
+  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
 }

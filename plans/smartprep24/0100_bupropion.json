@@ -1,117 +1,113 @@
 {
- "post_id": "2026-11-24_0100_bupropion",
- "slot_manila": "Tue Nov 24, 1:00 am",
- "slot_utc": "2026-11-23T17:00:00Z",
- "lane": "PHARM",
- "keyword": "PHARM",
- "format": "story (high stakes, night shift)",
- "title": "PHARM · Bupropion XL: do not crush (XL MEANS WHOLE) (high stakes, night shift, Smart Prep errors)",
- "hook": "Nurses: she can't swallow pills. Crush the XL?",
- "hook_backups": [
-  "Nurses: crushed into applesauce at 5 AM. Then a seizure.",
-  "Nurses: two letters on the label decide everything. Which?"
- ],
- "belief": "Any pill can be crushed if the patient can't swallow it.",
- "score": {
-  "virality": 23,
-  "difficulty": 21,
-  "search": 23,
-  "value": 23,
-  "total": 90
- },
- "smart_prep": [
-  "MISSED KEYWORD",
-  "SCOPE ERROR",
-  "ACTED TOO LATE"
- ],
- "story": {
-  "patient": "73-year-old woman with trouble swallowing since a stroke last year; bupropion XL (extended release) 300 mg every morning for depression",
-  "timeline": [
-   {
-    "clock": "5:20 AM",
-    "beat": "Early med pass. 'I can't swallow big pills.' Patient and nurse in frame with the hook"
-   },
-   {
-    "clock": "5:22 AM",
-    "beat": "Every pill crushed into applesauce. Nobody reads 'XL' on the label",
-    "mistake": "MISTAKE 1 · MISSED KEYWORD",
-    "mistake_line": "Never read 'XL' on the label"
-   },
-   {
-    "clock": "5:25 AM",
-    "beat": "'Can you give her this?' The cup goes to the nursing assistant",
-    "mistake": "MISTAKE 2 · SCOPE ERROR",
-    "mistake_line": "Asked the aide to give the meds"
-   },
-   {
-    "clock": "6:05 AM",
-    "beat": "Jittery, twitching, heart rate 116. 'Just anxious.'",
-    "mistake": "MISTAKE 3 · ACTED TOO LATE",
-    "mistake_line": "Called twitching 'anxiety'"
-   },
-   {
-    "clock": "6:30 AM",
-    "beat": "A seizure",
-    "banner": "RAPID RESPONSE",
-    "outcome": "The whole day's dose, all at once. 3 mistakes. Every one avoidable."
-   }
-  ]
- },
- "rewind": {
-  "clock": "5:20 AM, same patient",
-  "caught_it": [
-   {
-    "text": "XL, ER, SR, CR, LA on the label: never crush. A few can be split or opened: ask pharmacy",
-    "anchor": "READ EVERY LETTER"
-   },
-   {
-    "text": "Can't swallow it whole? Hold it, call pharmacy and the provider for another form",
-    "anchor": "STANDARD"
-   },
-   {
-    "text": "In the hospital, the nurse gives the meds",
-    "anchor": "SCOPE"
-   },
-   {
-    "text": "New twitching or jitters after a dose: check her, seizure precautions, report",
-    "anchor": "STABLE VS UNSTABLE"
-   }
-  ]
- },
- "choice": {
-  "question": "Bupropion XL due. She can't swallow tablets.",
-  "a": "Crush it into applesauce",
-  "b": "Hold it, call pharmacy for another form",
-  "answer": "B"
- },
- "save_card": {
-  "title": "DO NOT CRUSH (XL MEANS WHOLE)",
-  "items": [
-   "XL, ER, SR, CR, LA: never crush",
-   "Crushed XL: the whole dose at once",
-   "Can't swallow? Ask pharmacy for another form",
-   "Bupropion too fast: seizure risk"
+  "post_id": "2026-11-24_0100_bupropion",
+  "slot_manila": "Tue Nov 24, 1:00 am",
+  "slot_utc": "2026-11-23T17:00:00Z",
+  "lane": "PHARM",
+  "keyword": "PHARM",
+  "format": "story (high stakes, night shift)",
+  "title": "PHARM · Bupropion XL: do not crush (XL MEANS WHOLE) (high stakes, night shift, Smart Prep errors)",
+  "hook": "Nurses: she can't swallow pills. Crush the XL?",
+  "hook_backups": [
+    "Nurses: crushed into applesauce at 5 AM. Then a seizure.",
+    "Nurses: two letters on the label decide everything. Which?"
   ],
-  "seconds": 4
- },
- "memory_line": "XL means whole. Never crush.",
- "caption_lesson": "🌙 Night shift, 5:20 AM med pass. She's 73, trouble swallowing since a stroke. Bupropion XL (extended release) 300 mg every morning.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: crushed every pill, never read \"XL\"\n2️⃣ Scope error: handed the cup to the nursing assistant to give\n3️⃣ Acted too late: twitching and jitters called \"just anxious\"\n➡️ 6:30 AM: a seizure. Rapid response.\n\n💊 Bupropion XL (XL MEANS WHOLE)\n• XL tablets release the dose slowly over the day\n• Crushed, the whole day's dose hits at once\n• Bupropion's seizure risk climbs with dose and speed\n\n✅ The right move\n• XL, ER (extended release), SR (sustained release), CR (controlled release), LA (long acting) on the label: never crush. A few can be split or opened: ask pharmacy\n• Can't swallow it? Hold it and call pharmacy and the provider for another form\n• In the hospital, the nurse gives the meds\n• New twitching or jitters: check her, seizure precautions, report\n\n🧠 XL means whole. Never crush.",
- "share_line": "📤 Send this to the nurse who crushes everything into applesauce.",
- "sources": [
-  "Bupropion hydrochloride extended-release (XL) tablets prescribing information (DailyMed): do not crush, chew or divide; seizure risk",
-  "ISMP (Institute for Safe Medication Practices) Oral Dosage Forms That Should Not Be Crushed"
- ],
- "rn_checks": [
-  "Bupropion XL must be swallowed whole; crushing raises the risk of adverse effects including seizures (label)",
-  "Bupropion seizure risk is dose-related",
-  "Story: crushed 300 mg XL at 5:22, jitters and twitching by 6:05, seizure 6:30. Realistic timing?",
-  "Hospital wording: 'In the hospital, the nurse gives the meds' (certified medication aides give meds in some long-term care settings)",
-  "Extended-release forms: never crush; a few can be split or opened (for example some ER tablets and capsules), so 'ask pharmacy'. Bupropion XL itself: swallow whole (label). OK?",
-  "Memory phrase is NEW: (XL MEANS WHOLE). Keep or swap?",
-  "Story clock is the 5 to 6 AM med pass (bupropion XL is a morning dose). OK for the night-shift rule?",
-  "Smart Prep labels: MISSED KEYWORD, SCOPE ERROR, ACTED TOO LATE. Fit?",
-  "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'",
-  "Severe stroke is a listed predisposing factor for bupropion seizures (label), which fits this patient"
- ],
- "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
+  "belief": "Any pill can be crushed if the patient can't swallow it.",
+  "score": {
+    "virality": 23,
+    "difficulty": 21,
+    "search": 23,
+    "value": 23,
+    "total": 90
+  },
+  "smart_prep": [
+    "MISSED KEYWORD",
+    "SCOPE ERROR",
+    "ACTED TOO LATE"
+  ],
+  "story": {
+    "patient": "73-year-old woman with trouble swallowing since a stroke last year; bupropion XL (extended release) 300 mg every morning for depression",
+    "timeline": [
+      {
+        "clock": "5:20 AM",
+        "beat": "Early med pass. 'I can't swallow big pills.' Patient and nurse in frame with the hook"
+      },
+      {
+        "clock": "5:22 AM",
+        "beat": "Every pill crushed into applesauce. Nobody reads 'XL' on the label",
+        "mistake": "MISTAKE 1 · MISSED KEYWORD",
+        "mistake_line": "Never read 'XL' on the label"
+      },
+      {
+        "clock": "5:25 AM",
+        "beat": "'Can you give her this?' The cup goes to the nursing assistant",
+        "mistake": "MISTAKE 2 · SCOPE ERROR",
+        "mistake_line": "Asked the aide to give the meds"
+      },
+      {
+        "clock": "6:05 AM",
+        "beat": "Jittery, twitching, heart rate 116. 'Just anxious.'",
+        "mistake": "MISTAKE 3 · ACTED TOO LATE",
+        "mistake_line": "Called twitching 'anxiety'"
+      },
+      {
+        "clock": "6:30 AM",
+        "beat": "A seizure",
+        "banner": "RAPID RESPONSE",
+        "outcome": "The whole day's dose, all at once. 3 mistakes. Every one avoidable."
+      }
+    ]
+  },
+  "rewind": {
+    "clock": "5:20 AM, same patient",
+    "caught_it": [
+      {
+        "text": "XL, ER, SR, CR, LA on the label: never crush. A few can be split or opened: ask pharmacy"
+      },
+      {
+        "text": "Can't swallow it whole? Hold it, call pharmacy and the provider for another form"
+      },
+      {
+        "text": "In the hospital, the nurse gives the meds"
+      },
+      {
+        "text": "New twitching or jitters after a dose: check her, seizure precautions, report"
+      }
+    ]
+  },
+  "choice": {
+    "question": "Bupropion XL due. She can't swallow tablets.",
+    "a": "Crush it into applesauce",
+    "b": "Hold it, call pharmacy for another form",
+    "answer": "B"
+  },
+  "save_card": {
+    "title": "DO NOT CRUSH (XL MEANS WHOLE)",
+    "items": [
+      "XL, ER, SR, CR, LA: never crush",
+      "Crushed XL: the whole dose at once",
+      "Can't swallow? Ask pharmacy for another form",
+      "Bupropion too fast: seizure risk"
+    ],
+    "seconds": 4
+  },
+  "memory_line": "XL means whole. Never crush.",
+  "caption_lesson": "🌙 Night shift, 5:20 AM med pass. She's 73, trouble swallowing since a stroke. Bupropion XL (extended release) 300 mg every morning.\n\n❌ 3 mistakes, 3 error types\n1️⃣ Missed keyword: crushed every pill, never read \"XL\"\n2️⃣ Scope error: handed the cup to the nursing assistant to give\n3️⃣ Acted too late: twitching and jitters called \"just anxious\"\n➡️ 6:30 AM: a seizure. Rapid response.\n\n💊 Bupropion XL (XL MEANS WHOLE)\n• XL tablets release the dose slowly over the day\n• Crushed, the whole day's dose hits at once\n• Bupropion's seizure risk climbs with dose and speed\n\n✅ The right move\n• XL, ER (extended release), SR (sustained release), CR (controlled release), LA (long acting) on the label: never crush. A few can be split or opened: ask pharmacy\n• Can't swallow it? Hold it and call pharmacy and the provider for another form\n• In the hospital, the nurse gives the meds\n• New twitching or jitters: check her, seizure precautions, report\n\n🧠 XL means whole. Never crush.",
+  "share_line": "📤 Send this to the nurse who crushes everything into applesauce.",
+  "sources": [
+    "Bupropion hydrochloride extended-release (XL) tablets prescribing information (DailyMed): do not crush, chew or divide; seizure risk",
+    "ISMP (Institute for Safe Medication Practices) Oral Dosage Forms That Should Not Be Crushed"
+  ],
+  "rn_checks": [
+    "Bupropion XL must be swallowed whole; crushing raises the risk of adverse effects including seizures (label)",
+    "Bupropion seizure risk is dose-related",
+    "Story: crushed 300 mg XL at 5:22, jitters and twitching by 6:05, seizure 6:30. Realistic timing?",
+    "Hospital wording: 'In the hospital, the nurse gives the meds' (certified medication aides give meds in some long-term care settings)",
+    "Extended-release forms: never crush; a few can be split or opened (for example some ER tablets and capsules), so 'ask pharmacy'. Bupropion XL itself: swallow whole (label). OK?",
+    "Memory phrase is NEW: (XL MEANS WHOLE). Keep or swap?",
+    "Story clock is the 5 to 6 AM med pass (bupropion XL is a morning dose). OK for the night-shift rule?",
+    "Smart Prep labels: MISSED KEYWORD, SCOPE ERROR, ACTED TOO LATE. Fit?",
+    "Choice answer B; keyword PHARM; hook, cover and caption line 1 open with 'Nurses:'",
+    "Severe stroke is a listed predisposing factor for bupropion seizures (label), which fits this patient"
+  ],
+  "smart_prep_note": "Smart Prep error label (Cass, Nov 23): every MISTAKE stamp shows the error's simple name after the number, e.g. 'MISTAKE 1 · SCOPE ERROR', with the beat line under it. Every CAUGHT IT can carry a small anchor chip with the framework (e.g. 'ABC'). No product names, no pitch."
 }
