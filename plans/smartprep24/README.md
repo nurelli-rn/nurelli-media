@@ -17,3 +17,6 @@ Briefs written by HQ, checked by an independent Vera agent (fixes applied). Use 
 
 Already queued: Mon 11 am junctional repost, 1 pm bundle branch block, 7 pm amlodipine vs diltiazem style test, Tue 9 am levothyroxine vs methimazole.
 Quality over the clock: a Reel not at the bar 30 minutes before its slot leaves that slot empty.
+
+## Style (Cass, Mon Nov 23, 9:27 am Manila)
+Cass is changing the animation style. This batch stays in the CURRENT look so the slots run on time. Before building anything after this batch (the Monday batch body explainers included), check with Cass for the new style.
